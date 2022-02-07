@@ -12,7 +12,7 @@
 }
 
 /*===========================
-    01.COMMON css 
+    01.COMMON css
 ===========================*/
 html {
   scroll-behavior: smooth;
@@ -22,8 +22,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #6B6F92;
+  color: #a1aee6;
   overflow-x: hidden;
+  background-color: #111111;
 }
 
 * {
@@ -83,7 +84,7 @@ h6 {
   font-family: "Archivo Black", sans-serif;
   font-weight: 700;
   margin: 0px;
-  color: #313450;
+  color: #ffffff;
 }
 
 .section-title p {
@@ -170,7 +171,7 @@ p {
   z-index: 5;
   transition: all .4s ease-in-out;
   border: none;
-  background: #4E6EF1;
+  background: #f14e4e;
   overflow: hidden;
 }
 
@@ -396,7 +397,7 @@ p {
 }
 
 /*===========================
-    02.HEADER css 
+    02.HEADER css
 ===========================*/
 /*===== NAVBAR =====*/
 .navbar-area {
@@ -672,7 +673,7 @@ p {
   position: relative;
   z-index: 1;
   padding: 160px 0 120px;
-  background-image: url("../img/hero/hero-bg.jpg");
+  background-color: #000000;
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: cover;
@@ -705,7 +706,7 @@ p {
 .hero-section .hero-content span {
   font-family: "Archivo Black", sans-serif;
   font-size: 30px;
-  color: #4E6EF1;
+  color: #f14e4e;
   margin-bottom: 20px;
 }
 
