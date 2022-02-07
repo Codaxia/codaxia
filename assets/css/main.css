@@ -22,7 +22,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #a1aee6;
+  color: #8ca2fd;
   overflow-x: hidden;
   background-color: #1e2022;
 }
@@ -931,6 +931,8 @@ p {
 .service-section .single-service .content h3 {
   font-size: 24px;
   margin-bottom: 15px;
+  color: #000000;
+}
 }
 
 /* ============= counter-up css =========== */
