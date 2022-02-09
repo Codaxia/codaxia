@@ -16,7 +16,7 @@
 ===========================*/
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
+  scroll-padding-top: 3rem;
 }
 
 body {
@@ -420,12 +420,12 @@ p {
 }
 
 .sticky .navbar {
-  padding: 17px 0;
+  padding: 10px 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .sticky .navbar {
-    padding: 15px 0;
+    padding: 5px 0;
   }
 }
 
@@ -445,19 +445,24 @@ p {
   padding: 20px 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .navbar {
-    padding: 17px 0;
-  }
-}
-
 .navbar-brand {
   padding: 0;
 }
 
 .navbar-brand img {
-  max-width: 120px;
+  max-width: 100px;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .navbar {
+    padding: 17px 0;
+  }
+  
+  .navbar-brand img {
+   max-width: 80px;
+   }
+}
+
 
 .navbar-toggler {
   padding: 0;
