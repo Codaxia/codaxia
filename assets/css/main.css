@@ -414,7 +414,7 @@ p {
 .sticky {
   position: fixed;
   z-index: 99;
-  background-color: #fff;
+  background-color: #1e2022;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-out 0s;
 }
@@ -430,7 +430,7 @@ p {
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
-  color: #313450;
+  color: #ffffff;
 }
 
 .sticky .navbar .navbar-toggler .toggler-icon {
@@ -450,7 +450,11 @@ p {
 }
 
 .navbar-brand img {
-  max-width: 100px;
+  max-width: 55px;
+}
+
+.navbar-brand sticky img {
+  max-width: 90px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -756,28 +760,8 @@ p {
   margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .hero-section .hero-img img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .hero-section .hero-img img {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .hero-section .hero-img img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero-section .hero-img img {
-    width: 100%;
-  }
+.hero-section .hero-img img {
+  width: 100%;
 }
 
 .hero-section .hero-shape .shape {
