@@ -16,6 +16,7 @@
 ===========================*/
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
 body {
@@ -874,6 +875,7 @@ p {
   text-align: center;
   padding: 50px 30px;
   border-radius: 10px;
+  height: 365px;
   background: #fff;
   margin-bottom: 30px;
 }
@@ -933,7 +935,8 @@ p {
   margin-bottom: 15px;
   color: #000000;
 }
-}
+
+
 
 /* ============= counter-up css =========== */
 @media only screen and (min-width: 1400px) {
