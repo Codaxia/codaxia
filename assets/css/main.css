@@ -507,11 +507,15 @@ p {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #000000;
     z-index: 9;
     box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     padding: 5px 12px;
   }
+
+  .sticky .navbar-collapse {
+   background-color: #1e2022;
+   }
 }
 
 .navbar-nav .nav-item {
@@ -528,7 +532,7 @@ p {
 .navbar-nav .nav-item a {
   font-size: 18px;
   font-weight: 400;
-  color: #6B6F92;
+  color: #979dd1;
   transition: all 0.3s ease-out 0s;
   padding: 10px 0;
   position: relative;
@@ -538,7 +542,6 @@ p {
   .navbar-nav .nav-item a {
     display: inline-block;
     padding: 6px 0px;
-    color: #6B6F92;
   }
 }
 
