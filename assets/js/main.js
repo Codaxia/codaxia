@@ -36,9 +36,9 @@
         }
     };
 
-    // for menu scroll 
+    // for menu scroll
     var pageLink = document.querySelectorAll('.page-scroll');
-    
+
     pageLink.forEach(elem => {
         elem.addEventListener('click', e => {
             e.preventDefault();
@@ -71,7 +71,7 @@
 	window.document.addEventListener('scroll', onScroll);
 
     //===== close navbar-collapse when a  clicked
-    let navbarToggler = document.querySelector(".navbar-toggler");    
+    let navbarToggler = document.querySelector(".navbar-toggler");
     var navbarCollapse = document.querySelector(".navbar-collapse");
 
     document.querySelectorAll(".page-scroll").forEach(e =>
@@ -82,14 +82,14 @@
     );
     navbarToggler.addEventListener('click', function() {
         navbarToggler.classList.toggle("active");
-    }) 
+    })
 
 
 	// WOW active
     new WOW().init();
 
-    
-    //====== counter up 
+
+    //====== counter up
     var cu = new counterUp({
         start: 0,
         duration: 2000,
