@@ -1,0 +1,35 @@
+# WordPress .gitignore
+
+# Ignore the primary configuration file
+wp-config.php
+
+# Ignore log files and .htaccess
+*.log
+.htaccess
+
+# Ignore cache and backup files
+wp-content/cache/
+wp-content/backups/
+
+# Ignore update files and directories
+wp-content/upgrade/
+wp-content/updates/
+
+# Ignore specific directories used by popular plugins or development tools
+/wp-content/uploads/
+/wp-content/debug.log
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backup-db/
+/wp-content/backups/
+/wp-content/plugins/hello.php
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore files and directories related to local development environments
+/.vscode/
+/.idea/
+/.DS_Store
