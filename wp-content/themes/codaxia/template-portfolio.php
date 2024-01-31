@@ -1,63 +1,11 @@
-<?php
+<?php 
 /*
-Template Name: portfolio
+Template Name: Portfolio
 */
+?>
+<?php get_header()?>
 
-
-get_header()?>
-
-
-<!-- <!DOCTYPE html>
-<html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Xavier de Lisle | Portfolio</title>
-    <meta name="description" content="Saas | Site web | Applications web | React | Vue | Laravel | Javascript | PHP | Wordpress" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta property="og:image" content="https://cdn.thumbsmith.com/v1/u/codaxia/e-commerce" />
-	<meta name="google-site-verification" content="tPREifeNXUZ5BzNqsRZhQob__mrIxy1dQjsSd6GhCKE" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png"/>
-    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta2.min.css" />
-    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
-    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head> -->
-  <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
-    <!-- ========================= preloader start ========================= -->
-
-    <div class="preloader">
-      <div class="loader">
-        <div class="spinner">
-          <div class="spinner-container">
-            <div class="spinner-rotator">
-              <div class="spinner-left">
-                <div class="spinner-circle"></div>
-              </div>
-              <div class="spinner-right">
-                <div class="spinner-circle"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> 
-		<!-- preloader end -->
-
-
-
-
-    <!-- ========================= hero-section start ========================= -->
-    <section id="home" class="hero-section">
+<section id="home" class="hero-section">
 		<div class="container">
 		  <div class="row align-items-center">
 			<div class="col-lg-6">
@@ -97,7 +45,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/atuvu.jpg" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/atuvu.jpg" alt="">
 							</div>
 							<a href="https://www.atuvu.ca" class="overlay d-block" target="_blank">
 								<div class="content">
@@ -117,7 +65,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/wristband.jpg" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/wristband.jpg" alt="">
 							</div>
 							<a  class="overlay d-block" target="_blank">
 								<div class="content">
@@ -137,7 +85,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/g8a.jpg" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/g8a.jpg" alt="">
 							</div>
 							<a href="https://g8a-architects.com/" class="overlay d-block" target="_blank">
 								<div class="content">
@@ -158,7 +106,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/toilette.jpg" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/toilette.jpg" alt="">
 							</div>
 							<a href="https://toilettequebec.com/en/" class="overlay d-block" target="_blank">
 								<div class="content">
@@ -179,7 +127,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/medical-design.jpg" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/medical-design.jpg" alt="">
 							</div>
 							<a href="https://medicaldesign.ca/" class="overlay d-block" target="_blank">
 								<div class="content">
@@ -200,7 +148,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/cocoapp.jpg" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/cocoapp.jpg" alt="">
 							</div>
 							<a href="https://www.appwapp.com/en/our-projects/cocoapp/" class="overlay d-block" target="_blank">
 								<div class="content">
@@ -240,7 +188,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/acunote.jpg" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/acunote.jpg" alt="">
 							</div>
 							<a href="https://acunotereactapp.azurewebsites.net/" class="overlay d-block" target="_blank">
 								<div class="content">
@@ -260,7 +208,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/recyc-blur.png" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/recyc-blur.png" alt="">
 							</div>
 							<a href="https://www.recyc-auto.com/en/" class="overlay d-block" target="_blank">
 								<div class="content">
@@ -280,7 +228,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/glocal_robotics_blur.png" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/glocal_robotics_blur.png" alt="">
 							</div>
 							<a href="https://www.youtube.com/watch?v=xixVZ06qdNA&ab_channel=GlocalRobotics" class="overlay d-block" target="_blank">
 								<div class="content">
@@ -301,7 +249,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/plakk.jpg" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/plakk.jpg" alt="">
 							</div>
 							<a href="https://plakk-ai.com/solution/" class="overlay d-block" target="_blank">
 								<div class="content">
@@ -342,7 +290,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/ergo.jpg" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/ergo.jpg" alt="">
 							</div>
 							<a href="https://equilibre.net/prendre-rendez-vous" class="overlay d-block" target="_blank">
 								<div class="content">
@@ -363,7 +311,7 @@ get_header()?>
 					<div class="col-lg-4 col-md-6">
 						<div class="single-portfolio">
 							<div class="image">
-								<img src="assets/img/portfolio/pedlex.jpg" alt="">
+								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/pedlex.jpg" alt="">
 							</div>
 							<a href="https://www.pedlex.com/" class="overlay d-block" target="_blank">
 								<div class="content">
@@ -403,23 +351,5 @@ get_header()?>
 				</div>
 			</div>
 		</section>
-		<!-- ========================= cta-section end ========================= -->
-
-
-
-    <!-- ========================= scroll-top ========================= -->
-    <a href="#" class="scroll-top btn-hover">
-      <i class="lni lni-chevron-up"></i>
-    </a>
-
-    <!-- ========================= JS here ========================= -->
-    <script src="assets/js/bootstrap-5.0.0-beta2.min.js"></script>
-    <script src="assets/js/count-up.min.js"></script>
-    <script src="assets/js/tiny-slider.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/polifill.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
-<!-- </html> -->
 
 <?php get_footer()?>

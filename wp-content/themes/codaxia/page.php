@@ -1,11 +1,5 @@
-<?php
+<?php get_header() ?>
 
-/**
- * @package WordPress
- * @subpackage Coadaxia subpackage
- * @since Coadaxia version 0.1
- */
+<?php get_template_part('includes/section','content');?>
 
-get_header()?>
-ALLO
-<?php get_footer()?>
+<?php get_footer() ?>
