@@ -787,8 +787,12 @@ p {
   margin-bottom: 40px;
 }
 
+.hero-section .hero-img {
+  text-align: center;
+}
+
 .hero-section .hero-img img {
-  width: 100%;
+  width: 50%;
 }
 
 .hero-section .hero-shape .shape {

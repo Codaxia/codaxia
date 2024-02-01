@@ -10,17 +10,17 @@ Template Name: Portfolio
 		  <div class="row align-items-center">
 			<div class="col-lg-6">
 			  <div class="hero-content">
-				  <span class="wow fadeInLeft" data-wow-delay=".2s">Gabriel Brum</span>
+				  <span class="wow fadeInLeft" data-wow-delay=".2s"><?= get_field('name_of_the_person'); ?></span>
 					<h1 class="wow fadeInUp" data-wow-delay=".4s">
-					  Portfolio
+					<?= get_field('portfolio_title'); ?>
 				  </h1>
-				  <p class="wow fadeInUp" data-wow-delay=".6s">Here is Several project I worked on as developer, team lead or CTO.</p>
-				  <p class="wow fadeInUp" data-wow-delay=".6s">Saas | Site web | Applications web | React | Vue | Laravel | Javascript | PHP | Wordpress</p>
+				  <p class="wow fadeInUp" data-wow-delay=".6s"><?= get_field('several_projects_title'); ?></p>
+				  <p class="wow fadeInUp" data-wow-delay=".6s"><?= get_field('languages_title'); ?></p>
 			  </div>
 				  </div>
 				  <div class="col-lg-6">
 					  <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-						  <img src="assets/img/profil/profile.png" alt="">
+						  <img src="<?= get_field('image_of_the_person'); ?>" alt="">
 					  </div>
 				  </div>
 		  </div>
