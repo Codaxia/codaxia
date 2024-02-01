@@ -6,26 +6,28 @@ Template Name: Portfolio
 <?php get_header()?>
 
 <section id="home" class="hero-section">
-		<div class="container">
-		  <div class="row align-items-center">
-			<div class="col-lg-6">
-			  <div class="hero-content">
-				  <span class="wow fadeInLeft" data-wow-delay=".2s">XAVIER DE LISLE | FULL STACK DEVELOPMENT</span>
-					<h1 class="wow fadeInUp" data-wow-delay=".4s">
-					  Portfolio
-				  </h1>
-				  <p class="wow fadeInUp" data-wow-delay=".6s">Here is Several project I worked on as developer, team lead or CTO.</p>
-				  <p class="wow fadeInUp" data-wow-delay=".6s">Saas | Site web | Applications web | React | Vue | Laravel | Javascript | PHP | Wordpress</p>
-			  </div>
-				  </div>
-				  <div class="col-lg-6">
-					  <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-						  <img src="assets/img/profil/profile.png" alt="">
-					  </div>
-				  </div>
-		  </div>
-			  </div>
-	  </section>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="hero-content">
+                  <span class="wow fadeInLeft" data-wow-delay=".2s"><?= get_field('name_of_the_person'); ?></span>
+                    <h1 class="wow fadeInUp" data-wow-delay=".4s">
+                    <?= get_field('portfolio_title'); ?>
+                  </h1>
+                  <p class="wow fadeInUp" data-wow-delay=".6s"><?= get_field('several_projects_title'); ?></p>
+                  <p class="wow fadeInUp" data-wow-delay=".6s"><?= get_field('languages_title'); ?></p>
+              </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
+                          <img src="<?= get_field('image_of_the_person'); ?>" alt="">
+                      </div>
+                  </div>
+          </div>
+              </div>
+      </section>
+
+	  
 		  <!-- ========================= hero-section end ========================= -->
 
 		<!-- ========================= portfolio-section-de start ========================= -->
