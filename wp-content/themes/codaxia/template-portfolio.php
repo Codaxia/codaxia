@@ -10,23 +10,22 @@ Template Name: Portfolio
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="hero-content">
-                  <span class="wow fadeInLeft" data-wow-delay=".2s"><?= get_field('name_of_the_person'); ?></span>
+                  <span class="wow fadeInLeft" data-wow-delay=".2s"><?= get_field('portfolio_description_portfolio_name_of_the_person'); ?></span>
                     <h1 class="wow fadeInUp" data-wow-delay=".4s">
-                    <?= get_field('portfolio_title'); ?>
+                    <?= get_field('portfolio_description_portfolio_title'); ?>
                   </h1>
-                  <p class="wow fadeInUp" data-wow-delay=".6s"><?= get_field('several_projects_title'); ?></p>
-                  <p class="wow fadeInUp" data-wow-delay=".6s"><?= get_field('languages_title'); ?></p>
+                  <p class="wow fadeInUp" data-wow-delay=".6s"><?= get_field('portfolio_description_portfolio_several_projects_title'); ?></p>
+                  <p class="wow fadeInUp" data-wow-delay=".6s"><?= get_field('portfolio_description_portfolio_languages_title'); ?></p>
               </div>
                   </div>
                   <div class="col-lg-6">
                       <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-                          <img src="<?= get_field('image_of_the_person'); ?>" alt="">
+                          <img src="<?= get_field('portfolio_description_portfolio_image_of_the_person'); ?>" alt="">
                       </div>
                   </div>
           </div>
               </div>
       </section>
-
 	  
 		  <!-- ========================= hero-section end ========================= -->
 
@@ -36,8 +35,8 @@ Template Name: Portfolio
 				<div class="row justify-content-center">
 					<div class="col-xxl-5 col-xl-6 col-lg-7">
 						<div class="section-title text-center mb-60">
-							<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s">Project made as developer</h1>
-							<p class="mb-20 wow fadeInUp" data-wow-delay=".4s">Example of project I coded myself or with a team.</p>
+							<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('portfolio_project_made_dev_portfolio_project_made_dev_title'); ?></h1>
+							<p class="mb-20 wow fadeInUp" data-wow-delay=".4s"><?= get_field('portfolio_project_made_dev_portfolio_project_made_dev_title_2'); ?></p>
 						</div>
 					</div>
 				</div>
@@ -179,8 +178,8 @@ Template Name: Portfolio
 				<div class="row justify-content-center">
 					<div class="col-xxl-5 col-xl-6 col-lg-7">
 						<div class="section-title text-center mb-60">
-							<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s">Project made as Team lead or cto</h1>
-							<p class="mb-20 wow fadeInUp" data-wow-delay=".4s">Example of project I supervised as team lead or CTO.</p>
+							<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('portfolio_project_made_team_portfolio_project_made_team_title'); ?></h1>
+							<p class="mb-20 wow fadeInUp" data-wow-delay=".4s"><?= get_field('portfolio_project_made_team_portfolio_project_made_team_title_2'); ?></p>
 						</div>
 					</div>
 				</div>
@@ -341,13 +340,15 @@ Template Name: Portfolio
 				<div class="row align-items-center">
 					<div class="col-xl-6 col-lg-7">
 						<div class="section-title mb-50">
-							<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s">How can I help you?</h1>
-							<p class="wow fadeInUp" data-wow-delay=".4s">We can discuss your projects in more detail and determine your needs together.</p>
+							<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('portfolio_contact_portfolio_help_title'); ?></h1>
+							<p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('portfolio_contact_portfolio_discuss_projects_title'); ?></p>
 						</div>
 					</div>
 					<div class="col-xl-6 col-lg-5">
 						<div class="cta-btn text-lg-end mb-50">
-							<a href="mailto:xdelisle@codaxia.com" class="main-btn btn-hover text-uppercase">Contact me</a>
+							<a href="<?= get_field('portfolio_contact_portfolio_contact_mail'); ?>" class="main-btn btn-hover text-uppercase">
+								<?= get_field('portfolio_contact_portfolio_contact_button'); ?>
+							</a>
 						</div>
 					</div>
 				</div>
