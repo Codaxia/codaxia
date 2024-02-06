@@ -40,132 +40,32 @@ Template Name: Portfolio
 						</div>
 					</div>
 				</div>
-
+				
 				<div class="row">
 
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/atuvu.jpg" alt="">
-							</div>
-							<a href="https://www.atuvu.ca" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-									<div class="info">
-										<h4>atuvu.ca</h4>
-										<p>Show booking platform for Quebec</p>
-										<p>Laravel - HyperappJS - custom css - html</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/wristband.jpg" alt="">
-							</div>
-							<a  class="overlay d-block" target="_blank">
-								<div class="content">
-									<!-- <div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div> -->
-									<div class="info">
-										<h4>Wristband app</h4>
-										<p>Wristband charging application for festival terminal</p>
-										<p>ReactJS - Jsx - custom css</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/g8a.jpg" alt="">
-							</div>
-							<a href="https://g8a-architects.com/" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-
-									<div class="info">
-										<h4>G8a</h4>
-										<p>Architect organization website</p>
-										<p>100% Custom Wordpress</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/toilette.jpg" alt="">
-							</div>
-							<a href="https://toilettequebec.com/en/" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-
-									<div class="info">
-										<h4>Toilette Quebec</h4>
-										<p>Sanitary equipment rental Website</p>
-										<p>100% Custom Wordpress</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/medical-design.jpg" alt="">
-							</div>
-							<a href="https://medicaldesign.ca/" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-
-									<div class="info">
-										<h4>Medical design</h4>
-										<p>Medical equipment website</p>
-										<p>100% Custom Wordpress</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/cocoapp.jpg" alt="">
-							</div>
-							<a href="https://www.appwapp.com/en/our-projects/cocoapp/" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-
-									<div class="info">
-										<h4>Cocoapp</h4>
-										<p>Social aggregator - part of the team</p>
-										<p>Laravel - Lumen - VueJS</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
+				<?php if (have_rows('portfolio_project_made_dev_portfolio_project_made_dev_bloc')) : ?>
+                        <?php while (have_rows('portfolio_project_made_dev_portfolio_project_made_dev_bloc')) : the_row(); ?>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single-portfolio">
+                                    <div class="image">
+                                        <img src="<?= get_sub_field('portfolio_image_project'); ?>" alt="">
+                                    </div>
+                                    <a href="<?= get_sub_field('portfolio_link_project'); ?>" class="overlay d-block" target="_blank">
+                                        <div class="content">
+                                            <div class="link-btn">
+                                                <span> <i class="lni lni-link"></i> </span>
+                                            </div>
+                                            <div class="info">
+                                                <h4><?= get_sub_field('portfolio_project_name'); ?></h4>
+                                                <p><?= get_sub_field('portfolio_project_name_2'); ?></p>
+                                                <p><?= get_sub_field('portfolio_project_name_3'); ?></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
 
 				</div>
 			</div>
@@ -186,149 +86,30 @@ Template Name: Portfolio
 
 				<div class="row">
 
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/acunote.jpg" alt="">
-							</div>
-							<a href="https://acunotereactapp.azurewebsites.net/" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-									<div class="info">
-										<h4>Acunote</h4>
-										<p>Website for the medical record app</p>
-										<p>Typescript - ReduxJS - ReactJS - Stripe</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
+				<?php if (have_rows('portfolio_project_made_team_portfolio_project_made_team_bloc')) : ?>
+                        <?php while (have_rows('portfolio_project_made_team_portfolio_project_made_team_bloc')) : the_row(); ?>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single-portfolio">
+                                    <div class="image">
+                                        <img src="<?= get_sub_field('portfolio_team_image_project'); ?>" alt="">
+                                    </div>
+                                    <a href="<?= get_sub_field('portfolio_team_link_project'); ?>" class="overlay d-block" target="_blank">
+                                        <div class="content">
+                                            <div class="link-btn">
+                                                <span> <i class="lni lni-link"></i> </span>
+                                            </div>
+                                            <div class="info">
+                                                <h4><?= get_sub_field('portfolio_team_project_name'); ?></h4>
+                                                <p><?= get_sub_field('portfolio_team_project_name_2'); ?></p>
+                                                <p><?= get_sub_field('portfolio_team_project_name_3'); ?></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
 
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/recyc-blur.png" alt="">
-							</div>
-							<a href="https://www.recyc-auto.com/en/" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-									<div class="info">
-										<h4>Recyc-auto</h4>
-										<p>API connection between Square and the app</p>
-										<p>Symphony - Square - API</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/glocal_robotics_blur.png" alt="">
-							</div>
-							<a href="https://www.youtube.com/watch?v=xixVZ06qdNA&ab_channel=GlocalRobotics" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-
-									<div class="info">
-										<h4>Glocal robotics</h4>
-										<p>Front end for the app that controls the robot </p>
-										<p>VueJS - ReduxJS</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="<?= home_url() ?>/wp-content/themes/codaxia/assets/img/portfolio/plakk.jpg" alt="">
-							</div>
-							<a href="https://plakk-ai.com/solution/" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-
-									<div class="info">
-										<h4>Plakk ia</h4>
-										<p>Web app to analyze medical image</p>
-										<p>laravel - VueJS</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<!-- <div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/neurolens.jpg" alt="">
-							</div>
-							<a href="https://www.neurolens.ca/en/" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-
-									<div class="info">
-										<h4>Neurolens</h4>
-										<p>Duplication of the website</p>
-										<p>Hubspot website - javasript</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> -->
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/ergo.jpg" alt="">
-							</div>
-							<a href="https://equilibre.net/prendre-rendez-vous" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-
-									<div class="info">
-										<h4>Ergosearch</h4>
-										<p>Form to reserve medical equipment in the website</p>
-										<p>VueJs - CraftCms</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="single-portfolio">
-							<div class="image">
-								<img src="assets/img/portfolio/pedlex.jpg" alt="">
-							</div>
-							<a href="https://www.pedlex.com/" class="overlay d-block" target="_blank">
-								<div class="content">
-									<div class="link-btn">
-										<span> <i class="lni lni-link"></i> </span>
-									</div>
-
-									<div class="info">
-										<h4>Pedlex</h4>
-										<p>Several new features on the website</p>
-										<p>php - OpenCart</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
