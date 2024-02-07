@@ -792,8 +792,10 @@ p {
 }
 
 .hero-section .hero-img img {
-  width: 50%; 
+  width: 100%;
 }
+
+
 
 .hero-section .hero-shape .shape {
   position: absolute;
@@ -1066,6 +1068,15 @@ p {
   /* background-image: url("../img/portfolio/portfolio-bg.jpg"); */
   background-color: #000000;
 }
+
+.hero-img-portfolio {
+  text-align: center;
+}
+
+.hero-img-portfolio img {
+  width: 50%;
+}
+
 
 .portfolio-section .single-portfolio {
   position: relative;
@@ -2015,4 +2026,3 @@ p {
 .pb-225 {
   padding-bottom: 225px;
 }
-
