@@ -1,0 +1,418 @@
+/* ============== hero-area ============ */
+.hero-section {
+    position: relative;
+    z-index: 1;
+    padding: 160px 0 120px;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+  }
+  
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .hero-section {
+      padding: 180px 0 140px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-section {
+      padding: 180px 0 140px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-section .hero-content {
+      margin-bottom: 50px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .hero-section .hero-content {
+      margin-bottom: 50px;
+    }
+  }
+  
+  .hero-section .hero-content span {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 29px;
+    color: #f14e4e;
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-section .hero-content span {
+      font-size: 25px;
+    }
+  }
+  
+  .hero-section .hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 35px;
+  }
+  
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .hero-section .hero-content h1 {
+      font-size: 45px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-section .hero-content h1 {
+      font-size: 37px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .hero-section .hero-content h1 {
+      font-size: 36px;
+    }
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .hero-section .hero-content h1 {
+      font-size: 45px;
+    }
+  }
+  
+  .hero-section .hero-content p {
+    margin-bottom: 40px;
+  }
+  
+  .hero-section .hero-img {
+    text-align: center;
+  }
+  
+  .hero-section .hero-img img {
+    width: 100%;
+  }
+  
+  
+  
+  .hero-section .hero-shape .shape {
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .hero-section .hero-shape .shape.shape-1 {
+    top: -285px;
+    right: -300px;
+  }
+  
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .hero-section .hero-shape .shape.shape-1 {
+      top: -420px;
+      right: -550px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-section .hero-shape .shape.shape-1 {
+      top: -400px;
+      right: -550px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-section .hero-shape .shape.shape-1 {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .hero-section .hero-shape .shape.shape-1 {
+      display: none;
+    }
+  }
+  
+  .client-logo-section .single-logo {
+    opacity: 0.43;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .client-logo-section .single-logo:hover {
+    opacity: 1;
+  }
+  
+  .client-logo-section .single-logo img {
+    max-width: 100%;
+  }
+  
+  /* ======= about css ========*/
+  .about-section .about-img img {
+    width: 100%;
+  }
+  
+  .about-section .accordion .single-faq {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #fff;
+    /* box-shadow: 0px 0px 35px #f2f4f94a; */
+  }
+  
+  .about-section .accordion .single-faq button {
+    padding: 20px 55px 15px 30px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #313450;
+    position: relative;
+  }
+  
+  .about-section .accordion .single-faq button::after {
+    content: "\eb2c";
+    font: normal normal normal 1em/1 "LineIcons";
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .about-section .accordion .single-faq button.collapsed::after {
+    content: "\eb53";
+  }
+  
+  .about-section .accordion .single-faq .faq-content {
+    padding: 0 30px;
+    padding-bottom: 20px;
+    color: grey;
+  }
+  
+  /* ============== service css ==============*/
+  .service-section {
+    /* background-image: url("../img/service/service-bg.jpg"); */
+    background-color: #000000;
+  }
+  
+  .service-section .single-service {
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 10px;
+    color: grey;
+    height: 90%;
+    background: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .service-section .single-service:hover .icon {
+    color: #313450;
+  }
+  
+  .service-section .single-service:hover .icon.color-1 {
+    background: #ffefff;
+  }
+  
+  .service-section .single-service:hover .icon.color-2 {
+    background: #e4e9ff;
+  }
+  
+  .service-section .single-service:hover .icon.color-3 {
+    background: #ffeaea;
+  }
+  
+  .service-section .single-service:hover .icon.color-4 {
+    background: #ece8ff;
+  }
+  
+  .service-section .single-service .icon {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #fff;
+  
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .service-section .single-service .icon.color-1 {
+    background: #fb32fb;
+  }
+  
+  .service-section .single-service .icon.color-2 {
+    background: #4e6ef1;
+  }
+  
+  .service-section .single-service .icon.color-3 {
+    background: #ff3b3b;
+  }
+  
+  .service-section .single-service .icon.color-4 {
+    background: #5a37ff;
+  }
+  
+  .service-section .single-service .content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #000000;
+  }
+  
+  /* ============= counter-up css =========== */
+  @media only screen and (min-width: 1400px) {
+    .counter-up-section .counter-up-content {
+      margin-right: 65px;
+    }
+  }
+  
+  .counter-up-section .counter-up-content .counter-up-wrapper .single-counter {
+    margin-bottom: 35px;
+  }
+  
+  .counter-up-section
+    .counter-up-content
+    .counter-up-wrapper
+    .single-counter
+    .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #4e6ef1;
+    font-size: 42px;
+  }
+  
+  .counter-up-section
+    .counter-up-content
+    .counter-up-wrapper
+    .single-counter
+    .icon.color-1 {
+    background: #ffefff;
+  }
+  
+  .counter-up-section
+    .counter-up-content
+    .counter-up-wrapper
+    .single-counter
+    .icon.color-2 {
+    background: #e1f2fb;
+  }
+  
+  .counter-up-section
+    .counter-up-content
+    .counter-up-wrapper
+    .single-counter
+    .icon.color-3 {
+    background: #ffeaea;
+  }
+  
+  .counter-up-section
+    .counter-up-content
+    .counter-up-wrapper
+    .single-counter
+    .icon.color-4 {
+    background: #ece8ff;
+  }
+  
+  .counter-up-section
+    .counter-up-content
+    .counter-up-wrapper
+    .single-counter
+    .content
+    h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .counter-up-section
+      .counter-up-content
+      .counter-up-wrapper
+      .single-counter
+      .content
+      h1 {
+      font-size: 38px;
+    }
+  }
+  
+  .counter-up-section
+    .counter-up-content
+    .counter-up-wrapper
+    .single-counter
+    .content
+    span {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .counter-up-section
+      .counter-up-content
+      .counter-up-wrapper
+      .single-counter
+      .content
+      span {
+      font-size: 18px;
+    }
+  }
+  
+  .counter-up-section .counter-up-img img {
+    width: 100%;
+  }
+  
+  
+/* =============== team and blog css =============*/
+.bloc-section .single-bloc {
+    border-radius: 10px;
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    min-height: 464px;
+    text-align: center;
+  }
+  
+  .bloc-section .single-bloc .image {
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .bloc-section .single-bloc .image img {
+    width: 100%;
+  }
+  
+  .bloc-section .single-bloc .content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .bloc-section .single-bloc .content p {
+    font-size: 18px;
+    color: grey;
+  }
+  
+  .bloc-section .single-bloc .content a i {
+    transform: scale(2);
+    margin-top: 20px;
+  }
+  
+  .bloc-section.team .single-bloc .image img {
+    border-radius: 50%;
+  }
+  
+  .bloc-section {
+    background-color: #000000;
+  }
+  
+  .bloc-section.blog .single-bloc .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+/* ======================
+    BLOG PAGE CSS
+========================= */
+
+.blog-page {
+}
+
+.blog-page .image img {
+  width: 100%;
+  height: auto;
+  margin: 70px 5% 70px 0;
+}
