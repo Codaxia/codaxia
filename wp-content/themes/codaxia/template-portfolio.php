@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Portfolio
+Template Name: Portfolio 
 */
 ?>
 <?php get_header()?>
@@ -19,7 +19,7 @@ Template Name: Portfolio
               </div>
                   </div>
                   <div class="col-lg-6">
-                      <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
+                      <div class="hero-img-portfolio wow fadeInUp" data-wow-delay=".5s">
                           <img src="<?= get_field('portfolio_description_portfolio_image_of_the_person'); ?>" alt="">
                       </div>
                   </div>

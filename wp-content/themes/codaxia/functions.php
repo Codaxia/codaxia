@@ -117,6 +117,13 @@ class Custom_Walker_footer_Menu extends Walker_Nav_Menu
   }
 }
 
+function codaxia_remove_editor()
+{
+  // remove_post_type_support('post', 'editor');
+  remove_post_type_support('page', 'editor');
+}
+add_action('admin_init', 'codaxia_remove_editor');
+
 // class Custom_Walker_footer_Menu extends Walker_Nav_Menu
 // {
 //   function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
