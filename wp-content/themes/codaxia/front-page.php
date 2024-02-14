@@ -3,7 +3,7 @@
 /**
  * @package WordPress
  * @subpackage Coadaxia subpackage
- * @since Coadaxia version 0.1
+ * @since Codaxia version 0.1
  */
 
 
