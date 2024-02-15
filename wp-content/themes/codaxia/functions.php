@@ -70,7 +70,8 @@ function codaxia_enqueue_scripts()
 
 add_action('wp_enqueue_scripts', 'codaxia_enqueue_scripts');
 add_action('after_setup_theme', 'codaxia_setup');
-
+// disable Gutenberg
+add_filter('use_block_editor_for_post_type', '__return_false', 10);
 
 // Custom navbar and footer to automatically add the url before entry
 // It also check if it's an external link and then cancel the rule
