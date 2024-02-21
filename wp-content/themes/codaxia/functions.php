@@ -125,6 +125,10 @@ function codaxia_remove_editor()
 }
 add_action('admin_init', 'codaxia_remove_editor');
 
+function get_contact() {
+  get_template_part('contact');
+}
+
 // class Custom_Walker_footer_Menu extends Walker_Nav_Menu
 // {
 //   function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)

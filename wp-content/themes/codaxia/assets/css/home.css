@@ -368,6 +368,7 @@
   .bloc-section .single-bloc .image {
     border-radius: 10px;
     margin-bottom: 25px;
+    float: right;
   }
   
   .bloc-section .single-bloc .image img {
@@ -378,11 +379,13 @@
     font-size: 24px;
     margin-bottom: 10px;
     color: black;
+    
   }
   
   .bloc-section .single-bloc .content p {
     font-size: 18px;
     color: grey;
+    
   }
   
   .bloc-section .single-bloc .content a i {

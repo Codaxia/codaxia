@@ -9,12 +9,12 @@ Version: 0.1
 
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 @import url("header.css");
 @import url("home.css");
 @import url("portfolio.css");
 @import url("footer.css");
 @import url("default.css");
-@import url("font.css");
 .counter-up-section
   .counter-up-content
   .counter-up-wrapper
