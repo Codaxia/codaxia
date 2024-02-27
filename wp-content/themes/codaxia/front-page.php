@@ -158,7 +158,7 @@ get_header() ?>
 				<?php while (have_rows('team_bloc')) : the_row(); ?>
 					<div class="col-xl-3 col-md-6 col-sm-10">
 						<div class="single-bloc">
-							<div class="image">
+							<div class="imageTeam">
 								<img src="<?= get_sub_field('team_bloc_image'); ?>" alt="">
 							</div>
 							<div class="content">

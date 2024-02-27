@@ -356,36 +356,44 @@
   }
 
   /* =============== team and blog css =============*/
-.bloc-section .single-bloc {
+  .bloc-section .single-bloc {
     border-radius: 10px;
     background: #fff;
     padding: 30px;
     margin-bottom: 30px;
-    min-height: 464px;
+    min-height: 501px;
     text-align: center;
   }
   
-  .bloc-section .single-bloc .image {
+  .bloc-section .single-bloc .imageTeam {
     border-radius: 10px;
     margin-bottom: 25px;
-    float: right;
   }
   
-  .bloc-section .single-bloc .image img {
+  .bloc-section .single-bloc .imageTeam img {
     width: 100%;
+    border-radius: 50%;
+  }
+
+  .bloc-section .single-bloc .imageBlog img {
+    max-width: 400px; /* Largeur maximale en pixels */
+    max-height: 190px; /* Hauteur maximale en pixels */
+    height: 250px;
+    width: 325px;
+    margin: 10px 5% 0px 0;
+    margin-left: 20px;
+    border-radius: 20px;
   }
   
   .bloc-section .single-bloc .content h3 {
     font-size: 24px;
     margin-bottom: 10px;
     color: black;
-    
   }
-  
+    
   .bloc-section .single-bloc .content p {
     font-size: 18px;
     color: grey;
-    
   }
   
   .bloc-section .single-bloc .content a i {
@@ -393,17 +401,8 @@
     margin-top: 20px;
   }
   
-  .bloc-section.team .single-bloc .image img {
-    border-radius: 50%;
-  }
-  
   .bloc-section {
     background-color: #000000;
-  }
-  
-  .bloc-section.blog .single-bloc .image img {
-    max-width: 100%;
-    height: auto;
   }
 
   /* ======================
@@ -415,6 +414,29 @@
 
 .blog-page .image img {
   width: 100%;
-  height: auto;
-  margin: 70px 5% 70px 0;
+  border-radius: 20px;
+  height: 250px;
+  margin: 10px 5% 0px 0;
+  margin-left: -10px;
 }
+
+.blog-page .single-bloc-blog {
+  border-radius: 10px;
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  margin-right: -100px;
+  /*min-height: 464px;*/
+}
+
+.blog-page .single-bloc-blog .content h1{
+ color: black;
+ margin-left: -30px;
+}
+
+.blog-page .single-bloc-blog .content p {
+  font-size: 16px;
+  color: grey;  
+  margin-left: -30px;
+}
+

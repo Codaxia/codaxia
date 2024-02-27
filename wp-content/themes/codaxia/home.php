@@ -19,15 +19,18 @@ get_header() ?>
 			<?php
 			$query = new WP_Query(['']);
 			if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-					<div class="col-lg-8">
+					<div class="col-xl-4 col-md-6 col-sm-10">
 						<div class="single-bloc single-blog">
 							<a class="w-100"href="<?php the_permalink() ?>">
-                                <div class="image col-lg-6">
+                                <div class="imageBlog">
 									<?php the_post_thumbnail('medium') ?>
 								</div>
-                                <div class="content col-lg-5">
+                                <div class="content">
+									</br>
 									<h3><?php the_title() ?> </h3>
 									<p><?php the_excerpt() ?></p>
+                                    </br>
+                                    <p><?php echo get_the_date(); ?></p>
                                 </div>
 							</a>
 						</div>
