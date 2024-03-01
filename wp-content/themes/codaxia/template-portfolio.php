@@ -33,28 +33,20 @@ Template Name: Portfolio
 
 		  <!-- ========================= filter start ========================= -->
 	
-<div class="btn-container">
-	<?php if (have_rows('portfolio_filter_bloc')) : ?>
-		<?php while (have_rows('portfolio_filter_bloc')) : the_row(); ?>
-		<?php $data =  get_sub_field('portfolio_filter_name');?>
-		<button data-filter="<?= strtolower($data); ?>" class="filter-btn btn"><?= $data ?></button>
-		<?php endwhile; ?>
-	<?php endif; ?>
-</div>
+		<div class="btn-container d-flex justify-content-center align-items-center mt-2 pt-40 pb-20">
+			<?php if (have_rows('portfolio_filter_bloc')) : ?>
+				<?php while (have_rows('portfolio_filter_bloc')) : the_row(); ?>
+				<?php $data =  get_sub_field('portfolio_filter_name');?>
+				<button data-filter="<?= strtolower($data); ?>" class="filter-btn btn"><?= $data ?></button>
+				<?php endwhile; ?>
+			<?php endif; ?>
+		</div>
 
 		  <!-- ========================= filter end ========================= -->
 
 		<!-- ========================= portfolio-section-de start ========================= -->
 		<section id="portfolio" class="portfolio-section img-bg pt-40 pb-100">
 			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-xxl-5 col-xl-6 col-lg-7">
-						<div class="section-title text-center mb-60">
-							<h1 class="mb-20 wow fadeInUp" data-wow-delay=".1s"><?= get_field('portfolio_project_made_portfolio_project_made_title'); ?></h1>
-							<p class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('portfolio_project_made_portfolio_project_made_title_2'); ?></p>
-						</div>
-					</div>
-				</div>
 				<div class="row">
 					<?php if (have_rows('portfolio_project_made_portfolio_project_made_bloc')) : ?>
 						<?php while (have_rows('portfolio_project_made_portfolio_project_made_bloc')) : the_row(); ?>					

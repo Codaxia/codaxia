@@ -115,37 +115,26 @@
   }
 
 /* filter boutons */
- 
 .btn-container .filter-btn {
-  height: 45px;
+  height: 45px; 
   width: 140px;
+  background: #ff3152; 
+  color: #fff;
   border: 2px solid #ff3152;
   border-radius: 10px;
-  background: #ff3152;
-  color:#fff;
-  margin: 20px 0px 0px;
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: 20px;
-  transition: transform .40s;
+  margin-right: 25px;
+  transition: transform .40s; 
 }
+
 .btn-container .filter-btn:hover {
-  background: #ff3152;
-  color:#fff;
-  transform:scale(1.13);
+   background: #ff3152; 
+   color: #fff; 
+  transform: scale(1.13);
 }
 
-.btn-container{
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  margin-top: 2%;
-}
-
-.btn-container .filter-btn:focus{
+.btn-container .filter-btn:focus {
   border: 3px solid #e02645;
-  color: #fff;
-  transform:scale(1.13);
+  transform: scale(1.13);
 }
 
 
