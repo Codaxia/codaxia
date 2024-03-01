@@ -106,3 +106,20 @@
   });
   cu.start();
 })();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.body.addEventListener('click', function(e) {
+      if (e.target.classList.contains('filter-btn')) {
+          const filter = e.target.getAttribute('data-filter');
+          document.querySelectorAll('.filter-div').forEach(div => {
+              if (div.getAttribute('data-category') === filter || filter === 'all') {
+        div.classList.remove('remove')
+              } else {
+        div.classList.add('remove')
+              }
+          });
+      }
+  });
+});
+

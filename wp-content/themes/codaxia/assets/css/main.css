@@ -8,13 +8,13 @@ Requires PHP: 5.6
 Version: 0.1
 
 */
-
 @import url("font.css");
 @import url("header.css");
 @import url("home.css");
 @import url("portfolio.css");
 @import url("footer.css");
 @import url("default.css");
+@import url("contact-form.css");
 .counter-up-section
   .counter-up-content
   .counter-up-wrapper
@@ -198,11 +198,11 @@ p {
   color: #fff;
 }
 
-.main-btn.border-btn {
+/* .main-btn.border-btn {
   border: 2px solid #4e6ef1;
   background: transparent;
   color: #313450;
-}
+} */
 
 .btn-hover {
   position: relative;
@@ -355,6 +355,13 @@ p {
   border-left-color: #ddd;
   animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
+
+.remove {
+  display: none;
+}
+ 
+ 
+
 
 /* Preloader Animations */
 

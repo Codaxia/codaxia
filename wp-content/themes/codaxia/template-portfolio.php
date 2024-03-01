@@ -1,9 +1,10 @@
-<?php 
+<?php
 /*
-Template Name: Portfolio 
+Template Name: Portfolio
 */
 ?>
 <?php get_header()?>
+
 
 <section id="home" class="hero-section">
         <div class="container">
@@ -25,111 +26,70 @@ Template Name: Portfolio
                   </div>
           </div>
               </div>
+			 
       </section>
 	  
 		  <!-- ========================= hero-section end ========================= -->
 
+		  <!-- ========================= filter start ========================= -->
+	
+<div class="btn-container">
+	<?php if (have_rows('portfolio_filter_bloc')) : ?>
+		<?php while (have_rows('portfolio_filter_bloc')) : the_row(); ?>
+		<?php $data =  get_sub_field('portfolio_filter_name');?>
+		<button data-filter="<?= strtolower($data); ?>" class="filter-btn btn"><?= $data ?></button>
+		<?php endwhile; ?>
+	<?php endif; ?>
+</div>
+
+		  <!-- ========================= filter end ========================= -->
+
 		<!-- ========================= portfolio-section-de start ========================= -->
-		<section id="portfolio-dev" class="portfolio-section dev img-bg pt-120 pb-100">
+		<section id="portfolio" class="portfolio-section img-bg pt-40 pb-100">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-xxl-5 col-xl-6 col-lg-7">
 						<div class="section-title text-center mb-60">
-							<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('portfolio_project_made_dev_portfolio_project_made_dev_title'); ?></h1>
-							<p class="mb-20 wow fadeInUp" data-wow-delay=".4s"><?= get_field('portfolio_project_made_dev_portfolio_project_made_dev_title_2'); ?></p>
+							<h1 class="mb-20 wow fadeInUp" data-wow-delay=".1s"><?= get_field('portfolio_project_made_portfolio_project_made_title'); ?></h1>
+							<p class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('portfolio_project_made_portfolio_project_made_title_2'); ?></p>
 						</div>
 					</div>
 				</div>
-
 				<div class="row">
-					<?php if (have_rows('portfolio_project_made_dev_portfolio_project_made_dev_bloc')) : ?>
-						<?php while (have_rows('portfolio_project_made_dev_portfolio_project_made_dev_bloc')) : the_row(); ?>
-							<div class="col-lg-4 col-md-6">
-								<div class="single-portfolio">
-									<div class="image">
-										<img src="<?= get_sub_field('portfolio_image_project'); ?>" alt="">
-									</div>
-									<a href="<?= get_sub_field('portfolio_link_project'); ?>" class="overlay d-block" target="_blank">
-										<div class="content">
-											<div class="link-btn">
-												<span> <i class="lni lni-link"></i> </span>
-											</div>
-											<div class="info">
-												<h4><?= get_sub_field('portfolio_project_name'); ?></h4>
-												<p><?= get_sub_field('portfolio_description_of_the_client_project'); ?></p>
-												<p><?= get_sub_field('portfolio_languages_used_project'); ?></p>
-											</div>
+					<?php if (have_rows('portfolio_project_made_portfolio_project_made_bloc')) : ?>
+						<?php while (have_rows('portfolio_project_made_portfolio_project_made_bloc')) : the_row(); ?>					
+            					<div class="col-lg-4 col-md-6">
+									<div 
+									class="single-portfolio filter-div" 
+									id="<?= get_sub_field('portfolio_project_type'); ?>"
+									data-category="<?= get_sub_field('portfolio_project_type'); ?>" >
+										<div class="image">
+											<img src="<?= get_sub_field('portfolio_image_project'); ?>" alt="">
 										</div>
-									</a>
-								</div>
+										<a href="<?= get_sub_field('portfolio_link_project'); ?>" class="overlay d-block" target="_blank">
+											<div class="content">
+												<div class="link-btn">
+													<span> <i class="lni lni-link"></i> </span>
+												</div>
+												<div class="info">
+													<h4><?= get_sub_field('portfolio_project_name'); ?></h4>
+													<p><?= get_sub_field('portfolio_description_of_the_client_project'); ?></p>
+													<p><?= get_sub_field('portfolio_languages_used_project'); ?></p>
+												</div>
+											</div>
+										</a>
+									</div>
 							</div>
+							
 						<?php endwhile; ?>
 					<?php endif; ?>
 				</div>
 			</div>
 		</section>
-		  <!-- ========================= portfolio-section-dev end ========================= -->
+		  <!-- ========================= portfolio-section end ========================= -->
 
-		<!-- ========================= portfolio-section-cto start ========================= -->
-		<section id="portfolio-cto" class="portfolio-section cto img-bg pt-120 pb-100">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-xxl-5 col-xl-6 col-lg-7">
-						<div class="section-title text-center mb-60">
-							<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('portfolio_project_made_team_portfolio_project_made_team_title'); ?></h1>
-							<p class="mb-20 wow fadeInUp" data-wow-delay=".4s"><?= get_field('portfolio_project_made_team_portfolio_project_made_team_title_2'); ?></p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<?php if (have_rows('portfolio_project_made_team_portfolio_project_made_team_bloc')) : ?>
-						<?php while (have_rows('portfolio_project_made_team_portfolio_project_made_team_bloc')) : the_row(); ?>
-							<div class="col-lg-4 col-md-6">
-								<div class="single-portfolio">
-									<div class="image">
-										<img src="<?= get_sub_field('portfolio_team_image_project'); ?>" alt="">
-									</div>
-									<a href="<?= get_sub_field('portfolio_team_link_project'); ?>" class="overlay d-block" target="_blank">
-										<div class="content">
-											<div class="link-btn">
-												<span> <i class="lni lni-link"></i> </span>
-											</div>
-											<div class="info">
-												<h4><?= get_sub_field('portfolio_team_project_name'); ?></h4>
-												<p><?= get_sub_field('portfolio_team_description_of_the_client_project'); ?></p>
-												<p><?= get_sub_field('portfolio_team_languages_used_project'); ?></p>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						<?php endwhile; ?>
-					<?php endif; ?>
-				</div>
-			</div>
-		</section>
 		<!-- ========================= portfolio-section end ========================= -->
+		<?php get_footer()?>
 
-		<!-- ========================= cta-section start ========================= -->
-		<section id="contact" class="cta-section img-bg pt-110 pb-60">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-xl-6 col-lg-7">
-						<div class="section-title mb-50">
-							<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('portfolio_contact_portfolio_help_title'); ?></h1>
-							<p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('portfolio_contact_portfolio_discuss_projects_title'); ?></p>
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-5">
-						<div class="cta-btn text-lg-end mb-50">
-							<a href="<?= get_field('portfolio_contact_portfolio_contact_mail'); ?>" class="main-btn btn-hover text-uppercase">
-								<?= get_field('portfolio_contact_portfolio_contact_button'); ?>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
-<?php get_footer()?>
+
