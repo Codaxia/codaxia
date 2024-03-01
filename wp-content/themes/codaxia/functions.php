@@ -120,21 +120,21 @@ function get_contact() {
 }
 
 function my_custom_excerpt($excerpt) {
-  $limit = 35; // Nombre de mots à afficher
-  $excerpt = wp_trim_words($excerpt, $limit, '[...]');
+  $limit_words = 35; // number of words to show
+  $limit_characters = 100; // Maximum number of characters to display
+
+  // Truncate the excerpt by words
+  $excerpt = wp_trim_words($excerpt, $limit_words, '[...]');
+
+  // If the excerpt is still longer than the character limit, truncate it further
+  if (strlen($excerpt) > $limit_characters) {
+      $excerpt = substr($excerpt, 0, $limit_characters);
+      $excerpt = substr($excerpt, 0, strrpos($excerpt, ' ')) . '[...]';
+  }
+
   return $excerpt;
 }
 add_filter('the_excerpt', 'my_custom_excerpt');
-
-function my_custom_excerpt_2($excerpt) {
-  $limit = 100; // Maximum number of characters to display
-  $excerpt = substr($excerpt, 0, $limit);
-  if (strlen($excerpt) == $limit) {
-    $excerpt = substr($excerpt, 0, strrpos($excerpt, ' ')) . '[...]';
-  }
-  return $excerpt;
-}
-add_filter('the_excerpt', 'my_custom_excerpt_2');
 
 
 
