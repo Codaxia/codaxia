@@ -22,8 +22,7 @@ get_header() ?>
 					<div class="col-xl-4 col-md-6 col-sm-10">
 						<div class="single-bloc single-blog">
 							<a class="w-100"href="<?php the_permalink() ?>">
-                                <div class="imageBlog">
-									<?php the_post_thumbnail('medium') ?>
+								<div class="image-blog" style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url()); ?>');">
 								</div>
                                 <div class="content">
 									</br>
@@ -34,9 +33,8 @@ get_header() ?>
                                 </div>
 							</a>
 						</div>
-					
-		</div>
-<?php endwhile;
+					</div>
+			<?php endwhile;
 			endif;
 			wp_reset_postdata(); ?>
 <!-- // End of the loop.  -->

@@ -14,8 +14,7 @@
 							<p> <?= get_field('autor_name'); ?> </p>
 							<p><?php echo get_the_date(); ?></p>
 						</div>
-						<div class="image col-lg-6">
-							<?php the_post_thumbnail() ?>
+						<div class="image-article col-lg-6" style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url()); ?>');">
 						</div>
 					</div>
 					<div>
@@ -29,5 +28,6 @@
 	</section>
 <?php endwhile; // End of the loop.
 
-get_footer() ?>
+get_contact() ;
+get_footer(); ?>
 

@@ -1,5 +1,5 @@
 <!-- ========================= cta-section start ========================= -->
-<section id="contact" class="cta-section img-bg pt-110 pb-60">
+<section id="contact" class="cta-section img-bg pt-55 pb-10">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-xl-6 col-lg-7">
