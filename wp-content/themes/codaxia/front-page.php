@@ -142,7 +142,7 @@ get_header() ?>
 <!-- ========================= counter-up-section end ========================= -->
 
 <!-- ========================= team-section start ========================= -->
-<section id="team" class="bloc-section team pt-150">
+<section id="team" class="team-bloc-section team pt-150">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-xxl-5 col-xl-6 col-lg-7">
@@ -157,14 +157,17 @@ get_header() ?>
 			<?php if (have_rows('team_bloc')) : ?>
 				<?php while (have_rows('team_bloc')) : the_row(); ?>
 					<div class="col-xl-3 col-md-6 col-sm-10">
-						<div class="single-bloc">
-							<div class="imageTeam">
-								<img src="<?= get_sub_field('team_bloc_image'); ?>" alt="">
-							</div>
-							<div class="content">
-								<h3><?= get_sub_field('team_bloc_name'); ?></h3>
-								<p><?= get_sub_field('team_bloc_function'); ?></p>
-								<a href="<?= get_sub_field('team_bloc_linkedin'); ?>"> <i class="lni lni-linkedin-original"></i> </a>
+						<div class="single-bloc-team">
+							<div class="team">
+								<div class="image-team">
+									<img src="<?= get_sub_field('team_bloc_image'); ?>" alt="">
+								</div>
+							
+								<div class="content">
+									<h3><?= get_sub_field('team_bloc_name'); ?></h3>
+									<p><?= get_sub_field('team_bloc_function'); ?></p>
+									<a href="<?= get_sub_field('team_bloc_linkedin'); ?>"> <i class="lni lni-linkedin-original"></i> </a>
+								</div>
 							</div>
 						</div>
 					</div>
