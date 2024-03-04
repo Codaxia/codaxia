@@ -469,5 +469,18 @@
   color: rgb(175, 175, 175);
 }
 
+.blog-page .image-autor img {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.blog-page .bloc-autor {
+  margin-top: 18px;
+  margin-left: 38px;
+  font-size: 25px;
+}
+
+
+
 
 

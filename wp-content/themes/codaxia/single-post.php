@@ -20,8 +20,18 @@
 					<div class="content-article">
 					<p> <?php the_content() ?> </p>
 					</br>
+					<hr>
 					</div>
-					
+					<div class="row bloc-border-autor">
+						<div class="image-autor col-lg-1">
+							<img src="<?= get_field('autor_image'); ?>" alt="">
+						</div>
+						<div class="bloc-autor col-lg-2">
+							<p> <?= get_field('autor_name'); ?> </p>
+							<a href="<?= get_field('linkedin_autor'); ?>"> <i class="lni lni-linkedin-original"></i> </a>
+							<a href="<?= get_field('mail_autor'); ?>"> <i class="lni lni-envelope"></i> </a>
+						</div>
+					</div>
 				</div>
 				
 			</div>
@@ -32,4 +42,3 @@
 
 get_contact() ;
 get_footer(); ?>
-
