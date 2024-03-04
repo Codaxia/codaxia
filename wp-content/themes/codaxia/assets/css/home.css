@@ -365,6 +365,10 @@
     text-align: center;
   }
 
+  .team-bloc-section {
+    background-color: black;
+  }
+
   .team-bloc-section .single-bloc-team .image-team {
     border-radius: 10px;
     margin-bottom: 25px;
@@ -381,11 +385,6 @@
     color: black;
   }
     
-  .team-bloc-section .single-bloc-team .content p {
-    font-size: 18px;
-    color: grey;
-  }
-
   .team-bloc-section .single-bloc-team .content a i {
     transform: scale(2);
     margin-top: 20px;
@@ -414,11 +413,12 @@
     color: black;
   }
 
+  
   .bloc-section .single-bloc .content p {
     font-size: 18px;
     color: grey;
   }
-
+  
   .bloc-section .single-bloc .content a i {
     transform: scale(2);
     margin-top: 20px;
@@ -433,6 +433,7 @@
 ========================= */
 
 .blog-page {
+  background-color: #25262b
 }
 
 .blog-page .image-article {
@@ -445,7 +446,7 @@
 
 .blog-page .single-bloc-blog {
   border-radius: 10px;
-  background: #fff;
+  background: #e4dada;
   padding: 30px;
   margin-bottom: 30px;
   margin-right: -100px;
@@ -460,7 +461,13 @@
 
 .blog-page .single-bloc-blog .content p {
   font-size: 16px;
-  color: grey;  
+  color: rgb(112, 112, 112);  
   /*margin-left: -30px;*/
 }
+
+.blog-page .content-article p {
+  color: rgb(175, 175, 175);
+}
+
+
 

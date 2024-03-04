@@ -11,15 +11,17 @@
 							</br>
 							<p><?php the_excerpt() ?></p>
 							</br>
-							<p> <?= get_field('autor_name'); ?> </p>
+							<p> By: <?= get_field('autor_name'); ?> </p>
 							<p><?php echo get_the_date(); ?></p>
 						</div>
 						<div class="image-article col-lg-6" style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url()); ?>');">
 						</div>
 					</div>
-					<div>
-					<?php the_content() ?>
+					<div class="content-article">
+					<p> <?php the_content() ?> </p>
+					</br>
 					</div>
+					
 				</div>
 				
 			</div>
