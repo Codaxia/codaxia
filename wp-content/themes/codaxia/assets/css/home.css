@@ -433,53 +433,43 @@
 ========================= */
 
 .blog-page {
-  background-color: #25262b
+  background-color: #25262b;
 }
 
-.blog-page .image-article {
-  border-radius: 20px;
-  height: 250px; 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
+.image-article {
+  height: 250px;
 }
 
-.blog-page .single-bloc-blog {
-  border-radius: 10px;
+.single-bloc-blog {
   background: #e4dada;
   padding: 30px;
+  border-radius: 10px;
   margin-bottom: 30px;
-  margin-right: -100px;
-  /*min-height: 464px;*/
 }
 
-.blog-page .single-bloc-blog .content h1{
- color: black;
- margin-left: -30px;
- text-align: center;
+.single-bloc-blog .content h1 {
+  color: black;
+  text-align: center;
 }
 
-.blog-page .single-bloc-blog .content p {
+.single-bloc-blog .content p {
   font-size: 16px;
-  color: rgb(112, 112, 112);  
-  /*margin-left: -30px;*/
+  color: rgb(112, 112, 112);
 }
 
-.blog-page .content-article p {
+.content-article p {
   color: rgb(175, 175, 175);
 }
 
-.blog-page .image-autor img {
+.image-autor img {
   width: 90px;
   border-radius: 50%;
 }
 
-.blog-page .bloc-autor {
+.bloc-autor {
   margin-top: 18px;
-  margin-left: 38px;
   font-size: 25px;
 }
-
 
 
 
