@@ -1,7 +1,6 @@
 /* ============= portfolio css ============== */
 .portfolio-section.cto{
     /* background-image: url("../img/portfolio/portfolio-bg.jpg"); */
-    background-color: #000000;
   }
   
   .hero-img-portfolio {
@@ -114,3 +113,24 @@
       font-size: 15px;
     }
   }
+
+/* filter boutons */
+.btn-container .filter-btn {
+  height: 45px; 
+  width: 140px;
+  background: #ff3152; 
+  color: #fff;
+  border: 2px solid #ff3152;
+  border-radius: 10px;
+  margin-right: 25px;
+  transition: transform .40s; 
+}
+
+.btn-container .filter-btn:hover {
+  transform: scale(1.13);
+}
+
+.btn-container .filter-btn:focus {
+  border: 3px solid #e02645;
+  transform: scale(1.13);
+}
