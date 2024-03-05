@@ -14,7 +14,6 @@ Version: 0.1
 @import url("portfolio.css");
 @import url("footer.css");
 @import url("default.css");
-@import url("contact-form.css");
 .counter-up-section
   .counter-up-content
   .counter-up-wrapper
@@ -198,12 +197,6 @@ p {
   color: #fff;
 }
 
-/* .main-btn.border-btn {
-  border: 2px solid #4e6ef1;
-  background: transparent;
-  color: #313450;
-} */
-
 .btn-hover {
   position: relative;
   overflow: hidden;
@@ -359,9 +352,6 @@ p {
 .remove {
   display: none;
 }
- 
- 
-
 
 /* Preloader Animations */
 
@@ -421,4 +411,3 @@ p {
     transform: rotate(-130deg);
   }
 }
-

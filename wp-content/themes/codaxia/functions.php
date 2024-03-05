@@ -58,8 +58,6 @@ function codaxia_enqueue_scripts()
     wp_enqueue_style('footer');
     wp_enqueue_style('default');*/
 
-
-
     // js in the footer
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap-5.0.0-beta2.min.js', [], false, true);
     wp_enqueue_script('count-up', get_template_directory_uri() . '/assets/js/count-up.min.js', [], false, true);

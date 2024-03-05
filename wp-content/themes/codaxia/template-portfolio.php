@@ -6,7 +6,7 @@ Template Name: Portfolio
 <?php get_header()?>
 
 
-<section id="home" class="hero-section">
+<section class="hero-section">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
@@ -29,7 +29,6 @@ Template Name: Portfolio
 			 
       </section>
 	  
-		  <!-- ========================= hero-section end ========================= -->
 
 		  <!-- ========================= filter start ========================= -->
 	
@@ -45,7 +44,7 @@ Template Name: Portfolio
 		  <!-- ========================= filter end ========================= -->
 
 		<!-- ========================= portfolio-section-de start ========================= -->
-		<section id="portfolio" class="portfolio-section img-bg pt-40 pb-100">
+		<section class="portfolio-section img-bg pt-40 pb-100">
 			<div class="container">
 				<div class="row">
 					<?php if (have_rows('portfolio_project_made_portfolio_project_made_bloc')) : ?>
