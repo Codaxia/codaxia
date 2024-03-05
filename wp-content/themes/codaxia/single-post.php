@@ -44,9 +44,7 @@
 						</div>
 					</div>
 				</div>
-				
 			</div>
-			
 		</div>
 	</section>
 <?php endwhile; // End of the loop.

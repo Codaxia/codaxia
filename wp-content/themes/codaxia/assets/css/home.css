@@ -355,8 +355,6 @@
     width: 100%;
   }
    
-/* =============== team and blog css =============*/
-
   /* =============== team css =============*/
   .team-bloc-section .single-bloc-team .team {
     border-radius: 10px;
@@ -393,7 +391,6 @@
   }
 
   /* =============== blog css =============*/
-
   .bloc-section .single-bloc {
     border-radius: 10px;
     padding: 30px;
