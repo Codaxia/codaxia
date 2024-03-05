@@ -355,7 +355,7 @@
     width: 100%;
   }
 
-  /* =============== team and blog css =============*/
+  /* =============== team css =============*/
   .team-bloc-section .single-bloc-team .team {
     border-radius: 10px;
     background: #fff;
@@ -390,9 +390,10 @@
     margin-top: 20px;
   }
 
+  /* =============== blog css =============*/
+
   .bloc-section .single-bloc {
     border-radius: 10px;
-    background: #fff;
     padding: 30px;
     margin-bottom: 30px;
     min-height: 501px;
@@ -407,23 +408,6 @@
     background-repeat: no-repeat;
   }
   
-  .bloc-section .single-bloc .content h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: black;
-  }
-
-  
-  .bloc-section .single-bloc .content p {
-    font-size: 18px;
-    color: grey;
-  }
-  
-  .bloc-section .single-bloc .content a i {
-    transform: scale(2);
-    margin-top: 20px;
-  }
-
   .bloc-section {
     background-color: #000000;
   }
@@ -433,43 +417,34 @@
 ========================= */
 
 .blog-page {
-  background-color: #25262b;
+  background-color: #25262b
 }
 
-.image-article {
-  height: 250px;
+.blog-page .image-article {
+  border-radius: 20px;
+  height: 250px; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 
-.single-bloc-blog {
-  background: #e4dada;
-  padding: 30px;
+.blog-page .single-bloc-blog {
   border-radius: 10px;
-  margin-bottom: 30px;
+  background: #e4dada;
+  margin-right: -100px;
 }
 
-.single-bloc-blog .content h1 {
-  color: black;
-  text-align: center;
-}
-
-.single-bloc-blog .content p {
-  font-size: 16px;
-  color: rgb(112, 112, 112);
-}
-
-.content-article p {
+.blog-page .content-article p {
   color: rgb(175, 175, 175);
 }
 
-.image-autor img {
+.blog-page .image-autor img {
   width: 90px;
   border-radius: 50%;
 }
 
-.bloc-autor {
-  margin-top: 18px;
-  font-size: 25px;
-}
+
+
 
 
 
