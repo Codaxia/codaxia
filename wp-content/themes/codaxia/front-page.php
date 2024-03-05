@@ -153,7 +153,6 @@ get_header() ?>
 			</div>
 		</div>
 		<div class="row justify-content-center">
-
 			<?php if (have_rows('team_bloc')) : ?>
 				<?php while (have_rows('team_bloc')) : the_row(); ?>
 					<div class="col-xl-3 col-md-6 col-sm-10">
