@@ -108,7 +108,6 @@
 })();
 
 // Filters the portfolio page depending on the button clicked
-
 document.addEventListener('DOMContentLoaded', function() {
   document.body.addEventListener('click', function(e) {
       if (e.target.classList.contains('filter-btn')) {
@@ -123,4 +122,3 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
-

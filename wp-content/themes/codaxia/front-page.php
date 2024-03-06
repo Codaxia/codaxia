@@ -78,41 +78,6 @@ get_header() ?>
 </section>
 <!-- ========================= about-section end ========================= -->
 
-<!-- ========================= Blog section ========================= -->
-<section id="blog" class="bloc-section blog pt-150">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-xxl-5 col-xl-6 col-lg-7">
-				<div class="section-title text-center mb-60">
-					<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('blog_title'); ?></h1>
-					<p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('blog_description'); ?></p>
-				</div>
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<?php
-			$query = new WP_Query(['']);
-			if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-					<div class="col-xl-4 col-md-6 col-sm-10">
-						<div class="single-bloc single-blog">
-							<a class="w-100"href="<?php the_permalink() ?>">
-								<div class="image">
-									<?php the_post_thumbnail('medium') ?>
-								</div>
-								<div class="content">
-									<h3><?php the_title() ?> </h3>
-									<p><?php the_excerpt() ?></p>
-							</a>
-						</div>
-					</div>
-		</div>
-<?php endwhile;
-			endif;
-			wp_reset_postdata(); ?>
-<!-- // End of the loop.  -->
-	</div>
-</section>
-
 <!-- ========================= service-section start ========================= -->
 <section id="service" class="service-section img-bg pt-100 pb-100">
 	<div class="container">
@@ -177,7 +142,7 @@ get_header() ?>
 <!-- ========================= counter-up-section end ========================= -->
 
 <!-- ========================= team-section start ========================= -->
-<section id="team" class="bloc-section team pt-150">
+<section id="team" class="team-bloc-section team pt-150">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-xxl-5 col-xl-6 col-lg-7">
@@ -188,18 +153,20 @@ get_header() ?>
 			</div>
 		</div>
 		<div class="row justify-content-center">
-
 			<?php if (have_rows('team_bloc')) : ?>
 				<?php while (have_rows('team_bloc')) : the_row(); ?>
 					<div class="col-xl-3 col-md-6 col-sm-10">
-						<div class="single-bloc">
-							<div class="image">
-								<img src="<?= get_sub_field('team_bloc_image'); ?>" alt="">
-							</div>
-							<div class="content">
-								<h3><?= get_sub_field('team_bloc_name'); ?></h3>
-								<p><?= get_sub_field('team_bloc_function'); ?></p>
-								<a href="<?= get_sub_field('team_bloc_linkedin'); ?>"> <i class="lni lni-linkedin-original"></i> </a>
+						<div class="single-bloc-team">
+							<div class="team">
+								<div class="image-team">
+									<img src="<?= get_sub_field('team_bloc_image'); ?>" alt="">
+								</div>
+							
+								<div class="content">
+									<h3><?= get_sub_field('team_bloc_name'); ?></h3>
+									<p><?= get_sub_field('team_bloc_function'); ?></p>
+									<a href="<?= get_sub_field('team_bloc_linkedin'); ?>"> <i class="lni lni-linkedin-original"></i> </a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -210,26 +177,5 @@ get_header() ?>
 </section>
 <!-- ========================= team-section end ========================= -->
 
-<!-- ========================= cta-section start ========================= -->
-<section id="contact" class="cta-section img-bg pt-110 pb-60">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-xl-6 col-lg-7">
-				<div class="section-title mb-50">
-					<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('contact_title'); ?></h1>
-					<p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('contact_description'); ?></p>
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-5">
-				<div class="cta-btn text-lg-end mb-50">
-					<a href="<?= get_field('contact_mail'); ?>" class="main-btn btn-hover text-uppercase">
-						<?= get_field('contact_button'); ?>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- ========================= cta-section end ========================= -->
-
+<?php get_contact()?>
 <?php get_footer() ?>

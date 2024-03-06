@@ -5,7 +5,6 @@ Template Name: Portfolio
 ?>
 <?php get_header()?>
 
-
 <section class="hero-section">
         <div class="container">
           <div class="row align-items-center">
@@ -24,12 +23,10 @@ Template Name: Portfolio
                           <img src="<?= get_field('portfolio_description_portfolio_image_of_the_person'); ?>" alt="">
                       </div>
                   </div>
-          </div>
-              </div>
-			 
+          	</div>
+        </div> 
       </section>
 	  
-
 		  <!-- ========================= filter start ========================= -->
 	
 		<div class="btn-container d-flex justify-content-center align-items-center mt-2 pt-40 pb-20">
@@ -71,16 +68,14 @@ Template Name: Portfolio
 										</a>
 									</div>
 							</div>
-							
 						<?php endwhile; ?>
 					<?php endif; ?>
 				</div>
 			</div>
 		</section>
-		  <!-- ========================= portfolio-section end ========================= -->
 
 		<!-- ========================= portfolio-section end ========================= -->
 		<?php get_footer()?>
 
-
-
+<?php get_contact()?>
+<?php get_footer()?>
