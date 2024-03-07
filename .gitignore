@@ -25,6 +25,7 @@ wp-content/updates/
 /wp-content/backup-db/
 /wp-content/backups/
 /wp-content/plugins/hello.php
+/wp-content/plugins/wordpress-importer
 
 # Ignore node_modules directory
 node_modules/
