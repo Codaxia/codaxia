@@ -26,19 +26,19 @@
 					</div>
 					<div class="row">
 						<div class="image-autor col-lg-1">
-							<img src="<?= get_field('autor_image'); ?>" alt="">
+							<img src="<?= get_field('author_image'); ?>" alt="">
 						</div>
 						<div class="col-lg-2 fs-5 ms-5">
 							<div>
-								<p class="text-white fw-bolder"> <?= get_field('autor_name'); ?> </p>
-								<p class="mb-1 text-white"> <?= get_field('role_autor'); ?> </p>
+								<p class="text-white fw-bolder"> <?= get_field('author_name'); ?> </p>
+								<p class="mb-1 text-white"> <?= get_field('role_author'); ?> </p>
 							</div>
 							<ul class="socials d-flex align-items-center">
     							<li class="me-3">
-									<a href="<?= get_field('linkedin_autor'); ?>"> <i class="lni lni-linkedin-original"></i> </a> 
+									<a href="<?= get_field('linkedin_author'); ?>"> <i class="lni lni-linkedin-original"></i> </a> 
     							</li>
     							<li class="me-3">
-									<a href="<?= get_field('mail_autor'); ?>"> <i class="lni lni-envelope"></i> </a>
+									<a href="<?= get_field('mail_author'); ?>"> <i class="lni lni-envelope"></i> </a>
     							</li>
     						</ul>
 						</div>

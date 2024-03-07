@@ -75,7 +75,6 @@ Template Name: Portfolio
 		</section>
 
 		<!-- ========================= portfolio-section end ========================= -->
-		<?php get_footer()?>
 
 <?php get_contact()?>
 <?php get_footer()?>
