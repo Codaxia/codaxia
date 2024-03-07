@@ -10,7 +10,7 @@
     background: #25262b;
     padding: 30px;
     margin-bottom: 30px;
-    min-height: 464px;
+    min-height: 300px;
     max-height: 1000px;
     text-align: center;
     border-top-left-radius: 45px;
@@ -28,6 +28,7 @@
     font-size: 12px;
     color: rgb(47, 167, 77);
 }
+
 .pricing .single-bloc-pricing .icon p {
     font-size: 14px;
     color: rgb(47, 167, 77);
@@ -70,11 +71,19 @@
     background-color: rgb(87, 231, 123);
 }
 
+.pricing .single-bloc-pricing .subtitle h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
 .pricing .single-bloc-pricing .subtitle h3 {
     margin-top: -5px;
     margin-bottom: 13px;
-    font-size: 32px;
+    font-size: 27px;
+    font-family: 'Poppins', sans-serif;
 }
+
 .pricing .single-bloc-pricing .subtitle h4 {
     color: rgb(70, 194, 101);
     margin-left: -2px;

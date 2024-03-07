@@ -43,7 +43,7 @@ Template Name: Pricing
                         </div>
                         <div class="card-body d-flex flex-column justify-content-between">
                             <p>starting from</p>
-                            <h3 class="text-white">$2000</h3>
+                            <h3 class="text-white">2000$ CAD</h3>
                             <ul class="list-unstyled text-start subtitle">
                                     <li><i class="lni lni-checkmark-circle"></i> 1 Page</li>
                                     <li><i class="lni lni-checkmark-circle"></i> Mobile Ready Design</li>
@@ -72,7 +72,7 @@ Template Name: Pricing
                         </div>
                         <div class="card-body d-flex flex-column justify-content-between">
                             <p>starting from</p>
-                            <h3 class="text-white">$3000</h3>
+                            <h3 class="text-white">3000$ CAD</h3>
                             <ul class="list-unstyled text-start subtitle">
                                     <li><i class="lni lni-checkmark-circle"></i> 3 Pages</li>
                                     <li><i class="lni lni-checkmark-circle"></i> Mobile Ready Design</li>
@@ -97,7 +97,7 @@ Template Name: Pricing
                         </div>
                         <div class="card-body d-flex flex-column justify-content-between">
                             <p>starting from</p>
-                            <h3 class="text-white">$4500</h3>
+                            <h3 class="text-white">4500$ CAD</h3>
                             <ul class="list-unstyled text-start subtitle">
                                     <li><i class="lni lni-checkmark-circle"></i> 5 Pages</li>
                                     <li><i class="lni lni-checkmark-circle"></i> Mobile Ready Design</li>
@@ -121,16 +121,17 @@ Template Name: Pricing
                             <p class="text-white">Large scale enterprises</p>
                         </div>
                         <div class="card-body d-flex flex-column justify-content-between">
-                            <p>starting from</p>
-                            <h3 class="text-white">$4500</h3>
+                            <h1>We are open to negotiations.</h1> 
+                            </br>
                             <ul class="list-unstyled text-start subtitle">
                                     <li><i class="lni lni-checkmark-circle"></i> Unlimited Page</li>
                                     <li><i class="lni lni-checkmark-circle"></i> Mobile Ready Design</li>
                                     <li><i class="lni lni-checkmark-circle"></i> Custom features </li>  
                             </ul>
+                            <h1> Contact us to find a solution tailored to your needs!</h1>
                         </div>
                         <div class="card-footer bg-transparent">
-                            <a href="#" class="btn button-buy btn-block fw-bold">BUY NOW</a>
+                            <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold"><?= get_field('contact_button', 'option'); ?></a>
                         </div>
                     </div>
 				</div>
