@@ -10,8 +10,8 @@ get_header() ?>
 		<div class="row justify-content-center">
 			<div class="col-xxl-5 col-xl-6 col-lg-7">
 				<div class="section-title text-center mb-60">
-					<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('blog_title', 'option'); ?></h1>
-					<p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('blog_description', 'option'); ?></p>
+					<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('blog_title'); ?></h1>
+					<p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('blog_description'); ?></p>
 				</div>
 			</div>
 		</div>
