@@ -421,7 +421,8 @@
 
 .blog-page .image-article {
   border-radius: 20px;
-  height: 250px; 
+  height: 235px; 
+  width: 455px;
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
@@ -429,17 +430,17 @@
 
 .blog-page .single-bloc-blog {
   border-radius: 10px;
-  background: #e4dada;
-  margin-right: -100px;
+  background: #fff;
 }
 
 .blog-page .content-article p {
-  color: rgb(175, 175, 175);
+  color: #fff;
 }
 
 .blog-page .image-autor img {
   width: 105px;
   border-radius: 50%;
+  margin-left: -4px;
 }
 
 .blog-page .socials li a {
