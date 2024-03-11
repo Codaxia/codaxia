@@ -10,7 +10,7 @@ Template Name: Pricing
 		<!-- Title and Description -->
 		<div class="row ">
 			<div class="col-lg-12">
-                <div class="section-title text-center mb-60">
+                <div class="header section-title text-center mb-60">
 					<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('pricing_primary_title'); ?></h1>
 					<p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('pricing_secondary_title_1'); ?></p>
                     <p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('pricing_secondary_title_2'); ?></p>
@@ -18,20 +18,23 @@ Template Name: Pricing
 			</div>
 		</div>
 		<!-- Pricing Toggle -->
+        <div>
+            <p><?= get_field('toggle_title') ?></p>
+        </div>
 		<div class="row">
 			<div class="col-12 mb-4">
 				<div class="pricing-switch d-flex align-items-center">
-					<label class="form-check-label me-2" for="starter-toggle">Monthly</label>
+					<label class="form-check-label me-2" for="starter-toggle"><?= get_field('first_part_toggle') ?></label>
 					<div class="form-check form-switch">
 						<input class="form-check-input" type="checkbox" id="starter-toggle">
 						<label class="form-check-label" for="starter-toggle"></label>
 					</div>
-					<label class="form-check-label ms-2" for="starter-toggle">Yearly (25% OFF)</label>
+					<label class="form-check-label ms-2" for="starter-toggle"><?= get_field('second_part_toggle') ?></label>
 				</div>
 			</div>
 		</div>
 		<!-- Pricing Cards -->
-		<div class="row">
+		<div class="row pt-15">
 			<!-- Basic, pro and premium -->
             <?php if (have_rows('pricing_bloc')) : ?>
 				<?php while (have_rows('pricing_bloc')) : the_row(); ?>		
@@ -39,19 +42,18 @@ Template Name: Pricing
                         <?php if (!empty(get_sub_field('pricing_recommanded'))) : ?>
                                 <!-- Contenu de votre élément avec la classe ajoutée si la condition est remplie -->
                                 <div class="single-bloc-pricing recommanded text-white h-100">
-                                    <div class="subtitle">  
+                                    <div class="subtitle">
                                         <div class="recommanded">
-                                            <p class="text-white"><?= get_sub_field('pricing_recommanded')?></p>
+                                            <p><?= get_sub_field('pricing_recommanded')?></p>
                                         </div>
                                         <div class="row icon">
                                             <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
                                             <h4 class="col-lg-1"><?= get_sub_field('pricing_type')?></h4>
-                                            <p class="text-white"><?= get_sub_field('pricing_description')?></p>
-                                            <hr>
+                                            <p><?= get_sub_field('pricing_description')?></p>
                                         </div>
-                                        <div class="card-body d-flex flex-column ">
+                                        <div class="card-body d-flex flex-column">
                                             <p><?= get_sub_field('pricing_price_amount_title')?></p>
-                                            <h3 class="text-white"><?= get_sub_field('pricing_price_amount')?></h3>
+                                            <h3><?= get_sub_field('pricing_price_amount')?></h3>
                                             <?php if (have_rows('pricing_website_package')) : ?>
                                                 <?php while (have_rows('pricing_website_package')) : the_row(); ?>
                                                     <ul class="list-unstyled text-start">
@@ -61,22 +63,21 @@ Template Name: Pricing
                                             <?php endif; ?>
                                         </div>
                                         <div class="card-footer bg-transparent">
-                                            <a href="#" class="btn button-buy btn-block fw-bold"><?= get_sub_field('pricing_button_title')?></a>
+                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold text-white"><?= get_field('contact_button', 'option'); ?></a>
                                         </div>
                                     </div>
                                 </div>
                         <?php else: ?>
                                 <div class="single-bloc-pricing text-white h-100">
                                     <div class="subtitle">
-                                        <div class="row icon">
-                                            <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
-                                            <h4 class="col-lg-1"><?= get_sub_field('pricing_type')?></h4>
-                                            <p class="text-white"><?= get_sub_field('pricing_description')?></p>
-                                            <hr>
-                                        </div>
-                                        <div class="card-body d-flex flex-column ">
+                                            <div class="row icon">
+                                                <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
+                                                <h4 class="col-lg-1"><?= get_sub_field('pricing_type')?></h4>
+                                                <p><?= get_sub_field('pricing_description')?></p>
+                                            </div>
+                                        <div class="card-body d-flex flex-column">
                                             <p><?= get_sub_field('pricing_price_amount_title')?></p>
-                                            <h3 class="text-white"><?= get_sub_field('pricing_price_amount')?></h3>
+                                            <h3><?= get_sub_field('pricing_price_amount')?></h3>
                                             <?php if (have_rows('pricing_website_package')) : ?>
                                                 <?php while (have_rows('pricing_website_package')) : the_row(); ?>
                                                     <ul class="list-unstyled text-start">
@@ -86,7 +87,7 @@ Template Name: Pricing
                                             <?php endif; ?>
                                         </div>
                                         <div class="card-footer bg-transparent">
-                                            <a href="#" class="btn button-buy btn-block fw-bold"><?= get_sub_field('pricing_button_title')?></a>
+                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold text-white"><?= get_field('contact_button', 'option'); ?></a>
                                         </div>
                                     </div>
                                 </div>
@@ -101,11 +102,11 @@ Template Name: Pricing
                     <div class="subtitle">
                         <div class="row icon">
                             <i class="lni lni-stats-up"></i>
-                            <h4 class="col-lg-1">Ultimate</h4>
-                            <p class="text-white">Large scale enterprises</p>
-                            <hr>
+                            <h4 class="col-lg-1">ULTIMATE</h4>
+                            <p>Large scale enterprises</p>
                         </div>
                         <div class="card-body d-flex flex-column">
+                            </br>
                             <h1>We are open to negotiations.</h1> 
                             </br>
                             <ul class="list-unstyled text-start">
@@ -117,7 +118,7 @@ Template Name: Pricing
                             <h1> Contact us to find a solution tailored to your needs!</h1>
                         </div>
                         <div class="card-footer bg-transparent">
-                            <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold"><?= get_field('contact_button', 'option'); ?></a>
+                            <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold text-white"><?= get_field('contact_button', 'option'); ?></a>
                         </div>
                     </div>
 				</div>
