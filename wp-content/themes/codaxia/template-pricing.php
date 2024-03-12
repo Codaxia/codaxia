@@ -137,23 +137,53 @@ Template Name: Pricing
         <div class="row d-flex justify-content-center pt-60">
             <div class="col-lg-4">
                 <div class="icone1"><i class="lni lni-bulb"></i></div>
-                <div class="bloc-horizontal1"></div>
+                <div class="bloc-horizontal1">
+                    </br>
+                    </br>
+                    <h1>DEFINE YOUR NEEDS</h1> 
+                    <div class="bloc-petit1"></div>
+                    <p>We are going to ask you different questions to target what is your complete project.</p>
+                </div>
             </div>
             <div class="col-lg-3">
                 <div class="icone2"><i class="lni lni-graph"></i></div>
-                <div class="bloc-horizontal2"></div>
+                <div class="bloc-horizontal2">
+                    </br>
+                    </br>
+                    <h1>DESIGN</h1> 
+                    <div class="bloc-petit2"></div>
+                    <p>According to our exchange we are destining a template of the website.</p>
+                </div>
             </div>
             <div class="col-lg-3">
                 <div class="icone3"><i class="lni lni-rocket"></i></div>
-                <div class="bloc-horizontal3"></div>
+                <div class="bloc-horizontal3">
+                    </br>
+                    </br>
+                    <h1> PROGRAMMING</h1>
+                    <div class="bloc-petit3"></div>
+                    <p>We are developing the architecture and the code to transform the template in real website.</p> 
+                </div>
             </div>
             <div class="col-lg-3">
                 <div class="icone4"><i class="lni lni-alarm-clock"></i></div>
-                <div class="bloc-horizontal4"></div>
+                <div class="bloc-horizontal4">
+                    </br>
+                    </br>
+                    <h1> RELEASE</h1>
+                    <div class="bloc-petit4"></div>
+                    <p>Once the website is done and approved we reveal it to the world.</p> 
+                </div>
             </div>
             <div class="col-lg-3">
                 <div class="icone5"><i class="lni lni-cog"></i></div>
-                <div class="bloc-horizontal5"></div>
+                <div class="bloc-horizontal5">
+                    </br>
+                    </br>
+                    <h1> MAINTENANCE</h1>
+                    <div class="bloc-petit5"></div>
+                    <p>We are here for the maintenance and updating of your website. New ideas? We'll be here to support you every step of the way.</p> 
+                </div>
             </div>
         </div>
     </div>                                
