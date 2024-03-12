@@ -5,7 +5,7 @@ Template Name: Pricing
 ?>
 <?php get_header()?>
 
-<section id="pricing-plans" class="pt-120 pb-100 text-light pricing">
+<section id="pricing-plans" class="pt-120 text-light pricing">
 	<div class="container">
 		<!-- Title and Description -->
 		<div class="row ">
@@ -110,9 +110,9 @@ Template Name: Pricing
                             <h1>We are open to negotiations.</h1> 
                             </br>
                             <ul class="list-unstyled text-start">
-                                    <li><i class="lni lni-checkmark-circle"></i> Unlimited Page</li>
-                                    <li><i class="lni lni-checkmark-circle"></i> Mobile Ready Design</li>
-                                    <li><i class="lni lni-checkmark-circle"></i> Custom features </li>  
+                                    <li><i class="lni lni-checkmark-circle"></i>Unlimited Page</li>
+                                    <li><i class="lni lni-checkmark-circle"></i>Mobile Ready Design</li>
+                                    <li><i class="lni lni-checkmark-circle"></i>Custom features </li>  
                             </ul>
                             </br>
                             <h1> Contact us to find a solution tailored to your needs!</h1>
@@ -125,6 +125,38 @@ Template Name: Pricing
 			</div>
 		</div>
 	</div>
+</section>
+
+<section class="pt-90 pb-100 text-light website-process">
+    <div class="container"> 
+        <div class="col-lg-12">
+            <div class="header section-title text-center mb-60">
+				<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s">WHERE DO WE START</h1>
+		    </div>
+		</div>   
+        <div class="row d-flex justify-content-center pt-60">
+            <div class="col-lg-4">
+                <div class="icone1"><i class="lni lni-bulb"></i></div>
+                <div class="bloc-horizontal1"></div>
+            </div>
+            <div class="col-lg-3">
+                <div class="icone2"><i class="lni lni-graph"></i></div>
+                <div class="bloc-horizontal2"></div>
+            </div>
+            <div class="col-lg-3">
+                <div class="icone3"><i class="lni lni-rocket"></i></div>
+                <div class="bloc-horizontal3"></div>
+            </div>
+            <div class="col-lg-3">
+                <div class="icone4"><i class="lni lni-alarm-clock"></i></div>
+                <div class="bloc-horizontal4"></div>
+            </div>
+            <div class="col-lg-3">
+                <div class="icone5"><i class="lni lni-cog"></i></div>
+                <div class="bloc-horizontal5"></div>
+            </div>
+        </div>
+    </div>                                
 </section>
 
 <?php get_contact() ?>

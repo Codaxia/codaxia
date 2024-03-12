@@ -61,7 +61,7 @@
 }
 
 .pricing .single-bloc-pricing .subtitle ul {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .pricing .single-bloc-pricing .subtitle i {
@@ -133,3 +133,223 @@
 }
 
 
+/* ============= website-process css ============== */
+
+.website-process {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.website-process h1 {
+    color: rgb(62, 100, 226);
+}
+
+.website-process .bloc-horizontal1 {
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 30px;
+    background-color: #4646ca;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 22px;
+    margin-left: 100px;
+}
+
+.website-process .bloc-horizontal1::before {
+    content: '';
+    position: absolute;
+    top: -18px; 
+    left: 95px;
+    width: 2px; 
+    height: 60%;
+    background-color: #4646ca; 
+}
+
+.website-process .bloc-horizontal2 {
+    display: block;
+    width: 180px;
+    height: 30px;
+    background-color: #3c3c8a;
+    margin: 10px 0;
+    margin-top: 22px;
+    margin-left: -160px;
+}
+
+.website-process .bloc-horizontal2::before {
+    content: '';
+    position: absolute;
+    top: 1260px; 
+    left: 778px;
+    width: 2px; 
+    height: 18px;
+    background-color: #4646ca; 
+}
+
+.website-process .bloc-horizontal3 {
+    display: block;
+    width: 180px;
+    height: 30px;
+    background-color: #4646ca;
+    margin: 10px 0;
+    margin-top: 22px;
+    margin-left: -310px;
+}
+
+.website-process .bloc-horizontal3::before {
+    content: '';
+    position: absolute;
+    top: 1260px; 
+    left: 960px;
+    width: 2px; 
+    height: 18px;
+    background-color: #4646ca; 
+}
+
+.website-process .bloc-horizontal4 {
+    display: block;
+    width: 180px;
+    height: 30px;
+    background-color: #3c3c8a;
+    margin: 10px 0;
+    margin-top: 22px;
+    margin-left: 420px;
+ }
+
+.website-process .bloc-horizontal4::before {
+    content: '';
+    position: absolute;
+    top: 1260px; 
+    left: 1140px;
+    width: 2px; 
+    height: 18px;
+    background-color: #4646ca; 
+}
+
+.website-process .bloc-horizontal5 {
+    display: block;
+    width: 180px;
+    height: 30px;
+    background-color: #4646ca;
+    margin: 10px 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 21px;
+    margin-left: 270px;
+}
+
+.website-process .bloc-horizontal5::before {
+    content: '';
+    position: absolute;
+    top: 1261px; 
+    left: 1315px;
+    width: 2px; 
+    height: 18px;
+    background-color: #4646ca; 
+}
+
+.website-process .icone1 {
+    border: 10px solid #ff7b69;
+    background: #ff4545;
+    width: 105px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 144px;
+    margin-top: -53px
+}
+
+.website-process .icone1 i {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: auto;
+    margin-top: 17px;
+    margin-left: 2px;
+}
+
+.website-process .icone2 {
+    border: 10px solid #ff7b69;
+    background: #ff4545;
+    width: 105px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: -124px;
+    margin-top: -53px
+}
+
+.website-process .icone2 i {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: auto;
+    margin-top: 18px;
+    margin-left: 1px;
+}
+
+.website-process .icone3 {
+    border: 10px solid #ff7b69;
+    background: #ff4545;
+    width: 105px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: -271px;
+    margin-top: -53px
+}
+
+.website-process .icone3 i {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: auto;
+    margin-top: 18px;
+}
+
+.website-process .icone4 {
+    border: 10px solid #ff7b69;
+    background: #ff4545;
+    width: 105px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 458px;
+    margin-top: -162px
+}
+
+.website-process .icone4 i {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: auto;
+    margin-top: 19px;
+    margin-left: 2px;
+}
+
+.website-process .icone5 {
+    border: 10px solid #ff7b69;
+    background: #ff4545;
+    width: 105px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 303px;
+    margin-top: -161px
+}
+
+.website-process .icone5 i {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: auto;
+    margin-top: 18px;
+    margin-left: 2px;
+}
+ 
