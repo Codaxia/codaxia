@@ -25,7 +25,7 @@
     background: linear-gradient(to bottom, #ececec 27%, #f7f7f7 20%);
     padding: 30px;
     margin-top: -35px;
-    min-height: 500px;
+    min-height: 550px;
     max-height: 1000px;
     text-align: center;
     border-top-left-radius: 45px;
@@ -139,7 +139,7 @@
     background-color: black;
     display: flex;
     justify-content: center;
-    padding-bottom: 340px;
+    padding-bottom: 270px;
 }
 
 .website-process h1 {
@@ -215,12 +215,12 @@
 
 .website-process .icone4 {
     margin-left: 458px;
-    margin-top: -162px;
+    margin-top: -172px;
 }
 
 .website-process .icone5 {
     margin-left: 303px;
-    margin-top: -161px;
+    margin-top: -171px;
 }
 
 .website-process .icone1 i,
@@ -307,6 +307,7 @@
 
 .website-process .bloc-horizontal4 {
     margin-left: 420px;
+    margin-top: 22px;
 }
 
 .website-process .bloc-horizontal5 {
@@ -317,26 +318,126 @@
 }
 
 .website-process .bloc-horizontal1::before {
-    top: 1260px; 
-    left: 606px;
+    top: 1356px; 
+    left: 520px;
 }
 
 .website-process .bloc-horizontal2::before {
-    top: 1260px; 
-    left: 778px;
+    top: 1356px; 
+    left: 692px;
 }
 
 .website-process .bloc-horizontal3::before {
-    top: 1260px; 
-    left: 960px;
+    top: 1356px; 
+    left: 875px;
 }
 
 .website-process .bloc-horizontal4::before {
-    top: 1260px; 
-    left: 1140px;
+    top: 1356px; 
+    left: 1053px;
 }
 
 .website-process .bloc-horizontal5::before {
-    top: 1261px; 
-    left: 1315px;
+    top: 1356px;  
+    left: 1229px;
+}
+
+/* ============= Mobile section css ============== */
+
+.mobile-text1, .mobile-text2, .mobile-text3, .mobile-text4, .mobile-text5 {
+    margin-left: 40px;
+}
+
+.mobile-text1 h1, .mobile-text2 h1, .mobile-text3 h1, .mobile-text4 h1, .mobile-text5 h1 {
+    font-size: 15px;
+    margin-left: 0;
+}
+
+.website-process .mobile-text1 h1 {
+    margin-left: -15px;
+}
+
+.website-process .mobile-text2 h1 {
+    margin-left: 270px;
+}
+
+.website-process .mobile-text3 h1 {
+    margin-left: 13px;
+}
+
+.website-process .mobile-text4 h1 {
+    margin-left: 263px;
+}
+
+.website-process .mobile-text5 h1 {
+    margin-left: 132px;
+}
+
+.mobile-text1 p, .mobile-text2 p, .mobile-text3 p, .mobile-text4 p, .mobile-text5 p {
+    font-size: 13px;
+    text-align: center;
+    margin: 0 5px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    width: 150px;
+    margin-left: 0;
+}
+
+.website-process .mobile-text1 p {
+    margin-top: 8px;
+    margin-left: -2px;
+}
+
+.website-process .mobile-text2 p {
+    margin-top: 8px;
+    margin-left: 230px;
+}
+
+.website-process .mobile-text3 p {
+    margin-top: 8px;
+    margin-left: 3px;
+}
+
+.website-process .mobile-text4 p {
+    margin-top: 8px;
+    margin-left: 225px;
+}
+
+.website-process .mobile-text5 p {
+    margin-top: 8px;
+    margin-left: 122px;
+}
+
+.mobile-text1 .icone1, .mobile-text2 .icone2, .mobile-text3 .icone3, .mobile-text4 .icone4, .mobile-text5 .icone5 {
+    font-size: 13px;
+    text-align: center;
+    margin: 0 5px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    width: 100px;
+}
+
+.mobile-text1 .icone1 {
+    margin-top: -95px;
+    margin-left: 23px;
+}
+
+.mobile-text2 .icone2 {
+    margin-top: -230px;
+    margin-left: 250px;
+}
+
+.mobile-text3 .icone3 {
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.mobile-text4 .icone4 {
+    margin-top: -243px;
+    margin-left: 250px;
+}
+
+.mobile-text5 .icone5 {
+    margin-left: 145px;
+    margin-top: -10px;
 }
