@@ -1,0 +1,95 @@
+/* Bloc form */
+.wpcf7
+{
+    max-width: 600px;
+    min-height: 600px;
+    background-color: #fff;
+    border-radius: 30px ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    padding: 60px 40px 70px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.334);
+    border: solid 2px #ff3152;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+    margin-bottom: 3%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #dbbcbc74;
+    transition: all 0.3s ease-out 0s;
+    padding: 18px 30px;
+    color: #6B6F92;
+    line-height: 1;
+    height: 60px;
+    width: 480px;
+    border: solid 2px #ff3152;
+}
+
+.wpcf7 textarea
+{
+    height: 200px;
+    width: 480px;
+}
+
+.wpcf7 input[type="submit"]
+{
+    height: 55px; 
+    width: 180px;
+    background: #ff3152; 
+    color: #fff;
+    border: 2px solid #ff3152;
+    border-radius: 10px;
+    margin-top: 8%;
+    margin-left: 35%;
+}
+ 
+
+  .form-section{
+    margin-top: 5%;
+    background-color: #131415;
+  }
+
+  .contact-map-form{
+    margin-bottom: 3%;
+  }
+
+  #gmap-canvas-form{
+    width: 500px;
+    height: 300px;
+    margin-right: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 30px ;
+
+  }
+
+.title{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 29px;
+    color: #f14e4e;
+  }
+  .title-section{
+    margin-left: 5%;
+  }
+
+  .info
+{
+    max-width: 600px;
+    min-height: 600px;
+    background-color:#000;
+    color: #fff;
+    border-radius: 30px ;
+    margin-top: 4%;
+    padding: 60px 40px 60px;
+    border-color: #e5ebfa;
+    border: solid 2px;
+    text-decoration: underline;
+
+}
