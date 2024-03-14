@@ -6,13 +6,14 @@ Template Name: Contact Form
 <?php get_header()?>
 
 <section class="form-section pt-50">
-    <div class= "row pb-50 info-img">
+    <div class= "row pb-50">
     <div class="title-section pb-30">
                 <span class="title">
                     <?= get_field('contact_title_contact_title'); ?>
                 </span>
-                    </br>
+                <p>
                     <?= get_field('contact_title_contact_subtitle'); ?>
+                </p>
     </div>
         <div class="col-lg-6">
                 <?php echo do_shortcode(get_field('shortcode')); ?> 
