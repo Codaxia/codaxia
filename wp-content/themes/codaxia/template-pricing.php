@@ -46,12 +46,12 @@ Template Name: Pricing
                                         <div class="recommanded">
                                             <p><?= get_sub_field('pricing_recommanded')?></p>
                                         </div>
-                                        <div class="row icon mb-30">
+                                        <div class="row icon">
                                             <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
                                             <h4 class="col-lg-1"><?= get_sub_field('pricing_type')?></h4>
                                             <p><?= get_sub_field('pricing_description')?></p>
                                         </div>
-                                        <div class="card-body d-flex flex-column">
+                                        <div class="card-body d-flex flex-column mb-40">
                                             <p><?= get_sub_field('pricing_price_amount_title')?></p>
                                             <h3><?= get_sub_field('pricing_price_amount')?></h3>
                                             <?php if (have_rows('pricing_website_package')) : ?>
@@ -70,12 +70,12 @@ Template Name: Pricing
                         <?php else: ?>
                                 <div class="single-bloc-pricing text-white h-100">
                                     <div class="subtitle">
-                                            <div class="row icon mb-70">
+                                            <div class="row icon">
                                                 <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
                                                 <h4 class="col-lg-1"><?= get_sub_field('pricing_type')?></h4>
                                                 <p><?= get_sub_field('pricing_description')?></p>
                                             </div>
-                                        <div class="card-body d-flex flex-column">
+                                        <div class="card-body d-flex flex-column mb-60">
                                             <p><?= get_sub_field('pricing_price_amount_title')?></p>
                                             <h3><?= get_sub_field('pricing_price_amount')?></h3>
                                             <?php if (have_rows('pricing_website_package')) : ?>
@@ -100,12 +100,12 @@ Template Name: Pricing
 			<div class="col-lg-3 col-md-6 mb-70">
 				<div class="single-bloc-pricing text-white h-100">
                     <div class="subtitle">
-                        <div class="row icon mb-60">
+                        <div class="row icon">
                             <i class="lni lni-stats-up"></i>
                             <h4 class="col-lg-1">ULTIMATE</h4>
-                            <p>Large scale enterprises</p>
+                            <p class="mb-20">Large scale enterprises</p>
                         </div>
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column mb-40">
                             </br>
                             <h1>We are open to negotiations.</h1> 
                             </br>
@@ -129,15 +129,15 @@ Template Name: Pricing
 
 <section class="pt-90 pb-100 text-light website-process">
     <div class="container"> 
-        <div class="col-lg-12">
+        <div class="col-xxl-12 col-xl-14">
             <div class="header section-title text-center mb-60">
 				<h1 class="mb-20 wow fadeInUp" data-wow-delay=".3s">WHERE DO WE START</h1>
 		    </div>
 		</div>   
         <div class="row d-flex justify-content-center pt-60">
-            <div class="col-lg-4">
-                <div class="icone1 d-none d-sm-block"><i class="lni lni-bulb"></i></div>
-                <div class="bloc-horizontal1 d-none d-sm-block">
+            <div class="col-xxl-4 col-xl-4 col-lg-5">
+                <div class="icone1 d-none d-lg-block"><i class="lni lni-bulb"></i></div>
+                <div class="bloc-horizontal1 d-none d-lg-block">
                     </br>
                     </br>
                     <h1>DEFINE YOUR NEEDS</h1> 
@@ -145,14 +145,14 @@ Template Name: Pricing
                     <p>We are going to ask you different questions to target what is your complete project.</p>
                 </div>
                 <div class="mobile-text1 mb-20 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="icone1 d-block d-sm-none"><i class="lni lni-bulb"></i></div>
-                    <h1 class="d-block d-sm-none">DEFINE YOUR NEEDS</h1>
-                    <p class="d-block d-sm-none">We are going to ask you different questions to target what is your complete project.</p>
+                    <div class="icone1 d-block d-lg-none"><i class="lni lni-bulb"></i></div>
+                    <h1 class="d-block d-lg-none">DEFINE YOUR NEEDS</h1>
+                    <p class="d-block d-lg-none">We are going to ask you different questions to target what is your complete project.</p>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="icone2 d-none d-sm-block"><i class="lni lni-graph"></i></div>
-                <div class="bloc-horizontal2 d-none d-sm-block">
+            <div class="col-xxl-3 col-xl-3 col-lg-4">
+                <div class="icone2 d-none d-lg-block"><i class="lni lni-graph"></i></div>
+                <div class="bloc-horizontal2 d-none d-lg-block">
                     </br>
                     </br>
                     <h1>DESIGN</h1> 
@@ -161,13 +161,13 @@ Template Name: Pricing
                 </div>
                 <div class="mobile-text2 mb-20 wow fadeInUp" data-wow-delay=".5s">
                     <div class="icone2 d-block d-sm-none"><i class="lni lni-graph"></i></div>
-                    <h1 class="d-block d-sm-none">DESIGN</h1>
-                    <p class="d-block d-sm-none">According to our exchange we are destining a template of the website.</p>
+                    <h1 class="d-block d-lg-none">DESIGN</h1>
+                    <p class="d-block d-lg-none">According to our exchange we are destining a template of the website.</p>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="icone3 d-none d-sm-block"><i class="lni lni-rocket"></i></div>
-                <div class="bloc-horizontal3 d-none d-sm-block">
+            <div class="col-xxl-3 col-xl-3 col-lg-3">
+                <div class="icone3 d-none d-lg-block"><i class="lni lni-rocket"></i></div>
+                <div class="bloc-horizontal3 d-none d-lg-block">
                     </br>
                     </br>
                     <h1> PROGRAMMING</h1>
@@ -175,14 +175,14 @@ Template Name: Pricing
                     <p>We are developing the architecture and the code to transform the template in real website.</p> 
                 </div>
                 <div class="mobile-text3 mb-20 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="icone3 d-block d-sm-none"><i class="lni lni-rocket"></i></div>
-                    <h1 class="d-block d-sm-none">PROGRAMMING</h1>
-                    <p class="d-block d-sm-none">We are developing the architecture and the code to transform the template in real website.</p>
+                    <div class="icone3 d-block d-lg-none"><i class="lni lni-rocket"></i></div>
+                    <h1 class="d-block d-lg-none">PROGRAMMING</h1>
+                    <p class="d-block d-lg-none">We are developing the architecture and the code to transform the template in real website.</p>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="icone4 d-none d-sm-block"><i class="lni lni-alarm-clock"></i></div>
-                <div class="bloc-horizontal4 d-none d-sm-block">
+            <div class="col-xxl-3 col-xl-3 col-lg-4 mt-1">
+                <div class="icone4 d-none d-lg-block"><i class="lni lni-alarm-clock"></i></div>
+                <div class="bloc-horizontal4 d-none d-lg-block">
                     </br>
                     </br>
                     <h1> RELEASE</h1>
@@ -190,14 +190,14 @@ Template Name: Pricing
                     <p>Once the website is done and approved we reveal it to the world.</p> 
                 </div>
                 <div class="mobile-text4 mb-20 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="icone4 d-block d-sm-none"><i class="lni lni-alarm-clock"></i></div>
-                    <h1 class="d-block d-sm-none">RELEASE</h1>
-                    <p class="d-block d-sm-none">Once the website is done and approved we reveal it to the world.</p>
+                    <div class="icone4 d-block d-lg-none"><i class="lni lni-alarm-clock"></i></div>
+                    <h1 class="d-block d-lg-none">RELEASE</h1>
+                    <p class="d-block d-lg-none">Once the website is done and approved we reveal it to the world.</p>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="icone5 d-none d-sm-block"><i class="lni lni-cog"></i></div>
-                <div class="bloc-horizontal5 d-none d-sm-block">
+            <div class="col-xxl-3 col-xl-5 col-lg-4 mt-1">
+                <div class="icone5 d-none d-lg-block"><i class="lni lni-cog"></i></div>
+                <div class="bloc-horizontal5 d-none d-lg-block">
                     </br>
                     </br>
                     <h1> MAINTENANCE</h1>
@@ -205,9 +205,9 @@ Template Name: Pricing
                     <p>We are here for the maintenance and updating of your website. New ideas? We'll be here to support you every step of the way.</p> 
                 </div>
                 <div class="mobile-text5 mb-20 wow fadeInUp" data-wow-delay=".8s">
-                    <div class="icone5 d-block d-sm-none"><i class="lni lni-cog"></i></div>
-                    <h1 class="d-block d-sm-none">MAINTENANCE</h1>
-                    <p class="d-block d-sm-none">We are here for the maintenance and updating of your website. New ideas? We'll be here to support you every step of the way.</p>
+                    <div class="icone5 d-block d-lg-none"><i class="lni lni-cog"></i></div>
+                    <h1 class="d-block d-lg-none">MAINTENANCE</h1>
+                    <p class="d-block d-lg-none">We are here for the maintenance and updating of your website. New ideas? We'll be here to support you every step of the way.</p>
                 </div>
             </div>
         </div>
