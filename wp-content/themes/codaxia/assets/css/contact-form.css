@@ -1,95 +1,87 @@
-/* Bloc form */
-.wpcf7
-{
+.wpcf7 {
     max-width: 600px;
     min-height: 600px;
     background-color: #fff;
-    border-radius: 30px ;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    padding: 60px 40px 70px;
+    border-radius: 30px;
+    margin: 2% auto;
+    padding: 60px 40px 45px;
     position: relative;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.334);
-    border: solid 2px #ff3152;
+    border: solid 2px #030303;
 }
 
 .wpcf7 input[type="text"],
 .wpcf7 input[type="tel"],
 .wpcf7 input[type="email"],
-.wpcf7 textarea
-{
-    margin-bottom: 3%;
+.wpcf7 textarea {
     width: 100%;
     border-radius: 5px;
-    background-color: #dbbcbc74;
+    background: #fff;
+    box-shadow: 0px 0px 39px #f2f4f9;
     transition: all 0.3s ease-out 0s;
     padding: 18px 30px;
     color: #6B6F92;
     line-height: 1;
+    border: 1px solid transparent;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="email"] {
     height: 60px;
-    width: 480px;
-    border: solid 2px #ff3152;
 }
 
-.wpcf7 textarea
-{
+.wpcf7 textarea {
     height: 200px;
-    width: 480px;
 }
 
-.wpcf7 input[type="submit"]
-{
-    height: 55px; 
-    width: 180px;
-    background: #ff3152; 
+.wpcf7 input[type="submit"] {
+    font-weight: 500;
+    padding: 20px 40px;
+    font-size: 21px;
+    border-radius: 20px;
     color: #fff;
-    border: 2px solid #ff3152;
-    border-radius: 10px;
-    margin-top: 8%;
-    margin-left: 35%;
-}
- 
+    border: none;
+    background: #f14e4e;
+    margin-left: 15%;
+} 
 
-  .form-section{
+.form-section {
     margin-top: 5%;
-    background-color: #131415;
-  }
+    background-color: #000;
+}
 
-  .contact-map-form{
+.contact-map-form {
     margin-bottom: 3%;
-  }
+}
 
-  #gmap-canvas-form{
-    width: 500px;
+#gmap-canvas-form {
     height: 300px;
-    margin-right: 20%;
     margin-left: 2%;
     margin-top: 2%;
-    border-radius: 30px ;
+    border-radius: 30px;
+    width: 100%;
 
-  }
+}
 
-.title{
+.title {
     font-family: "Archivo Black", sans-serif;
     font-size: 29px;
     color: #f14e4e;
-  }
-  .title-section{
-    margin-left: 5%;
-  }
+}
 
-  .info
-{
+.title-section {
+    margin-left: 5%;
+}
+
+.info {
     max-width: 600px;
     min-height: 600px;
-    background-color:#000;
+    background-color: #1e2022;
     color: #fff;
-    border-radius: 30px ;
-    margin-top: 4%;
-    padding: 60px 40px 60px;
-    border-color: #e5ebfa;
-    border: solid 2px;
+    border-radius: 30px;
+    margin-top: 2%;
+    padding: 60px 40px 70px;
+    border: solid 2px #fff;
     text-decoration: underline;
-
 }

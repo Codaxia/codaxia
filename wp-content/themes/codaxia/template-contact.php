@@ -36,7 +36,7 @@ Template Name: Contact Form
                 </div>
                 <div class="contact-map-form pt-45">
                     <div class="gmap-canvas-form">
-                    <iframe id="gmap-canvas-form" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11181.844318091675!2d-73.566081!3d45.5209263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bd7ccaf2125%3A0x295597803e1369bc!2sCodaxia!5e0!3m2!1sfr!2sca!4v1709612719491!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    <iframe id="gmap-canvas-form" src="<?= get_field('contact_info_contact_map_key'); ?>">
                     </iframe>   
                     </div>
                 </div>
