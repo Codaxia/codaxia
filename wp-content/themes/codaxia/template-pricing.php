@@ -128,90 +128,62 @@ Template Name: Pricing
 </section>
 
 <section class="pt-90 pb-100 text-light website-process">
-    <div class="container"> 
-        <div class="col-xxl-12 col-xl-14">
-            <div class="header section-title text-center mb-60">
-				<h1 class="mb-20 wow fadeInUp" data-wow-delay=".3s">WHERE DO WE START</h1>
-		    </div>
-		</div>   
-        <div class="row d-flex justify-content-center pt-60">
-            <div class="col-xxl-4 col-xl-4 col-lg-5">
-                <div class="icone1 d-none d-lg-block"><i class="lni lni-bulb"></i></div>
-                <div class="bloc-horizontal1 d-none d-lg-block">
-                    </br>
-                    </br>
-                    <h1>DEFINE YOUR NEEDS</h1> 
-                    <div class="bloc-petit1"></div>
+    <div class="container">
+        <div class="col">
+            <div class="header section-title text-center mb-60 primary-title">
+                <h1 class="mb-20 wow fadeInUp" data-wow-delay=".3s">WHERE DO WE START</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-0 d-flex justify-content-center pt-60">
+            <div class="col-lg-2 col-md-4">
+                <div class="icon d-lg-block"><i class="lni lni-bulb"></i></div>
+                <div class="bloc-light-blue left-border d-none d-lg-block"></div>
+                <div>
+                    <h1>DEFINE YOUR NEEDS</h1>
+                    <div class="bloc-small"></div>
                     <p>We are going to ask you different questions to target what is your complete project.</p>
                 </div>
-                <div class="mobile-text1 mb-20 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="icone1 d-block d-lg-none"><i class="lni lni-bulb"></i></div>
-                    <h1 class="d-block d-lg-none">DEFINE YOUR NEEDS</h1>
-                    <p class="d-block d-lg-none">We are going to ask you different questions to target what is your complete project.</p>
-                </div>
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-4">
-                <div class="icone2 d-none d-lg-block"><i class="lni lni-graph"></i></div>
-                <div class="bloc-horizontal2 d-none d-lg-block">
-                    </br>
-                    </br>
-                    <h1>DESIGN</h1> 
-                    <div class="bloc-petit2"></div>
+            <div class="col-lg-2 col-md-4">
+                <div class="icon d-lg-block"><i class="lni lni-graph"></i></div>
+                <div class="bloc-dark-blue d-none d-lg-block"></div>
+                <div>
+                    <h1>DESIGN</h1>
+                    <div class="bloc-small"></div>
                     <p>According to our exchange we are destining a template of the website.</p>
                 </div>
-                <div class="mobile-text2 mb-20 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="icone2 d-block d-sm-none"><i class="lni lni-graph"></i></div>
-                    <h1 class="d-block d-lg-none">DESIGN</h1>
-                    <p class="d-block d-lg-none">According to our exchange we are destining a template of the website.</p>
-                </div>
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3">
-                <div class="icone3 d-none d-lg-block"><i class="lni lni-rocket"></i></div>
-                <div class="bloc-horizontal3 d-none d-lg-block">
-                    </br>
-                    </br>
+            <div class="col-lg-2 col-md-4">
+                <div class="icon d-lg-block"><i class="lni lni-rocket"></i></div>
+                <div class="bloc-light-blue d-none d-lg-block"></div>
+                <div>
                     <h1> PROGRAMMING</h1>
-                    <div class="bloc-petit3"></div>
-                    <p>We are developing the architecture and the code to transform the template in real website.</p> 
-                </div>
-                <div class="mobile-text3 mb-20 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="icone3 d-block d-lg-none"><i class="lni lni-rocket"></i></div>
-                    <h1 class="d-block d-lg-none">PROGRAMMING</h1>
-                    <p class="d-block d-lg-none">We are developing the architecture and the code to transform the template in real website.</p>
+                    <div class="bloc-small"></div>
+                    <p>We are developing the architecture and the code to transform the template in real website.</p>
                 </div>
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-4 mt-1">
-                <div class="icone4 d-none d-lg-block"><i class="lni lni-alarm-clock"></i></div>
-                <div class="bloc-horizontal4 d-none d-lg-block">
-                    </br>
-                    </br>
+            <div class="col-lg-2 col-md-4">
+                <div class="icon d-lg-block"><i class="lni lni-alarm-clock"></i></div>
+                <div class="bloc-dark-blue d-none d-lg-block"></div>
+                <div>
                     <h1> RELEASE</h1>
-                    <div class="bloc-petit4"></div>
-                    <p>Once the website is done and approved we reveal it to the world.</p> 
-                </div>
-                <div class="mobile-text4 mb-20 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="icone4 d-block d-lg-none"><i class="lni lni-alarm-clock"></i></div>
-                    <h1 class="d-block d-lg-none">RELEASE</h1>
-                    <p class="d-block d-lg-none">Once the website is done and approved we reveal it to the world.</p>
+                    <div class="bloc-small"></div>
+                    <p>Once the website is done and approved we reveal it to the world.</p>
                 </div>
             </div>
-            <div class="col-xxl-3 col-xl-5 col-lg-4 mt-1">
-                <div class="icone5 d-none d-lg-block"><i class="lni lni-cog"></i></div>
-                <div class="bloc-horizontal5 d-none d-lg-block">
-                    </br>
-                    </br>
+            <div class="col-lg-2 col-md-4">
+                <div class="icon d-lg-block"><i class="lni lni-cog"></i></div>
+                <div class="bloc-light-blue right-border d-none d-lg-block"></div>
+                <div>
                     <h1> MAINTENANCE</h1>
-                    <div class="bloc-petit5"></div>
-                    <p>We are here for the maintenance and updating of your website. New ideas? We'll be here to support you every step of the way.</p> 
-                </div>
-                <div class="mobile-text5 mb-20 wow fadeInUp" data-wow-delay=".8s">
-                    <div class="icone5 d-block d-lg-none"><i class="lni lni-cog"></i></div>
-                    <h1 class="d-block d-lg-none">MAINTENANCE</h1>
-                    <p class="d-block d-lg-none">We are here for the maintenance and updating of your website. New ideas? We'll be here to support you every step of the way.</p>
+                    <div class="bloc-small"></div>
+                    <p>We are here for the maintenance and updating of your website. New ideas? We'll be here to support you every step of the way.</p>
                 </div>
             </div>
         </div>
-    </div>                                
+    </div>
 </section>
 
 <?php get_contact() ?>
