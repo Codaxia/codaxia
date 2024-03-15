@@ -59,7 +59,7 @@ Template Name: Portfolio
 												<div class="link-btn">
 													<span> <i class="lni lni-link"></i> </span>
 												</div>
-												<div class="info">
+												<div class="info-portfolio">
 													<h4><?= get_sub_field('portfolio_project_name'); ?></h4>
 													<p><?= get_sub_field('portfolio_description_of_the_client_project'); ?></p>
 													<p><?= get_sub_field('portfolio_languages_used_project'); ?></p>

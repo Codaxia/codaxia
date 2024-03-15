@@ -15,13 +15,11 @@
 .wpcf7 input[type="email"],
 .wpcf7 textarea {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 20px;
     background: #fff;
     box-shadow: 0px 0px 39px #f2f4f9;
-    transition: all 0.3s ease-out 0s;
     padding: 18px 30px;
     color: #6B6F92;
-    line-height: 1;
     border: 1px solid transparent;
 }
 
@@ -31,9 +29,14 @@
     height: 60px;
 }
 
+.wpcf7-form-control-wrap{
+    width: 100%;
+}
+
 .wpcf7 textarea {
+    width: 100%;
     height: 200px;
-    /* width: 100%; */
+    resize: none;
 }
 
 
@@ -49,8 +52,7 @@
 } 
 
 .form-section {
-    margin-top: 5%;
-    /* width: 100%; */
+    width: 100%;
     background-color: #000;
 }
 
@@ -71,10 +73,6 @@
     font-family: "Archivo Black", sans-serif;
     font-size: 29px;
     color: #f14e4e;
-}
-
-.title-section {
-    margin-left: 5%;
 }
 
 .info {
