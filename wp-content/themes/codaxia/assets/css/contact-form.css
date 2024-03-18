@@ -1,0 +1,89 @@
+.wpcf7 {
+    min-height: 600px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 60px 40px 45px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.334);
+    border: solid 2px #030303;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 39px #f2f4f9;
+    padding: 18px 30px;
+    color: #6B6F92;
+    border: solid 2px #dcd7d7;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="email"] {
+    height: 60px;
+}
+
+.wpcf7-form-control-wrap{
+    width: 100%;
+}
+
+.wpcf7 textarea {
+    height: 200px;
+    resize: none;
+}
+
+.wpcf7 input[type="submit"] {
+    font-weight: 500;
+    padding: 20px 40px;
+    font-size: 21px;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    background: #f14e4e;
+    width: 100%;
+} 
+
+.form-section {
+    width: 100%;
+    background-color: #000;
+}
+
+.contact-map-form {
+    margin-bottom: 3%;
+}
+
+#gmap-canvas-form {
+    height: 300px;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 30px;
+    width: 100%; 
+
+}
+
+.title {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 29px;
+    color: #f14e4e;
+}
+
+.info-contact {
+    min-height: 600px;
+    background-color: #1e2022;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 2%;
+    padding: 60px 40px 70px;
+    text-decoration: underline;
+}
+
+.subtitle
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: #313450;
+}

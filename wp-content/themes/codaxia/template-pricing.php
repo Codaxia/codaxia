@@ -23,6 +23,7 @@ Template Name: Pricing
         </div>
 		<div class="row">
 			<div class="col-12 mb-4">
+                <div>design and content</div>
 				<div class="pricing-switch d-flex align-items-center">
 					<label class="form-check-label me-2" for="starter-toggle"><?= get_field('first_part_toggle') ?></label>
 					<div class="form-check form-switch">
