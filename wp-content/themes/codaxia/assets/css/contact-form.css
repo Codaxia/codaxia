@@ -2,7 +2,6 @@
     min-height: 600px;
     background-color: #fff;
     border-radius: 30px;
-    margin: 2% auto;
     padding: 60px 40px 45px;
     position: relative;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.334);
@@ -36,7 +35,6 @@
     height: 200px;
     resize: none;
 }
-
 
 .wpcf7 input[type="submit"] {
     font-weight: 500;
@@ -73,7 +71,7 @@
     color: #f14e4e;
 }
 
-.info {
+.info-contact {
     min-height: 600px;
     background-color: #1e2022;
     color: #fff;
@@ -81,12 +79,6 @@
     margin-top: 2%;
     padding: 60px 40px 70px;
     text-decoration: underline;
-}
-
-.informations{
-    display: flex;
-    height: 100%;
-    align-items:baseline;
 }
 
 .subtitle
