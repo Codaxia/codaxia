@@ -38,7 +38,7 @@ Template Name: Pricing
 			<!-- Basic, pro and premium -->
             <?php if (have_rows('pricing_bloc')) : ?>
 				<?php while (have_rows('pricing_bloc')) : the_row(); ?>		
-            		<div class="col-lg-3 col-md-6 mb-70">
+            		<div class="col-xl-3 col-lg-4 col-md-6 mb-70">
                         <?php if (!empty(get_sub_field('pricing_recommanded'))) : ?>
                                 <!-- Contenu de votre élément avec la classe ajoutée si la condition est remplie -->
                                 <div class="single-bloc-pricing recommanded text-white h-100">
@@ -47,11 +47,15 @@ Template Name: Pricing
                                             <p><?= get_sub_field('pricing_recommanded')?></p>
                                         </div>
                                         <div class="row icon">
-                                            <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
-                                            <h4 class="col-lg-1"><?= get_sub_field('pricing_type')?></h4>
-                                            <p><?= get_sub_field('pricing_description')?></p>
+                                            <div>
+                                                <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
+                                            </div>
+                                            <div>
+                                                <h4><?= get_sub_field('pricing_type')?></h4>
+                                                <p><?= get_sub_field('pricing_description')?></p>
+                                            </div>
                                         </div>
-                                        <div class="card-body d-flex flex-column mb-40">
+                                        <div class="card-body d-flex flex-column">
                                             <p><?= get_sub_field('pricing_price_amount_title')?></p>
                                             <h3><?= get_sub_field('pricing_price_amount')?></h3>
                                             <?php if (have_rows('pricing_website_package')) : ?>
@@ -71,11 +75,15 @@ Template Name: Pricing
                                 <div class="single-bloc-pricing text-white h-100">
                                     <div class="subtitle">
                                             <div class="row icon">
-                                                <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
-                                                <h4 class="col-lg-1"><?= get_sub_field('pricing_type')?></h4>
-                                                <p><?= get_sub_field('pricing_description')?></p>
+                                                <div>
+                                                    <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
+                                                </div>
+                                                <div>
+                                                    <h4><?= get_sub_field('pricing_type')?></h4>
+                                                    <p><?= get_sub_field('pricing_description')?></p>
+                                                </div>
                                             </div>
-                                        <div class="card-body d-flex flex-column mb-60">
+                                        <div class="card-body d-flex flex-column">
                                             <p><?= get_sub_field('pricing_price_amount_title')?></p>
                                             <h3><?= get_sub_field('pricing_price_amount')?></h3>
                                             <?php if (have_rows('pricing_website_package')) : ?>
@@ -97,15 +105,19 @@ Template Name: Pricing
 			<?php endif; ?>
 
 			<!-- Ultimate -->
-			<div class="col-lg-3 col-md-6 mb-70">
+			<div class="col-xl-3 col-lg-4 col-md-6 mb-70">
 				<div class="single-bloc-pricing text-white h-100">
                     <div class="subtitle">
                         <div class="row icon">
-                            <i class="lni lni-stats-up"></i>
-                            <h4 class="col-lg-1">ULTIMATE</h4>
-                            <p class="mb-20">Large scale enterprises</p>
+                            <div>
+                                <i class="lni lni-stats-up"></i>
+                            </div>
+                            <div>
+                                <h4>ULTIMATE</h4>
+                                <p>Large scale enterprises</p>
+                            </div>
                         </div>
-                        <div class="card-body d-flex flex-column mb-40">
+                        <div class="card-body d-flex flex-column">
                             </br>
                             <h1>We are open to negotiations.</h1> 
                             </br>
@@ -138,7 +150,7 @@ Template Name: Pricing
     <div class="container">
         <div class="row g-0 d-flex justify-content-center pt-60">
             <div class="col-lg-2 col-md-4">
-                <div class="icon d-lg-block"><i class="lni lni-bulb"></i></div>
+                <div class="icon"><i class="lni lni-bulb"></i></div>
                 <div class="bloc-light-blue left-border d-none d-lg-block"></div>
                 <div>
                     <h1>DEFINE YOUR NEEDS</h1>
@@ -147,7 +159,7 @@ Template Name: Pricing
                 </div>
             </div>
             <div class="col-lg-2 col-md-4">
-                <div class="icon d-lg-block"><i class="lni lni-graph"></i></div>
+                <div class="icon"><i class="lni lni-graph"></i></div>
                 <div class="bloc-dark-blue d-none d-lg-block"></div>
                 <div>
                     <h1>DESIGN</h1>
@@ -156,7 +168,7 @@ Template Name: Pricing
                 </div>
             </div>
             <div class="col-lg-2 col-md-4">
-                <div class="icon d-lg-block"><i class="lni lni-rocket"></i></div>
+                <div class="icon"><i class="lni lni-rocket"></i></div>
                 <div class="bloc-light-blue d-none d-lg-block"></div>
                 <div>
                     <h1> PROGRAMMING</h1>
@@ -165,7 +177,7 @@ Template Name: Pricing
                 </div>
             </div>
             <div class="col-lg-2 col-md-4">
-                <div class="icon d-lg-block"><i class="lni lni-alarm-clock"></i></div>
+                <div class="icon"><i class="lni lni-alarm-clock"></i></div>
                 <div class="bloc-dark-blue d-none d-lg-block"></div>
                 <div>
                     <h1> RELEASE</h1>
@@ -174,7 +186,7 @@ Template Name: Pricing
                 </div>
             </div>
             <div class="col-lg-2 col-md-4">
-                <div class="icon d-lg-block"><i class="lni lni-cog"></i></div>
+                <div class="icon"><i class="lni lni-cog"></i></div>
                 <div class="bloc-light-blue right-border d-none d-lg-block"></div>
                 <div>
                     <h1> MAINTENANCE</h1>
