@@ -9,14 +9,14 @@ Template Name: Contact Form
     <div class= "container">
         <div class="pb-30">
                     <span class="title">
-                        <?= get_field('contact_title_contact_title'); ?>
+                        <?= get_field('contact_title_section_contact_title'); ?>
                     </span>
                         <p>
-                            <?= get_field('contact_title_contact_subtitle'); ?>
+                            <?= get_field('contact_title_section_contact_subtitle'); ?>
                         </p>
         </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
+        <div class="row informations">
+            <div class="col-lg-6 col-md-6 mx-auto">
                 <?php echo do_shortcode(get_field('shortcode')); ?> 
             </div>
             <div class="col-lg-6 col-md-6">
