@@ -26,10 +26,10 @@
 					<hr>
 					</div>
 					<div class="row">
-						<div class="image-autor col-lg-1 col-sm-2">
+						<div class="image-autor col-2 col-md-1 me-4">
 							<img src="<?= get_field('author_image'); ?>" alt="">
 						</div>
-						<div class="col-lg-2 col-4 fs-4 ms-4">
+						<div class="col-8 col-md-3 fs-4 ms-4">
 							<div>
 								<p class="text-white fw-bolder"> <?= get_field('author_name'); ?> </p>
 								<p class="mb-1 text-white"> <?= get_field('role_author'); ?> </p>

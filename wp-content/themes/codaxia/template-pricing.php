@@ -5,140 +5,198 @@ Template Name: Pricing
 ?>
 <?php get_header()?>
 
-<section id="pricing-plans" class="pt-120 pb-100 text-light pricing">
+<section id="pricing-plans" class="pt-120 text-light pricing">
 	<div class="container">
 		<!-- Title and Description -->
 		<div class="row ">
 			<div class="col-lg-12">
-                <div class="section-title text-center mb-60">
-                <h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s">Custom Website Creation</h1>
-                <p class="wow fadeInUp" data-wow-delay=".4s">We take charge of the website design from the conception to the launch and then maintenance.</p>
-                <p class="wow fadeInUp" data-wow-delay=".4s">Our offer focuses on customization and scalability for a result tailored to your business needs (visibility, acquiring new customers, informing about a product...)</p>
+                <div class="header section-title text-center mb-60">
+					<h1 class="mb-20 wow fadeInUp" data-wow-delay=".2s"><?= get_field('pricing_primary_title'); ?></h1>
+					<p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('pricing_secondary_title_1'); ?></p>
+                    <p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('pricing_secondary_title_2'); ?></p>
 				</div>
 			</div>
 		</div>
 		<!-- Pricing Toggle -->
+        <div>
+            <p><?= get_field('toggle_title') ?></p>
+        </div>
 		<div class="row">
 			<div class="col-12 mb-4">
                 <div>design and content</div>
 				<div class="pricing-switch d-flex align-items-center">
-					<label class="form-check-label me-2" for="starter-toggle">you have it</label>
+					<label class="form-check-label me-2" for="starter-toggle"><?= get_field('first_part_toggle') ?></label>
 					<div class="form-check form-switch">
 						<input class="form-check-input" type="checkbox" id="starter-toggle">
 						<label class="form-check-label" for="starter-toggle"></label>
 					</div>
-					<label class="form-check-label ms-2" for="starter-toggle">You let us do it</label>
+					<label class="form-check-label ms-2" for="starter-toggle"><?= get_field('second_part_toggle') ?></label>
 				</div>
 			</div>
 		</div>
 		<!-- Pricing Cards -->
-		<div class="row">
-			<!-- Starter Plan -->
-			<div class="col-lg-3 col-md-6 mb-4">
-				<div class="single-bloc-pricing text-white h-100">
-                    <div class="subtitle">
-                        <div class="row card-header icon">
-                            <i class="lni lni-diamond-alt col-lg-1"></i>
-                            <h4 class="col-lg-1">Basic</h4>
-                            <p class="text-white">Personal websites</p>
-                        </div>
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <p>starting from</p>
-                            <h3 class="text-white">2000$ CAD</h3>
-                            <ul class="list-unstyled text-start subtitle">
-                                    <li><i class="lni lni-checkmark-circle"></i> 1 Page</li>
-                                    <li><i class="lni lni-checkmark-circle"></i> Mobile Ready Design</li>
-                                    <li><i class="lni lni-checkmark-circle "></i> 3 to 6 sections* </li>
-                                    <li><i class="lni lni-checkmark-circle"></i> Up to 2 features* </li>
-                                    <li><i class="lni lni-checkmark-circle"></i> 1 Year FREE Hosting!</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <a href="mailto:xdelisle@codaxia.com" class="btn button-buy btn-block fw-bold">Start now</a>
-                        </div>
+		<div class="row pt-15">
+			<!-- Basic, pro and premium -->
+            <?php if (have_rows('pricing_bloc')) : ?>
+				<?php while (have_rows('pricing_bloc')) : the_row(); ?>		
+            		<div class="col-xl-3 col-lg-4 col-md-6 mb-70">
+                        <?php if (!empty(get_sub_field('pricing_recommanded'))) : ?>
+                                <!-- Contenu de votre élément avec la classe ajoutée si la condition est remplie -->
+                                <div class="single-bloc-pricing recommanded text-white h-100">
+                                    <div class="subtitle">
+                                        <div class="recommanded">
+                                            <p><?= get_sub_field('pricing_recommanded')?></p>
+                                        </div>
+                                        <div class="row icon">
+                                            <div>
+                                                <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
+                                            </div>
+                                            <div>
+                                                <h4><?= get_sub_field('pricing_type')?></h4>
+                                                <p><?= get_sub_field('pricing_description')?></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <p><?= get_sub_field('pricing_price_amount_title')?></p>
+                                            <h3><?= get_sub_field('pricing_price_amount')?></h3>
+                                            <?php if (have_rows('pricing_website_package')) : ?>
+                                                <?php while (have_rows('pricing_website_package')) : the_row(); ?>
+                                                    <ul class="list-unstyled text-start">
+                                                            <li><i class="lni lni-checkmark-circle"></i><?= get_sub_field('pricing_website_package_description')?></li>
+                                                    </ul>           
+                                                <?php endwhile; ?>
+                                            <?php endif; ?>
+                                        </div>
+                                        <div class="card-footer bg-transparent">
+                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold text-white"><?= get_field('contact_button', 'option'); ?></a>
+                                        </div>
+                                    </div>
+                                </div>
+                        <?php else: ?>
+                                <div class="single-bloc-pricing text-white h-100">
+                                    <div class="subtitle">
+                                            <div class="row icon">
+                                                <div>
+                                                    <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
+                                                </div>
+                                                <div>
+                                                    <h4><?= get_sub_field('pricing_type')?></h4>
+                                                    <p><?= get_sub_field('pricing_description')?></p>
+                                                </div>
+                                            </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <p><?= get_sub_field('pricing_price_amount_title')?></p>
+                                            <h3><?= get_sub_field('pricing_price_amount')?></h3>
+                                            <?php if (have_rows('pricing_website_package')) : ?>
+                                                <?php while (have_rows('pricing_website_package')) : the_row(); ?>
+                                                    <ul class="list-unstyled text-start">
+                                                            <li><i class="lni lni-checkmark-circle"></i><?= get_sub_field('pricing_website_package_description')?></li>
+                                                    </ul>           
+                                                <?php endwhile; ?>
+                                            <?php endif; ?>
+                                        </div>
+                                        <div class="card-footer bg-transparent">
+                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold text-white"><?= get_field('contact_button', 'option'); ?></a>
+                                        </div>
+                                    </div>
+                                </div>
+                        <?php endif; ?>
                     </div>
-				</div>
-			</div>
-			<!-- Premium Plan -->
-			<div class="col-lg-3 col-md-6 mb-4">
+				<?php endwhile; ?>
+			<?php endif; ?>
+
+			<!-- Ultimate -->
+			<div class="col-xl-3 col-lg-4 col-md-6 mb-70">
 				<div class="single-bloc-pricing text-white h-100">
                     <div class="subtitle">
-                        <div class="recommanded">
-                            <p class="text-white">Recommanded</p>
+                        <div class="row icon">
+                            <div>
+                                <i class="lni lni-stats-up"></i>
+                            </div>
+                            <div>
+                                <h4>ULTIMATE</h4>
+                                <p>Large scale enterprises</p>
+                            </div>
                         </div>
-                        <div class="row card-header icon">
-                            <i class="lni lni-bar-chart"></i>
-                            <h4 class="col-lg-1">Pro</h4>
-                            <p class="text-white">Small businesses</p>
-                        </div>
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <p>starting from</p>
-                            <h3 class="text-white">3000$ CAD</h3>
-                            <ul class="list-unstyled text-start subtitle">
-                                    <li><i class="lni lni-checkmark-circle"></i> 3 Pages</li>
-                                    <li><i class="lni lni-checkmark-circle"></i> Mobile Ready Design</li>
-                                    <li><i class="lni lni-checkmark-circle "></i> Up to 4 features* </li>
-                                    <li><i class="lni lni-checkmark-circle"></i> 1 Year FREE Hosting!</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <a href="mailto:xdelisle@codaxia.com" class="btn button-buy btn-block fw-bold">Start now</a>
-                        </div>
-                    </div>
-				</div>
-			</div>
-			<!-- Ultimate Plan -->
-			<div class="col-lg-3 col-md-6 mb-4">
-				<div class="single-bloc-pricing text-white h-100">
-                    <div class="subtitle">
-                        <div class="row card-header icon">
-                            <i class="lni lni-dropbox"></i>
-                            <h4 class="col-lg-1">Premium</h4>
-                            <p class="text-white">Large scale enterprises</p>
-                        </div>
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <p>starting from</p>
-                            <h3 class="text-white">4500$ CAD</h3>
-                            <ul class="list-unstyled text-start subtitle">
-                                    <li><i class="lni lni-checkmark-circle"></i> 5 Pages</li>
-                                    <li><i class="lni lni-checkmark-circle"></i> Mobile Ready Design</li>
-                                    <li><i class="lni lni-checkmark-circle"></i> Up to 6 features* </li>
-                                    <li><i class="lni lni-checkmark-circle"></i> 1 Year FREE Hosting!</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <a href="mailto:xdelisle@codaxia.com" class="btn button-buy btn-block fw-bold">Start now</a>
-                        </div>
-                    </div>
-				</div>
-			</div>
-			<!-- Custom Plan -->
-			<div class="col-lg-3 col-md-6 mb-4">
-				<div class="single-bloc-pricing text-white h-100">
-                    <div class="subtitle">
-                        <div class="row card-header icon">
-                        <i class="lni lni-stats-up"></i>
-                            <h4 class="col-lg-1">Ultimate</h4>
-                            <p class="text-white">Large scale enterprises</p>
-                        </div>
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <h1>We are open to negotiations.</h1>
+                        <div class="card-body d-flex flex-column">
                             </br>
-                            <ul class="list-unstyled text-start subtitle">
-                                    <li><i class="lni lni-checkmark-circle"></i> Unlimited Page</li>
-                                    <li><i class="lni lni-checkmark-circle"></i> Mobile Ready Design</li>
-                                    <li><i class="lni lni-checkmark-circle"></i> Custom features </li>
+                            <h1>We are open to negotiations.</h1> 
+                            </br>
+                            <ul class="list-unstyled text-start">
+                                    <li><i class="lni lni-checkmark-circle"></i>Unlimited Page</li>
+                                    <li><i class="lni lni-checkmark-circle"></i>Mobile Ready Design</li>
+                                    <li><i class="lni lni-checkmark-circle"></i>Custom features </li>  
                             </ul>
-                            <h1> Start now to find a solution tailored to your needs!</h1>
+                            </br>
+                            <h1> Contact us to find a solution tailored to your needs!</h1>
                         </div>
                         <div class="card-footer bg-transparent">
-                            <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold">Start now</a>
+                            <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold text-white"><?= get_field('contact_button', 'option'); ?></a>
                         </div>
                     </div>
 				</div>
 			</div>
 		</div>
 	</div>
+</section>
+
+<section class="pt-90 pb-100 text-light website-process">
+    <div class="container">
+        <div class="col">
+            <div class="header section-title text-center mb-60 primary-title">
+                <h1 class="mb-20 wow fadeInUp" data-wow-delay=".3s">WHERE DO WE START</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-0 d-flex justify-content-center pt-60">
+            <div class="col-lg-2 col-md-4">
+                <div class="icon"><i class="lni lni-bulb"></i></div>
+                <div class="bloc-light-blue left-border d-none d-lg-block"></div>
+                <div>
+                    <h1>DEFINE YOUR NEEDS</h1>
+                    <div class="bloc-small"></div>
+                    <p>We are going to ask you different questions to target what is your complete project.</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <div class="icon"><i class="lni lni-graph"></i></div>
+                <div class="bloc-dark-blue d-none d-lg-block"></div>
+                <div>
+                    <h1>DESIGN</h1>
+                    <div class="bloc-small"></div>
+                    <p>According to our exchange we are destining a template of the website.</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <div class="icon"><i class="lni lni-rocket"></i></div>
+                <div class="bloc-light-blue d-none d-lg-block"></div>
+                <div>
+                    <h1> PROGRAMMING</h1>
+                    <div class="bloc-small"></div>
+                    <p>We are developing the architecture and the code to transform the template in real website.</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <div class="icon"><i class="lni lni-alarm-clock"></i></div>
+                <div class="bloc-dark-blue d-none d-lg-block"></div>
+                <div>
+                    <h1> RELEASE</h1>
+                    <div class="bloc-small"></div>
+                    <p>Once the website is done and approved we reveal it to the world.</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <div class="icon"><i class="lni lni-cog"></i></div>
+                <div class="bloc-light-blue right-border d-none d-lg-block"></div>
+                <div>
+                    <h1> MAINTENANCE</h1>
+                    <div class="bloc-small"></div>
+                    <p>We are here for the maintenance and updating of your website. New ideas? We'll be here to support you every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <?php get_contact() ?>
