@@ -25,7 +25,7 @@
     background: linear-gradient(to bottom, #ececec 27%, #f7f7f7 20%);
     padding: 30px;
     margin-top: -35px;
-    min-height: 490px;
+    min-height: 108%;
     max-height: 1000px;
     text-align: center;
     border-top-left-radius: 45px;
