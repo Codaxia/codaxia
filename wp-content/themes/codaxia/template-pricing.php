@@ -23,7 +23,6 @@ Template Name: Pricing
         </div>
 		<div class="row">
 			<div class="col-12 mb-4">
-                <div>design and content</div>
 				<div class="pricing-switch d-flex align-items-center">
 					<label class="form-check-label me-2" for="starter-toggle"><?= get_field('first_part_toggle') ?></label>
 					<div class="form-check form-switch">
@@ -39,11 +38,11 @@ Template Name: Pricing
 			<!-- Basic, pro and premium -->
             <?php if (have_rows('pricing_bloc')) : ?>
 				<?php while (have_rows('pricing_bloc')) : the_row(); ?>		
-            		<div class="col-xl-3 col-lg-4 col-md-6 mb-70">
+            		<div class="col-xl-3 col-lg-4 col-sm-6 mb-70">
                         <?php if (!empty(get_sub_field('pricing_recommanded'))) : ?>
                                 <!-- Contenu de votre élément avec la classe ajoutée si la condition est remplie -->
                                 <div class="single-bloc-pricing recommanded text-white h-100">
-                                    <div class="subtitle">
+                                    <div class="subtitle padding">
                                         <div class="recommanded">
                                             <p><?= get_sub_field('pricing_recommanded')?></p>
                                         </div>
@@ -52,7 +51,7 @@ Template Name: Pricing
                                                 <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
                                             </div>
                                             <div>
-                                                <h4><?= get_sub_field('pricing_type')?></h4>
+                                                <h4 class="col-xl-10"><?= get_sub_field('pricing_type')?></h4>
                                                 <p><?= get_sub_field('pricing_description')?></p>
                                             </div>
                                         </div>
@@ -106,7 +105,7 @@ Template Name: Pricing
 			<?php endif; ?>
 
 			<!-- Ultimate -->
-			<div class="col-xl-3 col-lg-4 col-md-6 mb-70">
+			<div class="col-xl-3 col-lg-4 col-sm-6 mb-70">
 				<div class="single-bloc-pricing text-white h-100">
                     <div class="subtitle">
                         <div class="row icon">
