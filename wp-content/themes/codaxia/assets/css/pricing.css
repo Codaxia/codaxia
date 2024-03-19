@@ -52,14 +52,9 @@
     color: rgb(62, 100, 226);
 }
 
-.pricing .single-bloc-pricing .icon p {
-    font-size: 14px;
-    color: #f14e4e;
-    margin-left: 60px;
-    margin-top: 10px;
-    margin-bottom: auto;
-    line-height: 1.2;
-    text-align: left; 
+.pricing .single-bloc-pricing .subtitle .margin {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pricing .single-bloc-pricing .subtitle li {

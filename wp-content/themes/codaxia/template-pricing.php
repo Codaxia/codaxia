@@ -121,7 +121,7 @@ Template Name: Pricing
                             </br>
                             <h1>We are open to negotiations.</h1> 
                             </br>
-                            <ul class="list-unstyled text-start">
+                            <ul class="list-unstyled text-start margin">
                                     <li><i class="lni lni-checkmark-circle"></i>Unlimited Page</li>
                                     <li><i class="lni lni-checkmark-circle"></i>Mobile Ready Design</li>
                                     <li><i class="lni lni-checkmark-circle"></i>Custom features </li>  
