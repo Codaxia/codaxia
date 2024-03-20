@@ -1,11 +1,11 @@
 .wpcf7 {
-    min-height: 600px;
+    height: 900px;
     background-color: #fff;
-    border-radius: 30px;
+     border-radius: 20px; 
     padding: 60px 40px 45px;
     position: relative;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.334);
-    border: solid 2px #030303;
+    border: solid #030303;
 }
 
 .wpcf7 input[type="text"],
@@ -36,17 +36,6 @@
     resize: none;
 }
 
-.wpcf7 input[type="submit"] {
-    font-weight: 500;
-    padding: 20px 40px;
-    font-size: 21px;
-    border-radius: 10px;
-    color: #fff;
-    border: none;
-    background: #f14e4e;
-    width: 100%;
-} 
-
 .form-section {
     width: 100%;
     background-color: #000;
@@ -57,33 +46,30 @@
 }
 
 #gmap-canvas-form {
-    height: 300px;
-    margin-left: 2%;
+    height: 500px;
     margin-top: 2%;
     border-radius: 30px;
     width: 100%; 
 
 }
 
-.title {
-    font-family: "Archivo Black", sans-serif;
-    font-size: 29px;
-    color: #f14e4e;
-}
-
 .info-contact {
-    min-height: 600px;
-    background-color: #1e2022;
+    height: 900px;
+    background-color: #000;
     color: #fff;
-    border-radius: 30px;
-    margin-top: 2%;
-    padding: 60px 40px 70px;
+    border-radius: 20px; 
+    border-top: solid white;
+    border-bottom: solid white;
+    padding: 60px 40px 45px;
     text-decoration: underline;
 }
 
-.subtitle
-{
+.subtitle {
+    padding: 20px 55px 15px 30px;
+    border: none;
+    background: none;
     font-size: 20px;
     font-weight: 500;
     color: #313450;
+    position: relative;
 }
