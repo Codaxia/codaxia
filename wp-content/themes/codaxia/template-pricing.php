@@ -5,6 +5,7 @@ Template Name: Pricing
 ?>
 <?php get_header()?>
 
+<!-- Pricing bloc section -->
 <section id="pricing-plans" class="pt-120 text-light pricing">
 	<div class="container">
 		<!-- Title and Description -->
@@ -41,23 +42,24 @@ Template Name: Pricing
             		<div class="col-xl-3 col-lg-4 col-sm-6 mb-70">
                         <?php if (!empty(get_sub_field('pricing_recommanded'))) : ?>
                                 <!-- Contenu de votre élément avec la classe ajoutée si la condition est remplie -->
-                                <div class="single-bloc-pricing recommanded text-white h-100">
-                                    <div class="subtitle padding">
-                                        <div class="recommanded">
+                                <div class="single-bloc-pricing recommanded h-100">
+                                    <div class="content padding">
+                                        <div class="recommanded text-white">
                                             <p><?= get_sub_field('pricing_recommanded')?></p>
                                         </div>
                                         <div class="row icon">
                                             <div>
                                                 <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
                                             </div>
-                                            <div>
-                                                <h4 class="col-xl-10"><?= get_sub_field('pricing_type')?></h4>
-                                                <p><?= get_sub_field('pricing_description')?></p>
+                                            <div class="col-11 col-sm-12">
+                                                <h4><?= get_sub_field('pricing_type')?></h4>
+                                                <p class="text-white"><?= get_sub_field('pricing_description')?></p>
+                                                <hr>
                                             </div>
                                         </div>
                                         <div class="card-body d-flex flex-column">
-                                            <p><?= get_sub_field('pricing_price_amount_title')?></p>
-                                            <h3><?= get_sub_field('pricing_price_amount')?></h3>
+                                            <p class="text-success"><?= get_sub_field('pricing_price_amount_title')?></p>
+                                            <h3 class="text-white"><?= get_sub_field('pricing_price_amount')?></h3>
                                             <?php if (have_rows('pricing_website_package')) : ?>
                                                 <?php while (have_rows('pricing_website_package')) : the_row(); ?>
                                                     <ul class="list-unstyled text-start">
@@ -72,20 +74,21 @@ Template Name: Pricing
                                     </div>
                                 </div>
                         <?php else: ?>
-                                <div class="single-bloc-pricing text-white h-100">
-                                    <div class="subtitle">
+                                <div class="single-bloc-pricing h-100">
+                                    <div class="content">
                                             <div class="row icon">
                                                 <div>
                                                     <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
                                                 </div>
-                                                <div>
+                                                <div class="col-11 col-sm-12">
                                                     <h4><?= get_sub_field('pricing_type')?></h4>
-                                                    <p><?= get_sub_field('pricing_description')?></p>
+                                                    <p class="text-white"><?= get_sub_field('pricing_description')?></p>
+                                                    <hr>
                                                 </div>
                                             </div>
                                         <div class="card-body d-flex flex-column">
-                                            <p><?= get_sub_field('pricing_price_amount_title')?></p>
-                                            <h3><?= get_sub_field('pricing_price_amount')?></h3>
+                                            <p class="text-success"><?= get_sub_field('pricing_price_amount_title')?></p>
+                                            <h3 class="text-white"><?= get_sub_field('pricing_price_amount')?></h3>
                                             <?php if (have_rows('pricing_website_package')) : ?>
                                                 <?php while (have_rows('pricing_website_package')) : the_row(); ?>
                                                     <ul class="list-unstyled text-start">
@@ -106,20 +109,21 @@ Template Name: Pricing
 
 			<!-- Ultimate -->
 			<div class="col-xl-3 col-lg-4 col-sm-6 mb-70">
-				<div class="single-bloc-pricing text-white h-100">
-                    <div class="subtitle">
+				<div class="single-bloc-pricing h-100">
+                    <div class="content">
                         <div class="row icon">
                             <div>
                                 <i class="lni lni-stats-up"></i>
                             </div>
-                            <div>
+                            <div class="col-11 col-sm-12">
                                 <h4>ULTIMATE</h4>
-                                <p>Large scale enterprises</p>
+                                <p class="text-white">Large scale enterprises</p>
+                                <hr>
                             </div>
                         </div>
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column padding-body">
                             </br>
-                            <h1>We are open to negotiations.</h1> 
+                            <h1 class="text-white">We are open to negotiations.</h1> 
                             </br>
                             <ul class="list-unstyled text-start margin">
                                     <li><i class="lni lni-checkmark-circle"></i>Unlimited Page</li>
@@ -127,7 +131,7 @@ Template Name: Pricing
                                     <li><i class="lni lni-checkmark-circle"></i>Custom features </li>  
                             </ul>
                             </br>
-                            <h1> Contact us to find a solution tailored to your needs!</h1>
+                            <h1 class="text-white"> Contact us to find a solution tailored to your needs!</h1>
                         </div>
                         <div class="card-footer bg-transparent">
                             <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold text-white"><?= get_field('contact_button', 'option'); ?></a>
@@ -139,6 +143,7 @@ Template Name: Pricing
 	</div>
 </section>
 
+<!-- Process section -->
 <section class="pt-90 pb-100 text-light website-process">
     <div class="container">
         <div class="col">

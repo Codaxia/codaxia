@@ -10,7 +10,7 @@
 }
 
 .pricing .single-bloc-pricing {
-    background: linear-gradient(to bottom, #ececec 25%, #fff 20%);
+    background: #25262b;
     padding: 30px; 
     min-height: 200px;
     max-height: 1000px; 
@@ -22,7 +22,7 @@
 }
 
 .pricing .single-bloc-pricing.recommanded {
-    background: linear-gradient(to bottom, #ececec 30%, #f7f7f7 20%);
+    background: #25262b;
     padding: 30px;
     margin-top: -35px;
     min-height: 108%;
@@ -32,10 +32,10 @@
     border-top-right-radius: 45px;
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 0px;
-    box-shadow: rgb(197, 211, 255) 0px -370px 66px -28px inset;
+    box-shadow: rgb(59, 60, 73) 0px 360px 66px -28px inset;
 }
 
-.pricing .single-bloc-pricing .subtitle {
+.pricing .single-bloc-pricing .content {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -46,30 +46,33 @@
     padding-top: 18px;
 }
 
-.pricing .single-bloc-pricing .subtitle p {
-    margin-top: 15px;
-    font-size: 12px;
-    color: rgb(62, 100, 226);
+.pricing .single-bloc-pricing .content .padding-body {
+    margin-top: -40px;
 }
 
-.pricing .single-bloc-pricing .subtitle .margin {
+.pricing .single-bloc-pricing .content p {
+    margin-top: -15px;
+    font-size: 12px;
+}
+
+.pricing .single-bloc-pricing .content .margin {
     margin-left: auto;
     margin-right: auto;
 }
 
-.pricing .single-bloc-pricing .subtitle li {
+.pricing .single-bloc-pricing .content li {
     font-size: 14px;
-    color: black;
+    color: rgb(175, 175, 175);
 }
 
-.pricing .single-bloc-pricing .subtitle ul {
+.pricing .single-bloc-pricing .content ul {
     margin-left: 15px;
 }
 
-.pricing .single-bloc-pricing .subtitle i {
+.pricing .single-bloc-pricing .content i {
     margin-top: 2px;
     margin-right: 4px;
-    color: rgb(62, 100, 226);
+    color: rgb(87, 231, 123);
 }
 
 .pricing .single-bloc-pricing .icon h4 {
@@ -82,7 +85,6 @@
 
 .pricing .single-bloc-pricing .icon p {
     font-size: 12px;
-    color: #f14e4e;
     margin-left: 47%;
     margin-top: 3px;
     margin-bottom: auto;
@@ -90,7 +92,7 @@
     text-align: left; 
 }
 
-.pricing .single-bloc-pricing .subtitle .icon i {
+.pricing .single-bloc-pricing .content .icon i {
     color: #f14e4e;
     width: 60px;
     height: 60px;
@@ -100,15 +102,14 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    margin-left: 13%;
-    margin-right: 20px;
+    margin-left: 20%;
     margin-bottom: auto;
     margin-top: auto;
 }
 
-.pricing .single-bloc-pricing .subtitle .icon hr {
+.pricing .single-bloc-pricing .content .icon hr {
     color: black;
-    margin-top: 8px;
+    margin-top: 25px;
     width: 255px;
 }
 
@@ -118,12 +119,12 @@
     background-color: #f14e4e;
 }
 
-.pricing .single-bloc-pricing .subtitle h1 {
+.pricing .single-bloc-pricing .content h1 {
     font-size: 15px;
     color: rgb(62, 100, 226);
 }
 
-.pricing .single-bloc-pricing .subtitle h3 {
+.pricing .single-bloc-pricing .content h3 {
     margin-top: -5px;
     margin-bottom: 13px;
     font-size: 26px;
@@ -131,7 +132,7 @@
     color: rgb(62, 100, 226);
 }
 
-.pricing .single-bloc-pricing .subtitle .recommanded {
+.pricing .single-bloc-pricing .content .recommanded {
     border: 1px solid #f14e4e;
     border-radius: 20px;
     margin-left: auto;
@@ -142,8 +143,7 @@
     padding-left: 10px;
 }
 
-.pricing .single-bloc-pricing .subtitle .recommanded p {
-    color: #f14e4e;
+.pricing .single-bloc-pricing .content .recommanded p {
     margin-top: auto;
 }
 
