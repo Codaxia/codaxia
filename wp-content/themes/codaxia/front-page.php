@@ -22,8 +22,14 @@ get_header() ?>
 					<p class="wow fadeInUp" data-wow-delay=".6s">
 						<?= get_field('hero_section_description'); ?>
 					</p>
-					<a href="<?= get_field('hero_section_url_button'); ?>" class="main-btn btn-hover wow fadeInUp" data-wow-delay=".6s">
-						<?= get_field('hero_section_button'); ?></a>
+					<div class="first">
+						<div class="second">
+							<button class="glow-button">
+								<span><a href="<?= get_field('hero_section_url_button'); ?>" class="wow fadeInUp text-white fs-4" data-wow-delay=".6s">
+								<?= get_field('hero_section_button'); ?></a></span>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-lg-6">
