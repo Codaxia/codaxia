@@ -6,8 +6,10 @@
  * @since Codaxia version 0.1
  */
 
-
 get_header() ?>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.1/chroma.min.js"></script>
 
 <!-- ========================= hero-section start ========================= -->
 <section id="home" class="hero-section">
@@ -76,7 +78,13 @@ get_header() ?>
 							endwhile;
 						endif; ?>
 					</div>
-					<a href="<?= get_field('about_button_url'); ?>" class="main-btn btn-hover"><?= get_field('about_button'); ?></a>
+					<div class="first">
+						<div class="second">
+							<button class="glow-button">
+								<span><a href="<?= get_field('about_button_url'); ?>" class="text-white fs-4 fw-bold"><?= get_field('about_button'); ?></a></span>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -5,6 +5,9 @@ Template Name: Pricing
 ?>
 <?php get_header()?>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.1/chroma.min.js"></script>
+
 <!-- Pricing bloc section -->
 <section id="pricing-plans" class="pt-120 text-light pricing">
 	<div class="container">
@@ -69,7 +72,14 @@ Template Name: Pricing
                                             <?php endif; ?>
                                         </div>
                                         <div class="card-footer bg-transparent">
-                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold text-white"><?= get_field('contact_button', 'option'); ?></a>
+                                            <div class="first">
+                                                <div class="second">
+                                                    <button class="glow-button">
+                                                        <span><a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                                        <?= get_field('contact_button', 'option'); ?></a></span>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -98,7 +108,14 @@ Template Name: Pricing
                                             <?php endif; ?>
                                         </div>
                                         <div class="card-footer bg-transparent">
-                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold text-white"><?= get_field('contact_button', 'option'); ?></a>
+                                            <div class="first">
+                                                <div class="second">
+                                                    <button class="glow-button">
+                                                        <span><a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                                        <?= get_field('contact_button', 'option'); ?></a></span>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +151,14 @@ Template Name: Pricing
                             <h1 class="text-white"> Contact us to find a solution tailored to your needs!</h1>
                         </div>
                         <div class="card-footer bg-transparent">
-                            <a href="<?= get_field('contact_mail', 'option'); ?>" class="btn button-buy btn-block fw-bold text-white"><?= get_field('contact_button', 'option'); ?></a>
+                            <div class="first">
+                                <div class="second">
+                                    <button class="glow-button">
+                                        <span><a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                        <?= get_field('contact_button', 'option'); ?></a></span>
+                                    </button>
+                                </div>
+                            </div>                        
                         </div>
                     </div>
 				</div>

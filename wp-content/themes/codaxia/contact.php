@@ -8,11 +8,16 @@
 					<p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('contact_description', 'option'); ?></p>
 				</div>
 			</div>
-			<div class="col-xl-6 col-lg-5">
+			<div class="col-xl-6 col-lg-5 col-sm-1">
 				<div class="cta-btn text-lg-end mb-50">
-					<a href="<?= get_field('contact_mail', 'option'); ?>" class="main-btn btn-hover text-uppercase">
-						<?= get_field('contact_button', 'option'); ?>
-					</a>
+					<div class="first">
+						<div class="second">
+							<button class="glow-button button-margin">
+								<span><a href="<?= get_field('contact_mail', 'option'); ?>" class="text-uppercase text-white fs-4 fw-bold">
+								<?= get_field('contact_button', 'option'); ?></a></span>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
