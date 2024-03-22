@@ -112,11 +112,14 @@ document.addEventListener('DOMContentLoaded', function() {
   document.body.addEventListener('click', function(e) {
       if (e.target.classList.contains('filter-btn')) {
           const filter = e.target.getAttribute('data-filter');
+          console.log(filter)
           document.querySelectorAll('.filter-div').forEach(div => {
+            console.log(filter)
+            console.log(div.getAttribute('data-category'))
               if (div.getAttribute('data-category') === filter || filter === 'all') {
-        div.classList.remove('remove')
+                div.parentElement.classList.remove('remove');
               } else {
-        div.classList.add('remove')
+                div.parentElement.classList.add('remove');
               }
           });
       }

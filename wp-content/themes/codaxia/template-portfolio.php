@@ -48,11 +48,11 @@ Template Name: Portfolio
 						<?php while (have_rows('portfolio_project_made_portfolio_project_made_bloc')) : the_row(); ?>					
             					<div class="col-lg-4 col-md-6">
 									<div 
-									class="single-portfolio filter-div " 
+									class="single-portfolio filter-div"
 									id="<?= get_sub_field('portfolio_project_type'); ?>"
 									data-category="<?= get_sub_field('portfolio_project_type'); ?>" >
 										<div class="image <?= get_sub_field('portfolio_project_privacy'); ?>">
-											<img src="<?= get_sub_field('portfolio_image_project'); ?>" alt="">
+											<img src="<?= get_sub_field('portfolio_image_project'); ?>" class="image <?= get_sub_field('portfolio_project_privacy'); ?>" alt="">
 										</div>
 										<?php if (get_sub_field('portfolio_project_privacy')=='private') : ?>
 											<a href="../contact-form/" class="overlay d-block" target="_blank">
@@ -61,7 +61,7 @@ Template Name: Portfolio
 														<span> <i class="lni lni-link"></i> </span>
 													</div>
 													<div class="info-portfolio">
-														<h4>Contactez nous pour connaitre tout nos projets</h4>
+														<h4><?= get_field('portfolio_contact_message'); ?></h4>
 													</div>
 												</div>
 											</a>
