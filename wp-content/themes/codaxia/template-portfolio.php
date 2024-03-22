@@ -55,14 +55,14 @@ Template Name: Portfolio
 											<img src="<?= get_sub_field('portfolio_image_project'); ?>" alt="">
 										</div>
 										<?php if (get_sub_field('portfolio_project_privacy')=='private') : ?>
-											<a href="https://www.codaxia.com/contact-form/" class="overlay d-block" target="_blank">
+											<a href="../contact-form/" class="overlay d-block" target="_blank">
 												<div class="content">
 													<div class="link-btn">
 														<span> <i class="lni lni-link"></i> </span>
 													</div>
 													<div class="info-portfolio">
 														<h4>Contactez nous pour connaitre tout nos projets</h4>
-														</div>
+													</div>
 												</div>
 											</a>
 										<?php else : ?>
