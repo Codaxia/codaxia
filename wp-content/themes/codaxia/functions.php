@@ -54,6 +54,8 @@ function codaxia_enqueue_scripts()
     wp_enqueue_script('tiny-slider', get_template_directory_uri() . '/assets/js/tiny-slider.js', [], false, true);
     wp_enqueue_script('wow', get_template_directory_uri() . '/assets/js/wow.min.js', [], false, true);
     wp_enqueue_script('polifill', get_template_directory_uri() . '/assets/js/polifill.js', [], false, true);
+    wp_enqueue_script('gsap', get_template_directory_uri() . '/assets/js/gsap.min.js', [], false, true);
+    wp_enqueue_script('chroma', get_template_directory_uri() . '/assets/js/chroma.min.js', [], false, true);
     wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', [], false, true);
   }
 }

@@ -1,0 +1,308 @@
+/* Container */
+@media (min-width: 1400px) {
+    .container {
+      max-width: 1600px;
+    }
+  }
+
+/* ======= why audit css ========*/
+.why-audit {
+    background-color: black;
+}
+
+.why-audit .title h5 {
+    color:rgb(62, 100, 226);
+    font-size: 30px;
+}
+
+.why-audit .title p {
+    color:white;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.why-audit .title i {
+    margin-top: 7px;
+    color:white;
+}
+
+.audit-information {
+    background-color: #1e2022;
+}
+
+/* ======= audit information css ========*/
+.audit-information .audit-img img {
+    width: 100%;
+}
+  
+.audit-information .accordion .single-faq {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+  
+.audit-information .accordion .single-faq button {
+    padding: 20px 55px 15px 30px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #313450;
+    position: relative;
+}
+  
+.audit-information .accordion .single-faq button::after {
+    content: "\eb2c";
+    font: normal normal normal 1em/1 "LineIcons";
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-out 0s;
+}
+  
+.audit-information .accordion .single-faq button.collapsed::after {
+    content: "\eb53";
+}
+  
+.audit-information .accordion .single-faq .faq-content {
+    padding: 0 30px;
+    padding-bottom: 10px;
+    color: grey;
+}
+
+/* ======= audit-pricing css ========*/
+.audit-pricing {
+    background-color: black;
+}
+
+.audit-pricing .title h5 {
+    color:rgb(62, 100, 226);
+    font-size: 30px;
+}
+
+.audit-pricing .title p {
+    color:rgb(126, 126, 126);
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.audit-pricing .title i {
+    margin-top: 7px;
+    color:rgb(126, 126, 126);
+}
+
+.audit-pricing .single-bloc-audit-pricing {
+    background: #25262b;
+    padding: 30px; 
+    min-height: 50%;
+    max-height: 5000px; 
+    width: 490px;
+    text-align: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 0px;
+}
+
+.audit-pricing .single-bloc-audit-pricing.recommanded {
+    background: #25262b;
+    padding: 30px;
+    margin-top: -35px;
+    min-height: 104%;
+    max-height: 5000px;
+    width: 490px;
+    text-align: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 0px;
+    box-shadow: rgb(59, 60, 73) 0px 360px 66px -28px inset;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.audit-pricing .single-bloc-audit-pricing .padding {
+    padding-top: 18px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .padding-body {
+    margin-top: -40px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .time p {
+    margin-top: 5px;
+    text-align: center;
+    margin-left: -250px;
+    font-size: 15px;
+    color: #1ec034;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .time-bloc p {
+    margin-top: 5px;
+    text-align: center;
+    margin-left: -280px;
+    font-size: 15px;
+    color: #1ec034;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content h2 {
+    margin-top: -22px;
+    margin-left: -165px;
+    font-size: 16px;
+    color: rgb(62, 100, 226)
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .margin {
+    margin-left: -3px;
+    margin-top: -20px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .margin-recommanded {
+    margin-left: 8px;
+    margin-top: -20px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .margin-analyse {
+    margin-left: -184px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .separation hr {
+    color: rgb(255, 255, 255);
+    height: 2px;
+    width: 400px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content li {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.audit-pricing .single-bloc-audit-pricing .content ul {
+    margin-left: -15px;
+    padding-left: 20px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content i {
+    margin-top: 10px;
+    margin-right: 4px;
+    color: rgb(87, 231, 123);
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .bubble .margin {
+    margin-left: 5px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .bubble .bubble-text {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999;
+    margin-left: -170px;
+    font-size: 11px;
+    width: 250px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .bubble .bubble-text .line-break {
+    padding-bottom: 10px;
+}
+    
+.audit-pricing .single-bloc-audit-pricing .content .bubble:hover .bubble-text {
+    display: block;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .space svg {
+    margin-top: 6px;
+    margin-left: 36px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .space .needle {
+    fill: green;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .space .clock {
+    fill: white;
+}
+
+.audit-pricing .single-bloc-audit-pricing .icon h4 {
+    color: #f14e4e;
+    margin-top: -58px;
+    margin-left: 22%;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 30px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .icon p {
+    font-size: 12px;
+    margin-left: 20%;
+    margin-top: 3px;
+    margin-bottom: auto;
+    line-height: 1.7;
+    text-align: left; 
+    padding: 0 8px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .icon i {
+    color: #f14e4e;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #3a3a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 7%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .icon hr {
+    color: black;
+    margin-top: 15px;
+    width: 455px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .button-buy {
+    margin-top: auto;
+    width: 130px;
+    background-color: #f14e4e;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content h1 {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content h3 {
+    margin-top: -5px;
+    margin-bottom: 13px;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(62, 100, 226);
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .recommanded {
+    border: 1px solid #f14e4e;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-top: -25px;
+    margin-bottom: 15px;
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .recommanded p {
+    margin-top: auto;
+    font-size: 11px;
+}

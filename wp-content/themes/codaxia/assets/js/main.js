@@ -168,3 +168,18 @@ document.addEventListener('DOMContentLoaded', generateGlowButtons);
 
 // Set variables on resize
 window.addEventListener('resize', generateGlowButtons);
+
+
+var bubbles = document.querySelectorAll('.bubble');
+
+bubbles.forEach(function(bubble) {
+    bubble.addEventListener('mouseenter', function() {
+        var bubbleText = this.querySelector('.bubble-text');
+        bubbleText.style.display = 'block';
+    });
+
+    bubble.addEventListener('mouseleave', function() {
+        var bubbleText = this.querySelector('.bubble-text');
+        bubbleText.style.display = 'none';
+    });
+});
