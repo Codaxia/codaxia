@@ -27,7 +27,7 @@
 }
 
 .why-audit .single-bloc-why {
-    border-radius: 10px;
+    border-radius: 20px;
     background: #fff;
     margin-left: auto;
     margin-right: auto;
@@ -282,6 +282,7 @@
     line-height: 1.7;
     text-align: left; 
     padding: 0 8px;
+    max-width: calc(45 * 1ch);
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .icon i {
@@ -341,6 +342,49 @@
 }
 
 /* ======= audit-example css ========*/
-.audit-pricing {
-    background-color: black;
+.audit-example {
+    background-color: #1e2022
+}
+
+.audit-example h1 {
+    color: #f14e4e;
+    font-size: 35px;
+}
+
+.audit-example h2 {
+    color: rgb(62, 100, 226);
+    font-size: 25px;
+}
+
+.audit-example p {
+    font-size: 16px;
+    color: white;
+    max-width: calc(80 * 1ch);
+    max-width: -20px;
+}
+
+.audit-example .image {
+    min-height: 180px;
+    min-width: 200px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+/* ======= audit-type css ========*/
+.audit-type {
+    background-color: black
+}
+
+.audit-type .single-bloc-type {
+    border-radius: 10px;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.audit-type .single-bloc-type .image {
+    min-height: 280px;
+    min-width: 300px;
+    border-radius: 20px;
+    padding-top: 10px;
 }

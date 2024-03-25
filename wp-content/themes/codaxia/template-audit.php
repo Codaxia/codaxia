@@ -23,7 +23,7 @@ Template Name: Audit
                     <div class="first col-12 col-xxl-4 col-xl-4 col-lg-5 col-md-5 col-sm-5 mb-10">
                         <div class="second">
                             <button class="glow-button">
-                                <span><a href="<?= get_field('audit_button_url'); ?>" class="text-white fs-5 fw-bold">Audit example</a></span>
+                                <span><a href="#audit-example_id" class="text-white fs-5 fw-bold">Audit example</a></span>
                             </button>
                         </div>
                     </div>
@@ -579,8 +579,33 @@ Template Name: Audit
     </div>                
 </section>
 
-<section class="pt-130 audit-example">
+<section id="audit-example_id" class="pt-80 pb-100 audit-example">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-6 col-xl-5 col-lg-6">
+                <h1>Want to see an example ?</h1>
+                <h2>Voici l'audit effectué sur un projet open source:</h2>
+                <p>Ce document vise à faire l'analyse du code de l'application de démo de la collection FilamenPHP.</p>
+                <p>Il s'agit d'une collection de composants full-stack pour le développement accéléré de Laravel.</p> 
+                </br>
+                <p>L'audit est fait sur une application open source.</p>
+                <p>Le code est donc particulièrement bien entretenu et à jour. L'audit est donc assez court, la plupart des tests sont positifs et donc n'ont pas besoin d'analyse. Les audits sont donc généralement beaucoup plus détaillés et plus long selon les applications.</p>        
+            </div>
+            <div class="col-xxl-4 col-xl-7 col-lg-6">
+            <a href="https://wirehaired-digit-7fa.notion.site/Exemple-d-audit-FilamentPHP-bfd83152b48741f5906d79ad01883d2f"><img class="col-12 col-xxl-11 col-xl-10 col-lg-12 col-md-12 col-sm-12 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/audit-example.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="pt-100 pb-50 audit-type">
+    <div class="container">
+        <div class="row single-bloc-type col-12 col-xxl-10 col-xl-12 col-lg-12 col-md-8 col-sm-10 p-4 mb-4 mr-n5">
+            <div>
+                <img class="col-6 col-xxl-3 col-xl-5 col-lg-5 col-md-5 col-sm-5 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/audit type 1.png" alt="">
+            </div>
+        </div>
+    </div>
 </section>
 
 
