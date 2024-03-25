@@ -26,11 +26,46 @@
     color:white;
 }
 
+.why-audit .single-bloc-why {
+    border-radius: 10px;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why-audit .single-bloc-why h4 {
+    padding-top: 65px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    font-size: 35px;
+    color: black;
+}
+
+.why-audit .single-bloc-why p {
+    padding-left: 35px;
+    font-size: 16px;
+    color: black;
+    max-width: calc(80 * 1ch);
+}
+
+.why-audit .single-bloc-why .padding-all-button {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.why-audit .single-bloc-why .image {
+    min-height: 280px;
+    min-width: 300px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+/* ======= audit information css ========*/
+
 .audit-information {
     background-color: #1e2022;
 }
 
-/* ======= audit information css ========*/
 .audit-information .audit-img img {
     width: 100%;
 }
@@ -95,9 +130,8 @@
 .audit-pricing .single-bloc-audit-pricing {
     background: #25262b;
     padding: 30px; 
-    min-height: 50%;
-    max-height: 5000px; 
-    width: 490px;
+    min-height: 10%;
+    max-height: 5000px;
     text-align: center;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
@@ -109,9 +143,8 @@
     background: #25262b;
     padding: 30px;
     margin-top: -35px;
-    min-height: 104%;
+    min-height: 10%;
     max-height: 5000px;
-    width: 490px;
     text-align: center;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
@@ -269,7 +302,7 @@
 .audit-pricing .single-bloc-audit-pricing .content .icon hr {
     color: black;
     margin-top: 15px;
-    width: 455px;
+    width: 490px;
 }
 
 .audit-pricing .single-bloc-audit-pricing .button-buy {
@@ -305,4 +338,9 @@
 .audit-pricing .single-bloc-audit-pricing .content .recommanded p {
     margin-top: auto;
     font-size: 11px;
+}
+
+/* ======= audit-example css ========*/
+.audit-pricing {
+    background-color: black;
 }

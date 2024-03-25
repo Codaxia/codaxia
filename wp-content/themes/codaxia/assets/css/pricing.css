@@ -111,6 +111,8 @@
     color: black;
     margin-top: 25px;
     width: 255px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pricing .single-bloc-pricing .button-buy {

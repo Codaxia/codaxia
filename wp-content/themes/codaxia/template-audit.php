@@ -12,6 +12,34 @@ Template Name: Audit
             <p>Starting at 890$ CAD</p>
             <a href="#audit"><i class="lni lni-angle-double-down"></i></a>
         </div>
+        <div class="row single-bloc-why col-12 col-xxl-10 col-xl-12 col-lg-12 col-md-8 col-sm-10 p-4 mb-4 mr-n5">
+            <div class="col-11 col-xxl-8 col-xl-8 col-lg-8 col-md-11 col-sm-12">
+                <h4>POURQUOI FAIRE UN AUDIT?</h4>
+                <p><span class="fw-bold">Application lente, bugs</span> réguliers, <span class="fw-bold">problèmes de performance</span> ?</p>
+                <p>Vous souhaitez avoir un <span class="fw-bold">avis extérieur</span> sur le développement de votre application ?</p>
+                <p>Ou simplement faire le point de la <span class="fw-bold">dette technique</span>, de la <span class="fw-bold">sécurité</span> et de la <span class="fw-bold">solidité</span> de votre application ?</p>
+                <div class="row padding-all-button">
+                    <div class="col-2 col-xxl-3 col-xl-2 col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="first col-12 col-xxl-4 col-xl-4 col-lg-5 col-md-5 col-sm-5 mb-10">
+                        <div class="second">
+                            <button class="glow-button">
+                                <span><a href="<?= get_field('audit_button_url'); ?>" class="text-white fs-5 fw-bold">Audit example</a></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="first col-4 col-xxl-5 col-xl-5 col-lg-6 col-md-3 col-sm-4">
+                        <div class="second">
+                            <button class="glow-button">
+                                <span><a href="<?= get_field('audit_button_url'); ?>" class="text-white fs-5 fw-bold"><?= get_field('audit_button'); ?></a></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 col-xxl-4 col-xl-1 col-lg-3 col-md-2 col-sm-2">
+                <img class="col-6 col-xxl-12 col-xl-5 col-lg-5 col-md-5 col-sm-5 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/image audit 2.png" alt="">
+            </div>
+        </div>
     </div>
 </section>
 
@@ -51,7 +79,7 @@ Template Name: Audit
 					<div class="first">
 						<div class="second">
 							<button class="glow-button">
-								<span><a href="<?= get_field('audit_button_url'); ?>" class="text-white fs-4 fw-bold"><?= get_field('audit_button'); ?></a></span>
+								<span><a href="<?= get_field('audit_button_url'); ?>" class="text-white fs-5 fw-bold"><?= get_field('audit_button'); ?></a></span>
 							</button>
 						</div>
 					</div>
@@ -63,12 +91,12 @@ Template Name: Audit
 
 <section id="audit" class="pt-50 audit-pricing">
     <div class="container">
-        <div class="title text-center pb-90">
+        <div class="title text-center pb-90 justify-content-center">
             <h5>OUR PACKAGES</h5>
             <p>Don't know which one to choose?</p>
             <i class="lni lni-angle-double-down"></i>
         </div>
-        <div class="row pt-15">
+        <div class="row justify-content-center">
             <div class="col-xl-4 col-lg-4 col-sm-6 mb-70">
                     <div class="single-bloc-audit-pricing h-100">
                         <div class="content">
@@ -550,6 +578,11 @@ Template Name: Audit
         </div>
     </div>                
 </section>
+
+<section class="pt-130 audit-example">
+
+</section>
+
 
 <?php get_contact() ?>
 <?php get_footer() ?>
