@@ -268,15 +268,15 @@
 .audit-pricing .single-bloc-audit-pricing .icon h4 {
     color: #f14e4e;
     margin-top: -58px;
-    margin-left: 22%;
+    margin-left: 29%;
     margin-bottom: auto;
     text-align: left;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .audit-pricing .single-bloc-audit-pricing .icon p {
     font-size: 12px;
-    margin-left: 20%;
+    margin-left: 27%;
     margin-top: 3px;
     margin-bottom: auto;
     line-height: 1.7;
@@ -295,7 +295,7 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    margin-left: 7%;
+    margin-left: 13%;
     margin-bottom: auto;
     margin-top: auto;
 }
@@ -384,7 +384,7 @@
 
 .audit-type .single-bloc-type .image {
     min-height: 280px;
-    min-width: 300px;
+    min-width: 112%;
     border-radius: 20px;
     padding-top: 10px;
 }

@@ -97,7 +97,7 @@ Template Name: Audit
             <a href="#audit-type-id" class="text-white fs-5 fw-bold"><i class="lni lni-angle-double-down"></i></a>
         </div>
         <div class="row justify-content-center">
-            <div class="col-xl-4 col-lg-4 col-sm-6 mb-70">
+            <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-sm-10 mb-70">
                     <div class="single-bloc-audit-pricing h-100">
                         <div class="content">
                             <div class="row icon">
@@ -210,7 +210,7 @@ Template Name: Audit
                         </div>
                     </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-sm-6 mb-70">
+            <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-sm-10 mb-70">
                     <div class="single-bloc-audit-pricing recommanded h-80">
                         <div class="content padding">
                             <div class="recommanded">
@@ -416,7 +416,7 @@ Template Name: Audit
                         </div>
                     </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-sm-6 mb-70">
+            <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-sm-10 mb-70">
                     <div class="single-bloc-audit-pricing h-100">
                         <div class="content">
                             <div class="row icon">
@@ -601,7 +601,7 @@ Template Name: Audit
 <section id="audit-type-id" class="pt-100 pb-50 audit-type">
     <div class="container">
         <div class="row single-bloc-type col-12 col-xxl-10 col-xl-12 col-lg-12 col-md-12 col-sm-9 p-4 mb-70 mr-n5">
-            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-5 col-sm-1 mb-10">
+            <div class="col-11 col-xxl-3 col-xl-3 col-lg-6 col-md-5 col-sm-11 mb-10">
                 <img class="col-6 col-xxl-3 col-xl-6 col-lg-12 col-md-5 col-sm-5 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/audit type 1.png" alt="">
             </div>
             <div class="col-xxl-9 col-xl-9 col-lg-6 col-md-7">
@@ -612,7 +612,7 @@ Template Name: Audit
             </div>
         </div>
         <div class="row single-bloc-type col-12 col-xxl-10 col-xl-12 col-lg-12 col-md-12 col-sm-9 p-4 mb-70 mr-n5">
-            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-5 col-sm-1 mb-10">
+            <div class="col-11 col-xxl-3 col-xl-3 col-lg-6 col-md-5 col-sm-11 mb-10">
                 <img class="col-6 col-xxl-3 col-xl-6 col-lg-12 col-md-5 col-sm-5 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/audit type 2.png" alt="">
             </div>
             <div class="col-xxl-9 col-xl-9 col-lg-6 col-md-7">
@@ -624,7 +624,7 @@ Template Name: Audit
             </div>
         </div>
         <div class="row single-bloc-type col-12 col-xxl-10 col-xl-12 col-lg-12 col-md-12 col-sm-9 p-4 mb-70 mr-n5">
-            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-5 col-sm-1 mb-10">
+            <div class="col-11 col-xxl-3 col-xl-3 col-lg-6 col-md-5 col-sm-11 mb-10">
                 <img class="col-6 col-xxl-3 col-xl-6 col-lg-12 col-md-5 col-sm-5 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/audit type 3.png" alt="">
             </div>
             <div class="col-xxl-9 col-xl-9 col-lg-6 col-md-7">
