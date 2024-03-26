@@ -33,7 +33,7 @@
     }
   }
   
-  .hero-section .hero-content span {
+  .title {
     font-family: "Archivo Black", sans-serif;
     font-size: 29px;
     color: #f14e4e;
@@ -41,7 +41,7 @@
   }
   
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .hero-section .hero-content span {
+    .title span {
       font-size: 25px;
     }
   }
@@ -150,7 +150,7 @@
     /* box-shadow: 0px 0px 35px #f2f4f94a; */
   }
   
-  .about-section .accordion .single-faq button {
+  .about-section .accordion .single-faq button, .subtitle-contact{
     padding: 20px 55px 15px 30px;
     border: none;
     background: none;

@@ -39,7 +39,7 @@
               </button>
 
               <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                <ul id="menu-navbar" class="navbar-nav ms-auto">
+                <ul id="menu-navbar" class="navbar-nav">
                   <?php wp_nav_menu([
                     'container' => false,
                     'items_wrap' => '%3$s',
