@@ -122,9 +122,3 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
-
-// stop the mail system from contact form 7
-add_filter('wpcf7_skip_mail', 'custom_skip_mail', 10, 2);
-function custom_skip_mail($skip_mail, $contact_form) {
-    return true;
-}
