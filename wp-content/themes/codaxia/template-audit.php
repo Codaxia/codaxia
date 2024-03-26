@@ -12,22 +12,22 @@ Template Name: Audit
             <p>Starting at 890$ CAD</p>
             <a href="#audit"><i class="lni lni-angle-double-down"></i></a>
         </div>
-        <div class="row single-bloc-why col-12 col-xxl-10 col-xl-12 col-lg-12 col-md-8 col-sm-10 p-4 mb-4 mr-n5">
-            <div class="col-11 col-xxl-8 col-xl-8 col-lg-8 col-md-11 col-sm-12">
+        <div class="row single-bloc-why col-12 col-xxl-10 col-xl-12 col-lg-12 col-sm-10 p-4 mb-4 mr-n5">
+            <div class="col-11 col-xxl-8 col-xl-8 col-lg-7 col-sm-12">
                 <h4>POURQUOI FAIRE UN AUDIT?</h4>
                 <p><span class="fw-bold">Application lente, bugs</span> réguliers, <span class="fw-bold">problèmes de performance</span> ?</p>
                 <p>Vous souhaitez avoir un <span class="fw-bold">avis extérieur</span> sur le développement de votre application ?</p>
                 <p>Ou simplement faire le point de la <span class="fw-bold">dette technique</span>, de la <span class="fw-bold">sécurité</span> et de la <span class="fw-bold">solidité</span> de votre application ?</p>
                 <div class="row padding-all-button">
-                    <div class="col-0 col-xxl-2 col-xl-2 col-lg-0 col-md-1 col-sm-1"></div>
-                    <div class="first col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-5 col-sm-5 mb-10 me-2">
+                    <div class="col-0 col-xxl-2 col-xl-2 col-lg-0 col-sm-1"></div>
+                    <div class="first col-6 col-xxl-4 col-xl-4 col-lg-4 col-sm-5 mb-10 me-2">
                         <div class="second">
                             <button class="glow-button">
                                 <span><a href="#audit-example_id" class="text-white fs-5 fw-bold">Audit example</a></span>
                             </button>
                         </div>
                     </div>
-                    <div class="first col-4 col-xxl-5 col-xl-5 col-lg-5 col-md-3 col-sm-4">
+                    <div class="first col-4 col-xxl-5 col-xl-5 col-lg-5 col-sm-4">
                         <div class="second">
                             <button class="glow-button">
                                 <span><a href="<?= get_field('audit_button_url'); ?>" class="text-white fs-5 fw-bold"><?= get_field('audit_button'); ?></a></span>
@@ -36,8 +36,8 @@ Template Name: Audit
                     </div>
                 </div>
             </div>
-            <div class="col-2 col-xxl-4 col-xl-1 col-lg-3 col-md-2 col-sm-2">
-                <img class="col-6 col-xxl-12 col-xl-5 col-lg-5 col-md-5 col-sm-5 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/image audit 2.png" alt="">
+            <div class="col-2 col-xxl-4 col-xl-4 col-lg-3 col-sm-2">
+                <img class="col-6 col-xxl-12 col-xl-5 col-lg-5 col-sm-5 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/image audit 2.png" alt="">
             </div>
         </div>
     </div>
@@ -600,22 +600,22 @@ Template Name: Audit
 
 <section id="audit-type-id" class="pt-100 pb-50 audit-type">
     <div class="container">
-        <div class="row single-bloc-type col-12 col-xxl-10 col-xl-12 col-lg-12 col-md-12 col-sm-9 p-4 mb-70 mr-n5">
-            <div class="col-11 col-xxl-3 col-xl-3 col-lg-6 col-md-5 col-sm-11 mb-10">
-                <img class="col-6 col-xxl-3 col-xl-6 col-lg-12 col-md-5 col-sm-5 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/audit type 1.png" alt="">
+        <div class="row single-bloc-type col-10 col-xxl-10 col-xl-12 col-lg-11 p-4 mb-70 mr-n5">
+            <div class="col-11 col-xxl-3 col-xl-3 col-lg-6 mb-10">
+                <img class="col-6 col-xxl-3 col-xl-6 col-lg-11 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/audit type 1.png" alt="">
             </div>
-            <div class="col-xxl-9 col-xl-9 col-lg-6 col-md-7">
+            <div class="col-xxl-9 col-xl-9 col-lg-6">
                 <h1 class="pb-20">Audit Essentiel</h1>
                 <p class="pb-20">Ce forfait couvre l'analyse de l'installation et des dépendances de l'application, ainsi qu'une revue initiale de la dette technique, des bugs, et de la sécurité via notre outil d'audit spécialisé. Cela inclut un rapport complet accessible en ligne via un lien fourni à la fin de l'audit.</p>
                 <p class="pb-20">Parfait pour les entreprises qui ont sous-traité leur développement et cherchent à avoir une idée générale de la qualité du code reçu.</p>
                 <p class="pb-20">Vous obtiendrez une vue d'ensemble claire de l'état actuel de votre code et des recommandations pour des améliorations immédiates.</p>
             </div>
         </div>
-        <div class="row single-bloc-type col-12 col-xxl-10 col-xl-12 col-lg-12 col-md-12 col-sm-9 p-4 mb-70 mr-n5">
-            <div class="col-11 col-xxl-3 col-xl-3 col-lg-6 col-md-5 col-sm-11 mb-10">
-                <img class="col-6 col-xxl-3 col-xl-6 col-lg-12 col-md-5 col-sm-5 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/audit type 2.png" alt="">
+        <div class="row single-bloc-type col-10 col-xxl-10 col-xl-12 col-lg-11 p-4 mb-70 mr-n5">
+            <div class="col-11 col-xxl-3 col-xl-3 col-lg-6 mb-10">
+                <img class="col-6 col-xxl-3 col-xl-6 col-lg-11 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/audit type 2.png" alt="">
             </div>
-            <div class="col-xxl-9 col-xl-9 col-lg-6 col-md-7">
+            <div class="col-xxl-9 col-xl-9 col-lg-6">
                 <h1 class="pb-20">Audit Complet</h1>
                 <p class="pb-20">Ce forfait est particulièrement utile pour les entreprises qui envisagent des mises à jour importantes ou des changements stratégiques (refonte, changement de technologie).</p>
                 <p class="pb-20">Il comprend une analyse complète du backend spécialisé pour Laravel et un examen minutieux des processus de déploiement et des assets.</p>
@@ -623,11 +623,11 @@ Template Name: Audit
                 <p class="pb-20">Il offre un aperçu précis des opportunités d'optimisation et des risques potentiels.</p>
             </div>
         </div>
-        <div class="row single-bloc-type col-12 col-xxl-10 col-xl-12 col-lg-12 col-md-12 col-sm-9 p-4 mb-70 mr-n5">
-            <div class="col-11 col-xxl-3 col-xl-3 col-lg-6 col-md-5 col-sm-11 mb-10">
-                <img class="col-6 col-xxl-3 col-xl-6 col-lg-12 col-md-5 col-sm-5 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/audit type 3.png" alt="">
+        <div class="row single-bloc-type col-10 col-xxl-10 col-xl-12 col-lg-11 p-4 mb-70 mr-n5">
+            <div class="col-11 col-xxl-3 col-xl-3 col-lg-6 mb-10">
+                <img class="col-6 col-xxl-3 col-xl-6 col-lg-11 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/audit type 3.png" alt="">
             </div>
-            <div class="col-xxl-9 col-xl-9 col-lg-6 col-md-7">
+            <div class="col-xxl-9 col-xl-9 col-lg-6">
                 <h1 class="pb-20">Audit Personnalisé</h1>
                 <p class="pb-20">Ce forfait est pour les applications utilisant des technologies plus spécifiques ou plus anciennes. Il inclut une analyse manuelle détaillée et un suivi personnalisé, adapté spécifiquement à la structure et aux défis uniques de votre code.</p>
                 <p class="pb-20">Avec une attention particulière portée à la sécurité, y compris une analyse approfondie du serveur. Ce forfait offre une perspective exhaustive et stratégique pour guider les décisions spécifiques en matière de développement.</p>
