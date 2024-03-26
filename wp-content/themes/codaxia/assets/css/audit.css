@@ -54,7 +54,7 @@
 }
 
 .why-audit .single-bloc-why .image {
-    min-height: 280px;
+    min-height: 350px;
     min-width: 300px;
     border-radius: 20px;
     padding-top: 10px;
@@ -387,4 +387,14 @@
     min-width: 300px;
     border-radius: 20px;
     padding-top: 10px;
+}
+
+.audit-type .single-bloc-type h1 {
+    color: #44446b;
+    margin-left: 40px;
+}
+
+.audit-type .single-bloc-type p {
+    color: #000000;
+    margin-left: 40px;
 }
