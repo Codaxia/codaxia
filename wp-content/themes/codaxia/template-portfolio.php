@@ -48,24 +48,37 @@ Template Name: Portfolio
 						<?php while (have_rows('portfolio_project_made_portfolio_project_made_bloc')) : the_row(); ?>					
             					<div class="col-lg-4 col-md-6">
 									<div 
-									class="single-portfolio filter-div" 
+									class="single-portfolio filter-div"
 									id="<?= get_sub_field('portfolio_project_type'); ?>"
 									data-category="<?= get_sub_field('portfolio_project_type'); ?>" >
-										<div class="image">
-											<img src="<?= get_sub_field('portfolio_image_project'); ?>" alt="">
+										<div class="image <?= get_sub_field('portfolio_project_privacy'); ?>">
+											<img src="<?= get_sub_field('portfolio_image_project'); ?>" class="image <?= get_sub_field('portfolio_project_privacy'); ?>" alt="">
 										</div>
-										<a href="<?= get_sub_field('portfolio_link_project'); ?>" class="overlay d-block" target="_blank">
-											<div class="content">
-												<div class="link-btn">
-													<span> <i class="lni lni-link"></i> </span>
+										<?php if (get_sub_field('portfolio_project_privacy')=='private') : ?>
+											<a href="../contact-form/" class="overlay d-block" target="_blank">
+												<div class="content">
+													<div class="link-btn">
+														<span> <i class="lni lni-link"></i> </span>
+													</div>
+													<div class="info-portfolio">
+														<h4><?= get_field('portfolio_contact_message'); ?></h4>
+													</div>
 												</div>
-												<div class="info-portfolio">
-													<h4><?= get_sub_field('portfolio_project_name'); ?></h4>
-													<p><?= get_sub_field('portfolio_description_of_the_client_project'); ?></p>
-													<p><?= get_sub_field('portfolio_languages_used_project'); ?></p>
+											</a>
+										<?php else : ?>
+											<a href="<?= get_sub_field('portfolio_link_project'); ?>" class="overlay d-block" target="_blank">
+												<div class="content">
+													<div class="link-btn">
+														<span> <i class="lni lni-link"></i> </span>
+													</div>
+													<div class="info-portfolio">
+														<h4><?= get_sub_field('portfolio_project_name'); ?></h4>
+														<p><?= get_sub_field('portfolio_description_of_the_client_project'); ?></p>
+														<p><?= get_sub_field('portfolio_languages_used_project'); ?></p>
+													</div>
 												</div>
-											</div>
-										</a>
+											</a>
+										<?php endif ?>
 									</div>
 							</div>
 						<?php endwhile; ?>

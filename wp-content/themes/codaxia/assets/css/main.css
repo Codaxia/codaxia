@@ -175,7 +175,7 @@ p {
 }
 
 /*===== All Button Style =====*/
-.main-btn {
+ .main-btn, .wpcf7 input[type="submit"] { 
   display: inline-block;
   font-weight: 500;
   text-align: center;

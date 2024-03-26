@@ -134,3 +134,7 @@
   border: 3px solid #e02645;
   transform: scale(1.13);
 }
+
+.private{
+  filter: blur(10px);
+}

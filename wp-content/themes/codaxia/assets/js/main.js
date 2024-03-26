@@ -114,11 +114,17 @@ document.addEventListener('DOMContentLoaded', function() {
           const filter = e.target.getAttribute('data-filter');
           document.querySelectorAll('.filter-div').forEach(div => {
               if (div.getAttribute('data-category') === filter || filter === 'all') {
-        div.classList.remove('remove')
+                div.parentElement.classList.remove('remove');
               } else {
-        div.classList.add('remove')
+                div.parentElement.classList.add('remove');
               }
           });
       }
   });
 });
+
+// stop the mail system from contact form 7
+add_filter('wpcf7_skip_mail', 'custom_skip_mail', 10, 2);
+function custom_skip_mail($skip_mail, $contact_form) {
+    return true;
+}
