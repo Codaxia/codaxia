@@ -5,8 +5,8 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-9 col-md-12 col-12 mb-2">
-					<div class="row single-bloc-blog single-blog col-lg-12 p-4 mb-4 mr-n5">
-						<div class="content col-lg-6">
+					<div class="row single-bloc-blog single-blog col-xl-12 col-lg-10 col-md-10 p-4 mb-4 mr-n5">
+						<div class="content col-xl-6 col-lg-12 col-md-12">
 							<h1 class="text-dark text-center"> <?php the_title() ?> </h1>
 							</br>
 							<div class="text-dark fs-7">
@@ -17,7 +17,7 @@
 								</br>
 							</div>
 						</div>
-						<div class="image-article col-lg-6" style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url()); ?>');">
+						<div class="image-article col-xl-6 col-lg-12 col-md-12" style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url()); ?>');">
 						</div>
 					</div>
 					<div class="content-article">

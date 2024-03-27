@@ -421,8 +421,8 @@
 
 .blog-page .image-article {
   border-radius: 20px;
-  height: 235px; 
-  width: 455px;
+  min-height: 260px;
+  min-width: 380px;
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
