@@ -1,8 +1,4 @@
 <!-- ========================= cta-section start ========================= -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.1/chroma.min.js"></script>
-
 <section id="contact" class="cta-section img-bg pt-55 pb-10">
 	<div class="container">
 		<div class="row align-items-center">

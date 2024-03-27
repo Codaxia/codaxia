@@ -170,16 +170,16 @@
 
 .audit-pricing .single-bloc-audit-pricing .content .time p {
     margin-top: 5px;
-    text-align: center;
-    margin-left: -250px;
+    text-align: left;
+    margin-left: -120px;
     font-size: 15px;
     color: #1ec034;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .time-bloc p {
     margin-top: 5px;
-    text-align: center;
-    margin-left: -280px;
+    text-align: left;
+    margin-left: -120px;
     font-size: 15px;
     color: #1ec034;
 }

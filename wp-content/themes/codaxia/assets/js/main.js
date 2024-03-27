@@ -170,16 +170,16 @@ document.addEventListener('DOMContentLoaded', generateGlowButtons);
 window.addEventListener('resize', generateGlowButtons);
 
 
-var bubbles = document.querySelectorAll('.bubble');
+const bubbles = document.querySelectorAll('.bubble');
 
 bubbles.forEach(function(bubble) {
     bubble.addEventListener('mouseenter', function() {
-        var bubbleText = this.querySelector('.bubble-text');
+        const bubbleText = this.querySelector('.bubble-text');
         bubbleText.style.display = 'block';
     });
 
     bubble.addEventListener('mouseleave', function() {
-        var bubbleText = this.querySelector('.bubble-text');
+        const bubbleText = this.querySelector('.bubble-text');
         bubbleText.style.display = 'none';
     });
 });
