@@ -15,11 +15,11 @@ Template Name: Contact Form
                             <?= get_field('contact_title_section_contact_subtitle'); ?>
                         </p>
         </div>
-        <div class="row informations">
-            <div class="col-lg-6 col-md-6">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 pt-140">
                 <?php echo do_shortcode(get_field('shortcode')); ?> 
             </div>
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 pt-140">
                 <div class="info-contact">
                     <span class="title">
                     <?= get_field('contact_info_contact_title'); ?>
