@@ -12,20 +12,21 @@ Template Name: Audit
             <p><?= get_field('why_audit_why_audit_subtitle'); ?></p>
             <a href="<?= get_field('why_audit_why_audit_icon_url'); ?>"><i class="<?= get_field('why_audit_why_audit_icon'); ?>"></i></a>
         </div>
-        <div class="row single-bloc-why col-12 col-xxl-10 col-xl-12 col-lg-12 col-sm-10 p-4 mb-4 mr-n5">
-            <div class="col-11 col-xxl-8 col-xl-8 col-lg-7 col-sm-12">
+        <div class="row single-bloc-why col-12 col-xxl-10 col-xl-12 col-md-12 col-lg-12 col-sm-10 p-4 mb-4 mr-n5">
+            <div class="col-11 col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12">
                 <h4><?= get_field('why_audit_why_audit_title'); ?></h4>
                 <p><?= get_field('why_audit_why_audit_description'); ?></p>
-                <div class="row padding-all-button">
-                    <div class="col-0 col-xxl-2 col-xl-2 col-lg-0 col-sm-1"></div>
-                    <div class="first col-6 col-xxl-4 col-xl-4 col-lg-4 col-sm-5 mb-10 me-2">
+                <div class="row d-flex justify-content-center align-items-center padding-all-button">
+                    <div class="col-3 col-xxl-2 col-xl-2 col-lg-0 col-md-1 col-sm-2"></div>
+                    <div class="first col-8 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-8 mb-1
+                    0">
                         <div class="second">
                             <button class="glow-button">
                                 <span><a href="<?= get_field('why_audit_why_audit_example_url_button'); ?>" class="text-white fs-5 fw-bold"><?= get_field('why_audit_why_audit_example_button'); ?></a></span>                            
                             </button>
                         </div>
                     </div>
-                    <div class="first col-4 col-xxl-5 col-xl-5 col-lg-5 col-sm-4">
+                    <div class="first col-4 col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-4 mb-10">
                         <div class="second">
                             <button class="glow-button">
                                 <span><a href="<?= get_field('why_audit_why_audit_packages_url_button'); ?>" class="text-white fs-5 fw-bold"><?= get_field('why_audit_why_audit_packages_button'); ?></a></span>
@@ -34,8 +35,8 @@ Template Name: Audit
                     </div>
                 </div>
             </div>
-            <div class="col-2 col-xxl-4 col-xl-4 col-lg-3 col-sm-2">
-                <img class="col-6 col-xxl-12 col-xl-5 col-lg-5 col-sm-5 image" src="http://localhost/Codaxia/wp-content/uploads/2024/02/image audit 2.png" alt="">
+            <div class="col-12 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center align-items-center pt-20">
+                <img class="col-7 col-xxl-12 col-xl-5 col-lg-5 col-md-9 col-sm-5 image" src="<?= get_field('why_audit_why_audit_image'); ?>" alt="">
             </div>
         </div>
     </div>
@@ -77,7 +78,7 @@ Template Name: Audit
 					<div class="first">
 						<div class="second">
 							<button class="glow-button">
-								<span><a href="<?= get_field('audit_button_url'); ?>" class="text-white fs-5 fw-bold"><?= get_field('audit_button'); ?></a></span>
+								<span><a href="<?= get_field('information_audit_audit_button_url'); ?>" class="text-white fs-5 fw-bold"><?= get_field('information_audit_audit_button'); ?></a></span>
 							</button>
 						</div>
 					</div>
@@ -258,13 +259,13 @@ Template Name: Audit
 <section id="audit-example-id" class="pt-80 pb-100 audit-example">
     <div class="container">
         <div class="row">
-            <div class="col-xxl-6 col-xl-5 col-lg-6">
+            <div class="col-xxl-9 col-xl-8 col-lg-7 mb-30">
                 <h1><?= get_field('example_audit_example_audit_title_1'); ?></h1>
                 <h2><?= get_field('example_audit_example_audit_title_2'); ?></h2>
                 <p><?= get_field('example_audit_example_audit_text'); ?></p>
             </div>
-            <div class="col-xxl-4 col-xl-7 col-lg-6">
-            <a href="<?= get_field('example_audit_example_audit_link'); ?>"><img class="col-12 col-xxl-11 col-xl-10 col-lg-12 col-md-12 col-sm-12 image" src="<?= get_field('example_audit_example_audit_image'); ?>" alt=""></a>
+            <div class="col-xxl-3 col-xl-4 col-lg-5 d-flex justify-content-center align-items-center ">
+            <a href="<?= get_field('example_audit_example_audit_link'); ?>"><img class="col-12 image" src="<?= get_field('example_audit_example_audit_image'); ?>" alt=""></a>
             </div>
         </div>
     </div>

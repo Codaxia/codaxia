@@ -50,11 +50,10 @@
 
 .why-audit .single-bloc-why .padding-all-button {
     padding-top: 40px;
-    padding-bottom: 30px;
 }
 
 .why-audit .single-bloc-why .image {
-    min-height: 350px;
+    min-height: 330px;
     min-width: 300px;
     border-radius: 20px;
     padding-top: 10px;
@@ -359,7 +358,7 @@
 .audit-example p {
     font-size: 16px;
     color: white;
-    max-width: calc(80 * 1ch);
+    max-width: calc(100 * 1ch);
     max-width: -20px;
 }
 
