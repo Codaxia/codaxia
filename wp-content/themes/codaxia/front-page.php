@@ -24,8 +24,8 @@ get_header() ?>
 					<div class="first">
 						<div class="second">
 							<button class="glow-button">
-								<span><a href="<?= get_field('hero_section_url_button'); ?>" class="wow fadeInUp text-white fs-4" data-wow-delay=".6s">
-								<?= get_field('hero_section_button'); ?></a></span>
+								<a href="<?= get_field('hero_section_url_button'); ?>" class="text-white fs-4">
+								<?= get_field('hero_section_button'); ?></a>
 							</button>
 						</div>
 					</div>
@@ -78,7 +78,7 @@ get_header() ?>
 					<div class="first">
 						<div class="second">
 							<button class="glow-button">
-								<span><a href="<?= get_field('about_button_url'); ?>" class="text-white fs-4 fw-bold"><?= get_field('about_button'); ?></a></span>
+								<a href="<?= get_field('about_button_url'); ?>" class="text-white fs-4 fw-bold"><?= get_field('about_button'); ?></a>
 							</button>
 						</div>
 					</div>

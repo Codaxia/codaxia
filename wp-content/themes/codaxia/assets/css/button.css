@@ -48,7 +48,7 @@
     animation: rotate linear 2s infinite;
   }
   
-  .glow-button span {
+  .glow-button a {
     z-index: 1;
     position: relative;
     display: table-cell;
@@ -62,7 +62,7 @@
     mask-image: radial-gradient(circle, white, black);
   }
   
-  .glow-button span:before {
+  .glow-button a:before {
     content: '';
     position: absolute;
     left: -16px;

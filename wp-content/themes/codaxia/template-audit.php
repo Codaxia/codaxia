@@ -21,14 +21,14 @@ Template Name: Audit
                     <div class="first col-10 col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-9">
                         <div class="second">
                             <button class="glow-button">
-                                <span><a href="<?= get_field('why_audit_why_audit_example_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_example_button'); ?></a></span>                            
+                                <a href="<?= get_field('why_audit_why_audit_example_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_example_button'); ?></a>                           
                             </button>
                         </div>
                     </div>
                     <div class="first col-10 col-xxl-5 col-xl-5 col-lg-6 col-md-5 col-sm-8">
                         <div class="second">
                             <button class="glow-button">
-                                <span><a href="<?= get_field('why_audit_why_audit_packages_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_packages_button'); ?></a></span>
+                                <a href="<?= get_field('why_audit_why_audit_packages_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_packages_button'); ?></a>
                             </button>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ Template Name: Audit
 					<div class="first">
 						<div class="second">
 							<button class="glow-button">
-								<span><a href="<?= get_field('information_audit_audit_button_url'); ?>" class="text-white fs-5 fw-bold"><?= get_field('information_audit_audit_button'); ?></a></span>
+								<a href="<?= get_field('information_audit_audit_button_url'); ?>" class="text-white fs-5 fw-bold"><?= get_field('information_audit_audit_button'); ?></a>
 							</button>
 						</div>
 					</div>
@@ -166,8 +166,8 @@ Template Name: Audit
                                         <div class="first">
                                             <div class="second">
                                                 <button class="glow-button">
-                                                    <span><a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
-                                                    <?= get_sub_field('audit_pricing_button'); ?></a></span>
+                                                    <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                                    <?= get_sub_field('audit_pricing_button'); ?></a>
                                                 </button>
                                             </div>
                                         </div>                        
@@ -239,8 +239,8 @@ Template Name: Audit
                                         <div class="first">
                                             <div class="second">
                                                 <button class="glow-button">
-                                                    <span><a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
-                                                    <?= get_field('contact_button', 'option'); ?></a></span>
+                                                    <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                                    <?= get_field('contact_button', 'option'); ?></a>
                                                 </button>
                                             </div>
                                         </div>                        
