@@ -18,14 +18,14 @@ Template Name: Audit
                 <p><?= get_field('why_audit_why_audit_description'); ?></p>
                 <div class="row d-flex justify-content-center align-items-center padding-all-button">
                     <div class="col-2 col-xxl-2 col-xl-2 col-lg-0 col-md-1 col-sm-2"></div>
-                    <div class="first col-10 col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-9">
+                    <div class="first col-10 col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-8 mb-3">
                         <div class="second">
                             <button class="glow-button">
-                                <a href="<?= get_field('why_audit_why_audit_example_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_example_button'); ?></a>                           
+                                <a href="<?= get_field('why_audit_why_audit_example_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_example_button'); ?></a>
                             </button>
                         </div>
                     </div>
-                    <div class="first col-10 col-xxl-5 col-xl-5 col-lg-6 col-md-5 col-sm-8">
+                    <div class="first col-10 col-xxl-5 col-xl-5 col-lg-6 col-md-5 col-sm-8  mb-3">
                         <div class="second">
                             <button class="glow-button">
                                 <a href="<?= get_field('why_audit_why_audit_packages_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_packages_button'); ?></a>
@@ -136,7 +136,7 @@ Template Name: Audit
                                             </div>
                                         </div>
                                         <div class="separation">
-                                            <h1 class="text-white fs-4"><?= get_sub_field('audit_pricing_price'); ?></h1> 
+                                            <h1 class="text-white fs-4"><?= get_sub_field('audit_pricing_price'); ?></h1>
                                             <hr class="separation">
                                             </br>
                                         </div>
@@ -157,7 +157,7 @@ Template Name: Audit
                                                                     <?php endif; ?>
                                                                 </div>
                                                             </span>
-                                                        </li>     
+                                                        </li>
                                                 </ul>
                                             <?php endwhile; ?>
                                         <?php endif; ?>
@@ -170,7 +170,7 @@ Template Name: Audit
                                                     <?= get_sub_field('audit_pricing_button'); ?></a>
                                                 </button>
                                             </div>
-                                        </div>                        
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +209,7 @@ Template Name: Audit
                                             </div>
                                         </div>
                                         <div class="separation">
-                                            <h1 class="text-white fs-4"><?= get_sub_field('audit_pricing_price'); ?></h1> 
+                                            <h1 class="text-white fs-4"><?= get_sub_field('audit_pricing_price'); ?></h1>
                                             <hr>
                                             </br>
                                         </div>
@@ -230,7 +230,7 @@ Template Name: Audit
                                                                     <?php endif; ?>
                                                                 </div>
                                                             </span>
-                                                        </li>  
+                                                        </li>
                                                 </ul>
                                             <?php endwhile; ?>
                                         <?php endif; ?>
@@ -243,7 +243,7 @@ Template Name: Audit
                                                     <?= get_field('contact_button', 'option'); ?></a>
                                                 </button>
                                             </div>
-                                        </div>                        
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +252,7 @@ Template Name: Audit
                 <?php endwhile; ?>
 			<?php endif; ?>
         </div>
-    </div>                
+    </div>
 </section>
 
 <section id="audit-example-id" class="pt-80 pb-100 audit-example">
