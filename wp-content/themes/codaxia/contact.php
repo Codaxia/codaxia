@@ -13,8 +13,8 @@
 					<div class="first">
 						<div class="second">
 							<button class="glow-button button-margin">
-								<span><a href="<?= get_field('contact_mail', 'option'); ?>" class="text-uppercase text-white fs-4 fw-bold">
-								<?= get_field('contact_button', 'option'); ?></a></span>
+								<a href="<?= get_field('contact_mail', 'option'); ?>" class="text-uppercase text-white fs-4 fw-bold">
+								<?= get_field('contact_button', 'option'); ?></a>
 							</button>
 						</div>
 					</div>

@@ -55,6 +55,8 @@
 .why-audit .single-bloc-why .image {
     min-height: 330px;
     min-width: 300px;
+    max-width: 370px;
+    max-height: 350px;
     border-radius: 20px;
     padding-top: 10px;
 }
