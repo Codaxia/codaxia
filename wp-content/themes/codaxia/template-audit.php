@@ -17,19 +17,18 @@ Template Name: Audit
                 <h4><?= get_field('why_audit_why_audit_title'); ?></h4>
                 <p><?= get_field('why_audit_why_audit_description'); ?></p>
                 <div class="row d-flex justify-content-center align-items-center padding-all-button">
-                    <div class="col-3 col-xxl-2 col-xl-2 col-lg-0 col-md-1 col-sm-2"></div>
-                    <div class="first col-8 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-8 mb-1
-                    0">
+                    <div class="col-2 col-xxl-2 col-xl-2 col-lg-0 col-md-1 col-sm-2"></div>
+                    <div class="first col-10 col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-9">
                         <div class="second">
                             <button class="glow-button">
-                                <span><a href="<?= get_field('why_audit_why_audit_example_url_button'); ?>" class="text-white fs-5 fw-bold"><?= get_field('why_audit_why_audit_example_button'); ?></a></span>                            
+                                <span><a href="<?= get_field('why_audit_why_audit_example_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_example_button'); ?></a></span>                            
                             </button>
                         </div>
                     </div>
-                    <div class="first col-4 col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-4 mb-10">
+                    <div class="first col-10 col-xxl-5 col-xl-5 col-lg-6 col-md-5 col-sm-8">
                         <div class="second">
                             <button class="glow-button">
-                                <span><a href="<?= get_field('why_audit_why_audit_packages_url_button'); ?>" class="text-white fs-5 fw-bold"><?= get_field('why_audit_why_audit_packages_button'); ?></a></span>
+                                <span><a href="<?= get_field('why_audit_why_audit_packages_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_packages_button'); ?></a></span>
                             </button>
                         </div>
                     </div>
