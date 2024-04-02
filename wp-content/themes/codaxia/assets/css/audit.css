@@ -55,7 +55,7 @@
 .why-audit .single-bloc-why .image {
     min-height: 330px;
     min-width: 300px;
-    max-width: 370px;
+    max-width: 500px;
     max-height: 350px;
     border-radius: 20px;
     padding-top: 10px;
@@ -172,7 +172,7 @@
 .audit-pricing .single-bloc-audit-pricing .content .time p {
     margin-top: 5px;
     text-align: left;
-    margin-left: -120px;
+    margin-left: -100%;
     font-size: 15px;
     color: #1ec034;
 }
@@ -180,7 +180,7 @@
 .audit-pricing .single-bloc-audit-pricing .content .time-bloc p {
     margin-top: 5px;
     text-align: left;
-    margin-left: -120px;
+    margin-left: -100%;
     font-size: 15px;
     color: #1ec034;
 }
@@ -193,23 +193,29 @@
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .margin {
-    margin-left: -3px;
+    margin-left: -11%;
     margin-top: -20px;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .margin-recommanded {
-    margin-left: 8px;
+    margin-left: -2%;
     margin-top: -20px;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .margin-analyse {
-    margin-left: -184px;
+    text-align: left;
+    margin-left: -5%;
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .margin-analyse-recommanded {
+    text-align: left;
+    margin-left: 3%;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .separation hr {
     color: rgb(255, 255, 255);
     height: 2px;
-    width: 400px;
+    width: 100%;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content li {
@@ -269,7 +275,7 @@
 .audit-pricing .single-bloc-audit-pricing .icon h4 {
     color: #f14e4e;
     margin-top: -58px;
-    margin-left: 29%;
+    margin-left: 32%;
     margin-bottom: auto;
     text-align: left;
     font-size: 25px;
@@ -277,13 +283,13 @@
 
 .audit-pricing .single-bloc-audit-pricing .icon p {
     font-size: 12px;
-    margin-left: 27%;
+    margin-left: 31%;
     margin-top: 3px;
     margin-bottom: auto;
     line-height: 1.7;
     text-align: left; 
     padding: 0 8px;
-    max-width: calc(45 * 1ch);
+    max-width: calc(35 * 1ch);
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .icon i {
@@ -296,7 +302,7 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    margin-left: 13%;
+    margin-left: 18%;
     margin-bottom: auto;
     margin-top: auto;
 }
