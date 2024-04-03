@@ -1,116 +1,137 @@
 /* ============== Button-CSS ============ */
 
 .glow-button {
-    --button-background: #09041e;
-    --button-color: #fff;
-    --button-shadow: rgba(33, 4, 104, 0.2);
-    --button-shine-left: rgba(120, 0, 245, 0.5);
-    --button-shine-right: rgba(200, 148, 255, 0.65);
-    --button-glow-start: #B000E8;
-    --button-glow-end: #009FFD;
-    appearance: none;
-    outline: none;
-    border: none;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 11px;
-    position: relative;
-    line-height: 34px;
-    cursor: pointer;
-    color: var(--button-color);
-    padding: 0;
-    margin: 0;
-    background: none;
-    z-index: 1;
-    box-shadow: 0 8px 20px var(--button-shadow);
-  }
-  
-  .glow-button .gradient {
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    overflow: hidden;
-    mask-image: radial-gradient(circle, white, black);
-    transform: scaleY(1.02) scaleX(1.005) rotate(-.35deg);
-  }
-  
-  .glow-button .gradient:before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 0px;
-    right: 0;
-    transform: scale(1.05) translateY(-44px) rotate(0deg) translateZ(0);
-    padding-bottom: 100%;
-    border-radius: 50%;
-    background: linear-gradient(90deg, var(--button-shine-left), var(--button-shine-right));
-    animation: rotate linear 2s infinite;
-  }
-  
-  .glow-button a {
-    z-index: 1;
-    position: relative;
-    display: table-cell;
-    padding: 10px 34px;
-    box-sizing: border-box;
-    width: fit-content;
-    min-width: 124px;
-    border-radius: inherit;
-    background-color: var(--button-background);
-    overflow: hidden;
-    mask-image: radial-gradient(circle, white, black);
-  }
-  
-  .glow-button a:before {
-    content: '';
-    position: absolute;
-    left: -16px;
-    top: -16px;
-    transform: translate(var(--pointer-x, 0px), var(--pointer-y, 0px)) translateZ(0);
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: var(--button-glow, transparent);
-    opacity: var(--button-glow-opacity, 0);
-    transition: opacity var(--button-glow-duration, .5s);
-    filter: blur(20px);
-  }
-  
-  .glow-button:hover {
-    --button-glow-opacity: 1;
-    --button-glow-duration: .25s;
-  }
-  
-  @keyframes rotate {
-    to {
-      transform: scale(1.05) translateY(-44px) rotate(360deg) translateZ(0);
-    }
-  }
-  
-  .first {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  * {
-    box-sizing: inherit;
-  }
-  
-  .second {
-    min-height: 5vh;
-    display: flex;
-    font-family: 'Inter', Arial;
-    justify-content: left;
-    align-items: center;
-  }
-  
-  .second:before {
-    content: '';
-    position: absolute;
-    opacity: .4;
-  }
+  /*--button-background: #09041e;
+  --button-color: #fff;
+  --button-shadow: rgba(33, 4, 104, 0.2);
+  --button-shine-left: rgba(120, 0, 245, 0.5);
+  --button-shine-right: rgba(200, 148, 255, 0.65);
+  --button-glow-start: #B000E8;
+  --button-glow-end: #009FFD;*/
+  /* --button-background: black;
+  --button-color: #fff;
+  --button-shadow: rgba(33, 4, 104, 0.2);
+  --button-shine-left: rgb(31, 88, 46);
+  --button-shine-right: rgba(87, 231, 123);
+  --button-glow-start: #daffd9;
+  --button-glow-end: #daffd9; */
+  --button-background: black;
+  --button-color: #fff;
+  --button-shadow: rgba(33, 4, 104, 0.2);
+  --button-shine-left: #4d1212;
+  --button-shine-right: #f14e4e;
+  --button-glow-start: #ffbfae;
+  --button-glow-end: #ffbfae;
+  /* --button-background: black;
+  --button-color: #fff;
+  --button-shadow: rgba(33, 4, 104, 0.2);
+  --button-shine-left: rgb(30, 45, 94);
+  --button-shine-right: rgb(62, 100, 226);
+  --button-glow-start: #a8b5ff;
+  --button-glow-end: #a8b5ff; */
+  appearance: none;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 11px;
+  position: relative;
+  line-height: 34px;
+  cursor: pointer;
+  color: var(--button-color);
+  padding: 0;
+  margin: 0;
+  background: none;
+  z-index: 1;
+  box-shadow: 0 8px 20px var(--button-shadow);
+}
 
-  .button-margin {
-    margin-left: 50%;
+.glow-button .gradient {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  overflow: hidden;
+  mask-image: radial-gradient(circle, white, black);
+  transform: scaleY(1.02) scaleX(1.005) rotate(-.35deg);
+}
+
+.glow-button .gradient:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  right: 0;
+  transform: scale(1.05) translateY(-44px) rotate(0deg) translateZ(0);
+  padding-bottom: 100%;
+  border-radius: 50%;
+  background: linear-gradient(90deg, var(--button-shine-left), var(--button-shine-right));
+  animation: rotate linear 2s infinite;
+}
+
+.glow-button a {
+  z-index: 1;
+  position: relative;
+  display: table-cell;
+  padding: 10px 34px;
+  box-sizing: border-box;
+  width: fit-content;
+  min-width: 124px;
+  border-radius: inherit;
+  background-color: var(--button-background);
+  overflow: hidden;
+  mask-image: radial-gradient(circle, white, black);
+}
+
+.glow-button a:before {
+  content: '';
+  position: absolute;
+  left: -16px;
+  top: -16px;
+  transform: translate(var(--pointer-x, 0px), var(--pointer-y, 0px)) translateZ(0);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--button-glow, transparent);
+  opacity: var(--button-glow-opacity, 0);
+  transition: opacity var(--button-glow-duration, .5s);
+  filter: blur(20px);
+}
+
+.glow-button:hover {
+  --button-glow-opacity: 1;
+  --button-glow-duration: .25s;
+}
+
+@keyframes rotate {
+  to {
+    transform: scale(1.05) translateY(-44px) rotate(360deg) translateZ(0);
   }
+}
+
+.first {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.second {
+  min-height: 5vh;
+  display: flex;
+  font-family: 'Inter', Arial;
+  justify-content: left;
+  align-items: center;
+}
+
+.second:before {
+  content: '';
+  position: absolute;
+  opacity: .4;
+}
+
+.button-margin {
+  margin-left: 50%;
+}
