@@ -94,10 +94,10 @@ Template Name: Audit
             <p><?= get_field('audit_pricing_audit_pricing_main_subtitle');?></p>
             <a href="<?= get_field('audit_pricing_audit_pricing_link_icon_url');?>" class="text-white fs-5 fw-bold"><i class="<?= get_field('audit_pricing_audit_pricing_link_icon');?>"></i></a>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-around">
             <?php if (have_rows('audit_pricing_audit_pricing_bloc')) : ?>
 				<?php while (have_rows('audit_pricing_audit_pricing_bloc')) : the_row(); ?>
-                    <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4 mb-70">
+                    <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4 mb-70 p-4">
                         <?php if (!empty(get_sub_field('audit_pricing_recommanded'))) : ?>
                             <div class="single-bloc-audit-pricing recommanded h-80">
                                 <div class="content padding">
