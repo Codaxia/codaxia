@@ -8,12 +8,12 @@
 					<p class="wow fadeInUp" data-wow-delay=".4s"><?= get_field('contact_description', 'option'); ?></p>
 				</div>
 			</div>
-			<div class="col-xl-6 col-lg-5 col-sm-1">
+			<div class="col-1 col-xl-6 col-lg-5">
 				<div class="cta-btn text-lg-end mb-50">
 					<div class="first">
 						<div class="second">
 							<button class="glow-button button-margin">
-								<a href="<?= get_field('contact_mail', 'option'); ?>" class="text-uppercase text-white fs-4 fw-bold">
+								<a href="<?= get_field('contact_mail', 'option'); ?>" class="text-uppercase text-white fs-4 fw-bold text-nowrap">
 								<?= get_field('contact_button', 'option'); ?></a>
 							</button>
 						</div>
