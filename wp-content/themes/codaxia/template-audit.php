@@ -140,10 +140,10 @@ Template Name: Audit
                                             <hr class="separation">
                                             </br>
                                         </div>
-                                        <h2 class="text-decoration-underline margin-analyse-recommanded"> <?= get_sub_field('audit_pricing_bloc_title'); ?></h3>
+                                        <h2 class="text-decoration-underline margin-analyse"> <?= get_sub_field('audit_pricing_bloc_title'); ?></h3>
                                         <?php if (have_rows('audit_pricing_options_bloc')) : ?>
                                             <?php while (have_rows('audit_pricing_options_bloc')) : the_row(); ?>
-                                                <ul class="list-unstyled text-start margin-recommanded ml-10">
+                                                <ul class="list-unstyled text-start margin">
                                                         <li class="pb-20">
                                                             <i class="lni lni-checkmark-circle"></i>
                                                             <?= get_sub_field('audit_pricing_options'); ?>
