@@ -72,8 +72,8 @@ Template Name: Pricing
                                             <div class="first">
                                                 <div class="second">
                                                     <button class="glow-button">
-                                                        <span><a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
-                                                        <?= get_field('contact_button', 'option'); ?></a></span>
+                                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                                        <?= get_field('contact_button', 'option'); ?></a>
                                                     </button>
                                                 </div>
                                             </div>
@@ -108,8 +108,8 @@ Template Name: Pricing
                                             <div class="first">
                                                 <div class="second">
                                                     <button class="glow-button">
-                                                        <span><a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
-                                                        <?= get_field('contact_button', 'option'); ?></a></span>
+                                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                                        <?= get_field('contact_button', 'option'); ?></a>
                                                     </button>
                                                 </div>
                                             </div>
@@ -151,8 +151,8 @@ Template Name: Pricing
                             <div class="first">
                                 <div class="second">
                                     <button class="glow-button">
-                                        <span><a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
-                                        <?= get_field('contact_button', 'option'); ?></a></span>
+                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                        <?= get_field('contact_button', 'option'); ?></a>
                                     </button>
                                 </div>
                             </div>                        
