@@ -10,7 +10,7 @@ Template Name: Portfolio
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="hero-content">
-                  <span class="wow fadeInLeft" data-wow-delay=".2s"><?= get_field('portfolio_description_portfolio_name_of_the_person'); ?></span>
+                  <span class="wow fadeInLeft title" data-wow-delay=".2s"><?= get_field('portfolio_description_portfolio_name_of_the_person'); ?></span>
                     <h1 class="wow fadeInUp" data-wow-delay=".4s">
                     <?= get_field('portfolio_description_portfolio_title'); ?>
                   </h1>

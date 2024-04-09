@@ -257,15 +257,26 @@ Template Name: Audit
     </div>
 </section>
 
-<section id="audit-example-id" class="pt-80 pb-100 audit-example">
+<section class="pt-80 pb-100 audit-example">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 col-xxl-9 mb-30">
-                <h1><?= get_field('example_audit_example_audit_title_1'); ?></h1>
-                <h2><?= get_field('example_audit_example_audit_title_2'); ?></h2>
-                <p><?= get_field('example_audit_example_audit_text'); ?></p>
+            <div class="row col-lg-7 col-xxl-9 mb-30">
+                <div>
+                    <h1><?= get_field('example_audit_example_audit_title_1'); ?></h1>
+                    <h2><?= get_field('example_audit_example_audit_title_2'); ?></h2>
+                    <p><?= get_field('example_audit_example_audit_text'); ?></p>
+                </div>
+                <div class="col-lg-9 col-xl-9"></div>
+                <div class="col-lg-1 col-xl-1 first pt-20 d-flex justify-content-center">
+                    <div class="second">
+                        <button class="glow-button">
+                            <a href="<?= get_field('example_audit_example_audit_button_url'); ?>" class="fw-bold text-white fs-5 text-nowrap">
+                            <?= get_field('example_audit_example_audit_button'); ?></a>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-5 col-xxl-3 d-flex justify-content-center align-items-center ">
+            <div class="col-lg-5 col-xxl-3 d-flex justify-content-center align-items-center">
             <a href="<?= get_field('example_audit_example_audit_link'); ?>"><img class="col-12 image" src="<?= get_field('example_audit_example_audit_image'); ?>" alt=""></a>
             </div>
         </div>
