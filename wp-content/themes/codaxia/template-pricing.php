@@ -72,7 +72,7 @@ Template Name: Pricing
                                             <div class="first">
                                                 <div class="second">
                                                     <button class="glow-button">
-                                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
+                                                        <a href="<?= get_field('contact_link', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
                                                         <?= get_field('contact_button', 'option'); ?></a>
                                                     </button>
                                                 </div>
@@ -108,7 +108,7 @@ Template Name: Pricing
                                             <div class="first">
                                                 <div class="second">
                                                     <button class="glow-button">
-                                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
+                                                        <a href="<?= get_field('contact_link', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
                                                         <?= get_field('contact_button', 'option'); ?></a>
                                                     </button>
                                                 </div>
@@ -151,7 +151,7 @@ Template Name: Pricing
                             <div class="first">
                                 <div class="second">
                                     <button class="glow-button">
-                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
+                                        <a href="<?= get_field('contact_link', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
                                         <?= get_field('contact_button', 'option'); ?></a>
                                     </button>
                                 </div>
@@ -169,7 +169,7 @@ Template Name: Pricing
     <div class="container">
         <div class="col">
             <div class="header section-title text-center mb-60 primary-title">
-                <h1 class="mb-20 wow fadeInUp" data-wow-delay=".3s">WHERE DO WE START</h1>
+                <h1 class="mb-20 wow fadeInUp" data-wow-delay=".3s">WHERE DO WE START ?</h1>
             </div>
         </div>
     </div>
