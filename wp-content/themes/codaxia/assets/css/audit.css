@@ -67,46 +67,6 @@
     background-color: #1e2022;
 }
 
-.audit-information .audit-img img {
-    width: 100%;
-}
-  
-.audit-information .accordion .single-faq {
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background: #fff;
-}
-  
-.audit-information .accordion .single-faq button {
-    padding: 20px 55px 15px 30px;
-    border: none;
-    background: none;
-    font-size: 20px;
-    font-weight: 500;
-    color: #313450;
-    position: relative;
-}
-  
-.audit-information .accordion .single-faq button::after {
-    content: "\eb2c";
-    font: normal normal normal 1em/1 "LineIcons";
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all 0.3s ease-out 0s;
-}
-  
-.audit-information .accordion .single-faq button.collapsed::after {
-    content: "\eb53";
-}
-  
-.audit-information .accordion .single-faq .faq-content {
-    padding: 0 30px;
-    padding-bottom: 10px;
-    color: grey;
-}
-
 /* ======= audit-pricing css ========*/
 .audit-pricing {
     background-color: black;
@@ -193,21 +153,11 @@
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .margin {
-    margin-left: -11%;
-    margin-top: -20px;
-}
-
-.audit-pricing .single-bloc-audit-pricing .content .margin-recommanded {
     margin-left: -2%;
     margin-top: -20px;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .margin-analyse {
-    text-align: left;
-    margin-left: -5%;
-}
-
-.audit-pricing .single-bloc-audit-pricing .content .margin-analyse-recommanded {
     text-align: left;
     margin-left: 3%;
 }
@@ -241,22 +191,52 @@
 .audit-pricing .single-bloc-audit-pricing .content .bubble .bubble-text {
     display: none;
     position: absolute;
-    background-color: #000000;
-    border: 1px solid #ccc;
+    background-color: #000000; 
+    border: 1px solid #808080; 
     padding: 10px;
     border-radius: 5px;
     z-index: 999;
-    margin-left: -170px;
+    margin-left: 11px;     
+    margin-top: -25px;
     font-size: 11px;
-    width: 250px;
+    width: 220px;
+    transform: translateX(-50%) translateY(-100%); 
+}
+
+.audit-pricing .single-bloc-audit-pricing .content .bubble .triangle {
+    content: '';
+    position: absolute;
+    bottom: 0px; 
+    left: 50%;
+    transform: translateX(-50%) translateY(99%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #808080 transparent transparent transparent;
+  } 
+   
+.audit-pricing .single-bloc-audit-pricing .content .bubble .triangle::before {
+    content: "";
+    position: absolute;
+    top: -7px; 
+    left: 50%; 
+    transform: translateX(-50%) translateY(-20%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 7px 0 7px; 
+    border-color: #000000 transparent transparent transparent; 
+  }
+
+  @media (max-width: 576px) {
+    .audit-pricing .single-bloc-audit-pricing .content .bubble .bubble-text {
+        max-width: 28%; 
+    }
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .bubble .bubble-text .line-break {
     padding-bottom: 10px;
-}
-    
-.audit-pricing .single-bloc-audit-pricing .content .bubble:hover .bubble-text {
-    display: block;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .space svg {
@@ -275,15 +255,15 @@
 .audit-pricing .single-bloc-audit-pricing .icon h4 {
     color: #f14e4e;
     margin-top: -58px;
-    margin-left: 32%;
+    margin-left: 34%;
     margin-bottom: auto;
     text-align: left;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .audit-pricing .single-bloc-audit-pricing .icon p {
-    font-size: 12px;
-    margin-left: 31%;
+    font-size: 11px;
+    margin-left: 33%;
     margin-top: 3px;
     margin-bottom: auto;
     line-height: 1.7;
@@ -302,7 +282,7 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    margin-left: 18%;
+    margin-left: 20%;
     margin-bottom: auto;
     margin-top: auto;
 }

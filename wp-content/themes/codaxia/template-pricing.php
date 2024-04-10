@@ -72,7 +72,7 @@ Template Name: Pricing
                                             <div class="first">
                                                 <div class="second">
                                                     <button class="glow-button">
-                                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                                        <a href="<?= get_field('contact_link', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
                                                         <?= get_field('contact_button', 'option'); ?></a>
                                                     </button>
                                                 </div>
@@ -108,7 +108,7 @@ Template Name: Pricing
                                             <div class="first">
                                                 <div class="second">
                                                     <button class="glow-button">
-                                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                                        <a href="<?= get_field('contact_link', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
                                                         <?= get_field('contact_button', 'option'); ?></a>
                                                     </button>
                                                 </div>
@@ -122,7 +122,7 @@ Template Name: Pricing
 			<?php endif; ?>
 
 			<!-- Ultimate -->
-			<div class="col-xl-3 col-lg-4 col-sm-6 mb-70">
+			<div class="col-sm-6 col-lg-4 col-xl-3 mb-70">
 				<div class="single-bloc-pricing h-100">
                     <div class="content">
                         <div class="row icon">
@@ -151,7 +151,7 @@ Template Name: Pricing
                             <div class="first">
                                 <div class="second">
                                     <button class="glow-button">
-                                        <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                        <a href="<?= get_field('contact_link', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
                                         <?= get_field('contact_button', 'option'); ?></a>
                                     </button>
                                 </div>
@@ -169,13 +169,13 @@ Template Name: Pricing
     <div class="container">
         <div class="col">
             <div class="header section-title text-center mb-60 primary-title">
-                <h1 class="mb-20 wow fadeInUp" data-wow-delay=".3s">WHERE DO WE START</h1>
+                <h1 class="mb-20 wow fadeInUp" data-wow-delay=".3s">WHERE DO WE START ?</h1>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row g-0 d-flex justify-content-center pt-60">
-            <div class="col-lg-2 col-md-4">
+            <div class="col-md-4 col-lg-2">
                 <div class="icon"><i class="lni lni-bulb"></i></div>
                 <div class="bloc-light-blue left-border d-none d-lg-block"></div>
                 <div>
@@ -184,7 +184,7 @@ Template Name: Pricing
                     <p>We are going to ask you different questions to target what is your complete project.</p>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4">
+            <div class="col-md-4 col-lg-2">
                 <div class="icon"><i class="lni lni-graph"></i></div>
                 <div class="bloc-dark-blue d-none d-lg-block"></div>
                 <div>
@@ -193,7 +193,7 @@ Template Name: Pricing
                     <p>According to our exchange we are destining a template of the website.</p>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4">
+            <div class="col-md-4 col-lg-2">
                 <div class="icon"><i class="lni lni-rocket"></i></div>
                 <div class="bloc-light-blue d-none d-lg-block"></div>
                 <div>
@@ -202,7 +202,7 @@ Template Name: Pricing
                     <p>We are developing the architecture and the code to transform the template in real website.</p>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4">
+            <div class="col-md-4 col-lg-2">
                 <div class="icon"><i class="lni lni-alarm-clock"></i></div>
                 <div class="bloc-dark-blue d-none d-lg-block"></div>
                 <div>
@@ -211,7 +211,7 @@ Template Name: Pricing
                     <p>Once the website is done and approved we reveal it to the world.</p>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4">
+            <div class="col-md-4 col-lg-2">
                 <div class="icon"><i class="lni lni-cog"></i></div>
                 <div class="bloc-light-blue right-border d-none d-lg-block"></div>
                 <div>

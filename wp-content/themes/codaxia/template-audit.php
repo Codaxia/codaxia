@@ -12,13 +12,13 @@ Template Name: Audit
             <p><?= get_field('why_audit_why_audit_subtitle'); ?></p>
             <a href="<?= get_field('why_audit_why_audit_icon_url'); ?>"><i class="<?= get_field('why_audit_why_audit_icon'); ?>"></i></a>
         </div>
-        <div class="col-11 col-xxl-10 col-lg-12 row d-flex justify-content-center single-bloc-why">
-            <div class="col-11 col-xxl-8 col-lg-7 ">
+        <div class="col-11 col-lg-12 col-xxl-10 row d-flex justify-content-center single-bloc-why">
+            <div class="col-11 col-lg-7 col-xxl-8">
                 <h4><?= get_field('why_audit_why_audit_title'); ?></h4>
                 <p><?= get_field('why_audit_why_audit_description'); ?></p>
                 <div class="row d-flex justify-content-center align-items-center padding-all-button">
                     <div class="col-2 col-lg-12"></div>
-                    <div class="first col-xxl-2 col-lg-5 mb-3 d-flex justify-content-center align-items-center">
+                    <div class="first col-lg-5 col-xxl-2 mb-3 d-flex justify-content-center align-items-center">
                         <div class="second">
                             <button class="glow-button">
                                 <a href="<?= get_field('why_audit_why_audit_example_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_example_button'); ?></a>
@@ -41,16 +41,16 @@ Template Name: Audit
     </div>
 </section>
 
-<section class="pt-130 audit-information">
+<section class="pt-130 about-section">
     <div class="container">
         <div class="row">
-			<div class="col-xxl-5 col-lg-7">
-				<div class="audit-img mb-50">
+			<div class="col-lg-7 col-xxl-5">
+				<div class="about-img mb-50">
 					<img src="<?= get_field('information_audit_audit_image'); ?>" alt="about">
 				</div>
 			</div>
-			<div class="col-12 col-xxl-6 col-lg-5">
-				<div class="audit-content mb-50">
+			<div class="col-lg-5 col-xxl-6">
+				<div class="about-content mb-50">
 					<div class="section-title mb-50">
 						<h1 class="mb-25"><?= get_field('information_audit_audit_title'); ?></h1>
 						<p><?= get_field('information_audit_audit_description'); ?></p>
@@ -77,7 +77,7 @@ Template Name: Audit
 					<div class="first">
 						<div class="second">
 							<button class="glow-button">
-								<a href="<?= get_field('information_audit_audit_button_url'); ?>" class="text-white fs-5 fw-bold"><?= get_field('information_audit_audit_button'); ?></a>
+								<a href="<?= get_field('information_audit_audit_button_url'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('information_audit_audit_button'); ?></a>
 							</button>
 						</div>
 					</div>
@@ -94,10 +94,10 @@ Template Name: Audit
             <p><?= get_field('audit_pricing_audit_pricing_main_subtitle');?></p>
             <a href="<?= get_field('audit_pricing_audit_pricing_link_icon_url');?>" class="text-white fs-5 fw-bold"><i class="<?= get_field('audit_pricing_audit_pricing_link_icon');?>"></i></a>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-around">
             <?php if (have_rows('audit_pricing_audit_pricing_bloc')) : ?>
 				<?php while (have_rows('audit_pricing_audit_pricing_bloc')) : the_row(); ?>
-                    <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4 mb-70">
+                    <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4 mb-70 p-4">
                         <?php if (!empty(get_sub_field('audit_pricing_recommanded'))) : ?>
                             <div class="single-bloc-audit-pricing recommanded h-80">
                                 <div class="content padding">
@@ -140,16 +140,17 @@ Template Name: Audit
                                             <hr class="separation">
                                             </br>
                                         </div>
-                                        <h2 class="text-decoration-underline margin-analyse-recommanded"> <?= get_sub_field('audit_pricing_bloc_title'); ?></h3>
+                                        <h2 class="text-decoration-underline margin-analyse"> <?= get_sub_field('audit_pricing_bloc_title'); ?></h3>
                                         <?php if (have_rows('audit_pricing_options_bloc')) : ?>
                                             <?php while (have_rows('audit_pricing_options_bloc')) : the_row(); ?>
-                                                <ul class="list-unstyled text-start margin-recommanded ml-10">
+                                                <ul class="list-unstyled text-start margin">
                                                         <li class="pb-20">
                                                             <i class="lni lni-checkmark-circle"></i>
                                                             <?= get_sub_field('audit_pricing_options'); ?>
                                                             <span class="bubble">
                                                                 <i class="lni lni-question-circle text-white margin"></i>
                                                                 <div class="bubble-text">
+                                                                    <div class="triangle"></div>
                                                                     <?php if (have_rows('audit_pricing_options_secondary_bloc')) : ?>
                                                                         <?php while (have_rows('audit_pricing_options_secondary_bloc')) : the_row(); ?>
                                                                         <div class="pb-10"><i class="lni lni-checkmark text-white"></i><?= get_sub_field('audit_pricing_options_details'); ?>  </div>
@@ -166,7 +167,7 @@ Template Name: Audit
                                         <div class="first">
                                             <div class="second">
                                                 <button class="glow-button">
-                                                    <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                                    <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
                                                     <?= get_sub_field('audit_pricing_button'); ?></a>
                                                 </button>
                                             </div>
@@ -223,6 +224,7 @@ Template Name: Audit
                                                             <span class="bubble">
                                                                 <i class="lni lni-question-circle text-white margin"></i>
                                                                 <div class="bubble-text">
+                                                                    <div class="triangle"></div>
                                                                     <?php if (have_rows('audit_pricing_options_secondary_bloc')) : ?>
                                                                         <?php while (have_rows('audit_pricing_options_secondary_bloc')) : the_row(); ?>
                                                                         <div class="pb-10"><i class="lni lni-checkmark text-white"></i><?= get_sub_field('audit_pricing_options_details'); ?>  </div>
@@ -239,7 +241,7 @@ Template Name: Audit
                                         <div class="first">
                                             <div class="second">
                                                 <button class="glow-button">
-                                                    <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6">
+                                                    <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
                                                     <?= get_field('contact_button', 'option'); ?></a>
                                                 </button>
                                             </div>
@@ -255,15 +257,26 @@ Template Name: Audit
     </div>
 </section>
 
-<section id="audit-example-id" class="pt-80 pb-100 audit-example">
+<section class="pt-80 pb-100 audit-example">
     <div class="container">
         <div class="row">
-            <div class="col-xxl-9 col-lg-7 mb-30">
-                <h1><?= get_field('example_audit_example_audit_title_1'); ?></h1>
-                <h2><?= get_field('example_audit_example_audit_title_2'); ?></h2>
-                <p><?= get_field('example_audit_example_audit_text'); ?></p>
+            <div class="row col-lg-7 col-xxl-9 mb-30">
+                <div>
+                    <h1><?= get_field('example_audit_example_audit_title_1'); ?></h1>
+                    <h2><?= get_field('example_audit_example_audit_title_2'); ?></h2>
+                    <p><?= get_field('example_audit_example_audit_text'); ?></p>
+                </div>
+                <div class="col-lg-9 col-xl-9"></div>
+                <div class="col-lg-1 col-xl-1 first pt-20 d-flex justify-content-center">
+                    <div class="second">
+                        <button class="glow-button">
+                            <a href="<?= get_field('example_audit_example_audit_button_url'); ?>" class="fw-bold text-white fs-5 text-nowrap">
+                            <?= get_field('example_audit_example_audit_button'); ?></a>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="col-xxl-3 col-lg-5 d-flex justify-content-center align-items-center ">
+            <div class="col-lg-5 col-xxl-3 d-flex justify-content-center align-items-center">
             <a href="<?= get_field('example_audit_example_audit_link'); ?>"><img class="col-12 image" src="<?= get_field('example_audit_example_audit_image'); ?>" alt=""></a>
             </div>
         </div>
@@ -274,11 +287,11 @@ Template Name: Audit
     <div class="container">
     <?php if (have_rows('audit_type')) : ?>
 		<?php while (have_rows('audit_type')) : the_row(); ?>
-        <div class="row single-bloc-type col-10 col-xxl-10 col-xl-12 col-lg-11 p-3 mb-70">
-            <div class="col-11 col-xxl-3 col-xl-3 col-lg-6 mb-10">
+        <div class="row single-bloc-type col-lg-11 col-xl-12 col-xxl-10 p-3 mb-70">
+            <div class="col-11 col-lg-6 col-xl-3 mb-10">
                 <img class="image img-fluid" src="<?= get_sub_field('audit_type_image'); ?>" alt="">
             </div>
-            <div class="col-xxl-9 col-xl-9 col-lg-6">
+            <div class="col-lg-6 col-xl-9">
                 <h1 class="pb-20"><?= get_sub_field('audit_type_title'); ?></h1>
                 <p class="pb-20"><?= get_sub_field('audit_type_description'); ?></p>
             </div>
