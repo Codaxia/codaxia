@@ -47,13 +47,15 @@ function codaxia_enqueue_scripts()
     wp_enqueue_style('tiny-slider');
     wp_enqueue_style('animate');
     wp_enqueue_style('main');
-    
+
     // js in the footer
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap-5.0.0-beta2.min.js', [], false, true);
     wp_enqueue_script('count-up', get_template_directory_uri() . '/assets/js/count-up.min.js', [], false, true);
     wp_enqueue_script('tiny-slider', get_template_directory_uri() . '/assets/js/tiny-slider.js', [], false, true);
     wp_enqueue_script('wow', get_template_directory_uri() . '/assets/js/wow.min.js', [], false, true);
     wp_enqueue_script('polifill', get_template_directory_uri() . '/assets/js/polifill.js', [], false, true);
+    wp_enqueue_script('gsap', get_template_directory_uri() . '/assets/js/gsap.min.js', [], false, true);
+    wp_enqueue_script('chroma', get_template_directory_uri() . '/assets/js/chroma.min.js', [], false, true);
     wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', [], false, true);
   }
 }
@@ -136,6 +138,12 @@ function my_custom_excerpt($excerpt) {
 }
 add_filter('the_excerpt', 'my_custom_excerpt');
 
+// stop the mail system from contact form 7
+add_filter('wpcf7_skip_mail', 'custom_skip_mail', 10, 2);
+function custom_skip_mail($skip_mail, $contact_form) {
+    return true;
+}
+
 // class Custom_Walker_footer_Menu extends Walker_Nav_Menu
 // {
 //   function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
@@ -145,7 +153,6 @@ add_filter('the_excerpt', 'my_custom_excerpt');
 //     $output .= '</li>';
 //   }
 // }
-
 
 // add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_scripts' );
 

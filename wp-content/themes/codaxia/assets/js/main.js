@@ -123,8 +123,63 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// stop the mail system from contact form 7
-add_filter('wpcf7_skip_mail', 'custom_skip_mail', 10, 2);
-function custom_skip_mail($skip_mail, $contact_form) {
-    return true;
+// Animation for button
+const generateGlowButtons = () => {
+  document.querySelectorAll(".glow-button").forEach((button) => {
+      let gradientElem = button.querySelector('.gradient');
+      
+      if(!gradientElem) {
+          gradientElem = document.createElement("div");
+          gradientElem.classList.add("gradient");
+
+          button.appendChild(gradientElem);
+      }
+
+      button.addEventListener("pointermove", (e) => {
+          const rect = button.getBoundingClientRect();
+
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          gsap.to(button, {
+              "--pointer-x": `${x}px`,
+              "--pointer-y": `${y}px`,
+              duration: 0.6,
+          });
+
+          gsap.to(button, {
+              "--button-glow": chroma
+              .mix(
+                  getComputedStyle(button)
+                  .getPropertyValue("--button-glow-start")
+                  .trim(),
+                  getComputedStyle(button).getPropertyValue("--button-glow-end").trim(),
+                  x / rect.width
+              )
+              .hex(),
+              duration: 0.2,
+          });
+      });
+  });
 }
+
+// Set variables on loaded
+document.addEventListener('DOMContentLoaded', generateGlowButtons);
+
+// Set variables on resize
+window.addEventListener('resize', generateGlowButtons);
+
+
+const bubbles = document.querySelectorAll('.bubble');
+
+bubbles.forEach(function(bubble) {
+    bubble.addEventListener('mouseenter', function() {
+        const bubbleText = this.querySelector('.bubble-text');
+        bubbleText.style.display = 'block';
+    });
+
+    bubble.addEventListener('mouseleave', function() {
+        const bubbleText = this.querySelector('.bubble-text');
+        bubbleText.style.display = 'none';
+    });
+});

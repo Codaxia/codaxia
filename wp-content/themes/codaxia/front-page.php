@@ -6,7 +6,6 @@
  * @since Codaxia version 0.1
  */
 
-
 get_header() ?>
 
 <!-- ========================= hero-section start ========================= -->
@@ -22,8 +21,14 @@ get_header() ?>
 					<p class="wow fadeInUp" data-wow-delay=".6s">
 						<?= get_field('hero_section_description'); ?>
 					</p>
-					<a href="<?= get_field('hero_section_url_button'); ?>" class="main-btn btn-hover wow fadeInUp" data-wow-delay=".6s">
-						<?= get_field('hero_section_button'); ?></a>
+					<div class="first">
+						<div class="second">
+							<button class="glow-button">
+								<a href="<?= get_field('hero_section_url_button'); ?>" class="text-white fs-4">
+								<?= get_field('hero_section_button'); ?></a>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -70,7 +75,13 @@ get_header() ?>
 							endwhile;
 						endif; ?>
 					</div>
-					<a href="<?= get_field('about_button_url'); ?>" class="main-btn btn-hover"><?= get_field('about_button'); ?></a>
+					<div class="first">
+						<div class="second">
+							<button class="glow-button">
+								<a href="<?= get_field('about_button_url'); ?>" class="text-white fs-4 fw-bold"><?= get_field('about_button'); ?></a>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
