@@ -144,6 +144,18 @@ function custom_skip_mail($skip_mail, $contact_form) {
     return true;
 }
 
+function custom_button($link, $text, $font_size = '') {
+  ?>
+  <div class="first">
+      <div class="second">
+          <button class="glow-button">
+              <a href="<?= $link ?>" class="fw-bold text-white <?= $font_size ?> text-nowrap"><?= $text ?></a>
+          </button>
+      </div>
+  </div>
+  <?php
+}
+
 // class Custom_Walker_footer_Menu extends Walker_Nav_Menu
 // {
 //   function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)

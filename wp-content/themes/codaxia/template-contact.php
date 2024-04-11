@@ -16,10 +16,10 @@ Template Name: Contact Form
                         </p>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6 pt-140">
+            <div class="col-lg-6 col-md-6 pt-30">
                 <?php echo do_shortcode(get_field('shortcode')); ?> 
             </div>
-            <div class="col-lg-6 col-md-6 pt-140">
+            <div class="col-lg-6 col-md-6 pt-30">
                 <div class="info-contact">
                     <span class="title">
                     <?= get_field('contact_info_contact_title'); ?>

@@ -69,14 +69,7 @@ Template Name: Pricing
                                             <?php endif; ?>
                                         </div>
                                         <div class="card-footer bg-transparent">
-                                            <div class="first">
-                                                <div class="second">
-                                                    <button class="glow-button">
-                                                        <a href="<?= get_field('contact_link', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
-                                                        <?= get_field('contact_button', 'option'); ?></a>
-                                                    </button>
-                                                </div>
-                                            </div>
+                                            <?php custom_button(home_url('/' . get_field('contact_link', 'option')), get_field('contact_button', 'option'), 'fs-6'); ?>
                                         </div>
                                     </div>
                                 </div>
@@ -105,14 +98,7 @@ Template Name: Pricing
                                             <?php endif; ?>
                                         </div>
                                         <div class="card-footer bg-transparent">
-                                            <div class="first">
-                                                <div class="second">
-                                                    <button class="glow-button">
-                                                        <a href="<?= get_field('contact_link', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
-                                                        <?= get_field('contact_button', 'option'); ?></a>
-                                                    </button>
-                                                </div>
-                                            </div>
+                                            <?php custom_button(home_url('/' . get_field('contact_link', 'option')), get_field('contact_button', 'option'), 'fs-6'); ?>
                                         </div>
                                     </div>
                                 </div>

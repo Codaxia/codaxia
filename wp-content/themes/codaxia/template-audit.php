@@ -18,19 +18,11 @@ Template Name: Audit
                 <p><?= get_field('why_audit_why_audit_description'); ?></p>
                 <div class="row d-flex justify-content-center align-items-center padding-all-button">
                     <div class="col-2 col-lg-12"></div>
-                    <div class="first col-lg-5 col-xxl-2 mb-3 d-flex justify-content-center align-items-center">
-                        <div class="second">
-                            <button class="glow-button">
-                                <a href="<?= get_field('why_audit_why_audit_example_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_example_button'); ?></a>
-                            </button>
-                        </div>
+                    <div class="col-lg-5 col-xxl-2 mb-3 d-flex justify-content-center align-items-center">
+                        <?php custom_button(get_field('why_audit_why_audit_example_url_button'), get_field('why_audit_why_audit_example_button'), 'fs-5'); ?>
                     </div>
-                    <div class="first col-9 col-lg-6 mb-3 d-flex justify-content-center align-items-center">
-                        <div class="second">
-                            <button class="glow-button">
-                                <a href="<?= get_field('why_audit_why_audit_packages_url_button'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('why_audit_why_audit_packages_button'); ?></a>
-                            </button>
-                        </div>
+                    <div class="col-9 col-lg-6 mb-3 d-flex justify-content-center align-items-center">
+                        <?php custom_button(get_field('why_audit_why_audit_packages_url_button'), get_field('why_audit_why_audit_packages_button'), 'fs-5'); ?>
                     </div>
                 </div>
             </div>
@@ -74,13 +66,7 @@ Template Name: Audit
 							endwhile;
 						endif; ?>
 					</div>
-					<div class="first">
-						<div class="second">
-							<button class="glow-button">
-								<a href="<?= get_field('information_audit_audit_button_url'); ?>" class="text-white fs-5 fw-bold text-nowrap"><?= get_field('information_audit_audit_button'); ?></a>
-							</button>
-						</div>
-					</div>
+                    <?php custom_button(get_field('information_audit_audit_button_url'), get_field('information_audit_audit_button'), 'fs-5'); ?>
 				</div>
 			</div>
 		</div>
@@ -164,14 +150,7 @@ Template Name: Audit
                                         <?php endif; ?>
                                     </div>
                                     <div class="card-footer bg-transparent">
-                                        <div class="first">
-                                            <div class="second">
-                                                <button class="glow-button">
-                                                    <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
-                                                    <?= get_sub_field('audit_pricing_button'); ?></a>
-                                                </button>
-                                            </div>
-                                        </div>
+                                        <?php custom_button(home_url('/' . get_field('contact_link', 'option')), get_sub_field('audit_pricing_button'), 'fs-6'); ?>
                                     </div>
                                 </div>
                             </div>
@@ -238,14 +217,7 @@ Template Name: Audit
                                         <?php endif; ?>
                                     </div>
                                     <div class="card-footer bg-transparent">
-                                        <div class="first">
-                                            <div class="second">
-                                                <button class="glow-button">
-                                                    <a href="<?= get_field('contact_mail', 'option'); ?>" class="fw-bold text-white fs-6 text-nowrap">
-                                                    <?= get_field('contact_button', 'option'); ?></a>
-                                                </button>
-                                            </div>
-                                        </div>
+                                        <?php custom_button(home_url('/' . get_field('contact_link', 'option')), get_sub_field('audit_pricing_button'), 'fs-6'); ?>
                                     </div>
                                 </div>
                             </div>
@@ -268,12 +240,7 @@ Template Name: Audit
                 </div>
                 <div class="col-lg-9 col-xl-9"></div>
                 <div class="col-lg-1 col-xl-1 first pt-20 d-flex justify-content-center">
-                    <div class="second">
-                        <button class="glow-button">
-                            <a href="<?= get_field('example_audit_example_audit_button_url'); ?>" class="fw-bold text-white fs-5 text-nowrap">
-                            <?= get_field('example_audit_example_audit_button'); ?></a>
-                        </button>
-                    </div>
+                    <?php custom_button(get_field('example_audit_example_audit_button_url'), get_field('example_audit_example_audit_button'), 'fs-5'); ?>
                 </div>
             </div>
             <div class="col-lg-5 col-xxl-3 d-flex justify-content-center align-items-center">

@@ -21,14 +21,7 @@ get_header() ?>
 					<p class="wow fadeInUp" data-wow-delay=".6s">
 						<?= get_field('hero_section_description'); ?>
 					</p>
-					<div class="first">
-						<div class="second">
-							<button class="glow-button">
-								<a href="<?= get_field('hero_section_url_button'); ?>" class="text-white fs-4">
-								<?= get_field('hero_section_button'); ?></a>
-							</button>
-						</div>
-					</div>
+					<?php custom_button(get_field('hero_section_url_button'), get_field('hero_section_button'), 'fs-4'); ?>
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -75,13 +68,7 @@ get_header() ?>
 							endwhile;
 						endif; ?>
 					</div>
-					<div class="first">
-						<div class="second">
-							<button class="glow-button">
-								<a href="<?= get_field('about_button_url'); ?>" class="text-white fs-4 fw-bold"><?= get_field('about_button'); ?></a>
-							</button>
-						</div>
-					</div>
+					<?php custom_button(get_field('about_button_url'), get_field('about_button'), 'fs-4'); ?>
 				</div>
 			</div>
 		</div>
@@ -142,7 +129,7 @@ get_header() ?>
 					</div>
 				</div>
 			</div>
-			<div class="col-xl-6 col-lg-6">
+			<div class="col-xl-5 col-lg-6">
 				<div class="counter-up-img mb-50">
 					<img src="<?= get_field('why_us_image'); ?>" alt="">
 				</div>
