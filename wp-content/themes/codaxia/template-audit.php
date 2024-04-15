@@ -87,7 +87,7 @@ Template Name: Audit
                         <?php if (!empty(get_sub_field('audit_pricing_recommanded'))) : ?>
                             <div class="single-bloc-audit-pricing text-center recommanded h-80">
                                 <div class="content d-flex flex-column h-100 align-items-center padding">
-                                    <div class="recommanded d-flex ms-auto">
+                                    <div class="recommanded ms-auto">
                                         <p class="text-white"><?= get_sub_field('audit_pricing_recommanded'); ?></p>
                                     </div>
                                     <div class="row icon">

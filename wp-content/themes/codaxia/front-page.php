@@ -26,7 +26,7 @@ get_header() ?>
 			</div>
 			<div class="col-lg-6">
 				<div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-					<img src="<?= get_field('hero_section_image'); ?>" alt="">
+					<img class="w-100" src="<?= get_field('hero_section_image'); ?>" alt="">
 				</div>
 			</div>
 		</div>
@@ -40,7 +40,7 @@ get_header() ?>
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="about-img mb-50">
-					<img src="<?= get_field('about_image'); ?>" alt="about">
+					<img class="w-100" src="<?= get_field('about_image'); ?>" alt="about">
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -53,8 +53,8 @@ get_header() ?>
 						<?php $i = 1;
 						if (have_rows('about_bloc')) : ?>
 							<?php while (have_rows('about_bloc')) : the_row(); ?>
-								<div class="single-faq">
-									<button class="w-100 text-start <?= ($i != 1) ? 'collapsed' : ''; ?>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $i ?>" aria-expanded="<?= ($i != 1) ? 'true' : 'false'; ?>" aria-controls="collapse<?= $i ?>">
+								<div class="single-faq bg-white">
+									<button class="w-100 text-start fs-5 <?= ($i != 1) ? 'collapsed' : ''; ?>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $i ?>" aria-expanded="<?= ($i != 1) ? 'true' : 'false'; ?>" aria-controls="collapse<?= $i ?>">
 										<?= get_sub_field('about_bloc_title'); ?>
 									</button>
 
@@ -93,14 +93,14 @@ get_header() ?>
 			if (have_rows('service_bloc')) : ?>
 				<?php while (have_rows('service_bloc')) : the_row(); ?>
 					<div class="col-xl-3 col-md-6">
-						<div class="single-service">
+						<div class="single-service bg-white text-center">
 							<div class="d-flex">
 								<?php if (get_sub_field('service_bloc_icon_1')) : ?>
-									<div class="icon color-3">
+									<div class="icon d-flex justify-content-center align-items-center rounded-circle text-white mx-auto fs-1 color-3">
 										<i class="lni <?= get_sub_field('service_bloc_icon_1'); ?>"></i>
 									</div>
 								<?php endif; ?>
-								<div class="icon color-2">
+								<div class="icon d-flex justify-content-center align-items-center rounded-circle text-white mx-auto fs-1 color-2">
 									<i class="lni <?= get_sub_field('service_bloc_icon_2'); ?>"></i>
 								</div>
 							</div>
@@ -131,7 +131,7 @@ get_header() ?>
 			</div>
 			<div class="col-xl-5 col-lg-6">
 				<div class="counter-up-img mb-50">
-					<img src="<?= get_field('why_us_image'); ?>" alt="">
+					<img class="w-100" src="<?= get_field('why_us_image'); ?>" alt="">
 				</div>
 			</div>
 		</div>
@@ -155,13 +155,13 @@ get_header() ?>
 				<?php while (have_rows('team_bloc')) : the_row(); ?>
 					<div class="col-xl-3 col-md-6 col-sm-10">
 						<div class="single-bloc-team">
-							<div class="team">
+							<div class="team bg-white text-center">
 								<div class="image-team">
-									<img src="<?= get_sub_field('team_bloc_image'); ?>" alt="">
+									<img class="w-100" src="<?= get_sub_field('team_bloc_image'); ?>" alt="">
 								</div>
 							
 								<div class="content">
-									<h3><?= get_sub_field('team_bloc_name'); ?></h3>
+									<h3 class="text-dark fs-4"><?= get_sub_field('team_bloc_name'); ?></h3>
 									<p><?= get_sub_field('team_bloc_function'); ?></p>
 									<a href="<?= get_sub_field('team_bloc_linkedin'); ?>"> <i class="lni lni-linkedin-original"></i> </a>
 								</div>

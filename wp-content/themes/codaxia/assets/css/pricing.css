@@ -14,7 +14,6 @@
     padding: 30px; 
     min-height: 200px;
     max-height: 1000px; 
-    text-align: center;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
     border-bottom-left-radius: 45px;
@@ -27,19 +26,11 @@
     margin-top: -35px;
     min-height: 108%;
     max-height: 1000px;
-    text-align: center;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 0px;
     box-shadow: rgb(59, 60, 73) 0px 360px 66px -28px inset;
-}
-
-.pricing .single-bloc-pricing .content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
 }
 
 .pricing .single-bloc-pricing .padding {
@@ -79,7 +70,6 @@
     color: #f14e4e;
     margin-top: -58px;
     margin-left: 46%;
-    margin-bottom: auto;
     text-align: left;
 }
 
@@ -87,7 +77,6 @@
     font-size: 12px;
     margin-left: 47%;
     margin-top: 3px;
-    margin-bottom: auto;
     line-height: 1.2;
     text-align: left; 
 }
@@ -96,15 +85,8 @@
     color: #f14e4e;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
     background: #3a3a3a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
     margin-left: 20%;
-    margin-bottom: auto;
-    margin-top: auto;
 }
 
 .pricing .single-bloc-pricing .content .icon hr {
@@ -116,7 +98,6 @@
 }
 
 .pricing .single-bloc-pricing .button-buy {
-    margin-top: auto;
     width: 130px;
     background-color: #f14e4e;
 }
@@ -129,48 +110,39 @@
 .pricing .single-bloc-pricing .content h3 {
     margin-top: -5px;
     margin-bottom: 13px;
-    font-size: 26px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(62, 100, 226);
 }
 
 .pricing .single-bloc-pricing .content .recommanded {
     border: 1px solid #f14e4e;
     border-radius: 20px;
-    margin-left: auto;
     margin-top: -25px;
     margin-bottom: 15px;
-    display: flex;
     padding-right: 10px;
     padding-left: 10px;
 }
 
 .pricing .single-bloc-pricing .content .recommanded p {
+    font-size: 11px;
     margin-top: auto;
 }
 
 /* ============= website-process css ============== */
 .website-process {
     background-color: black;
-    padding-bottom: 100px;
 }
 
 .website-process .primary-title h1{
-    font-size: 36px;
-    text-align: center;
     color: rgb(62, 100, 226);
     margin-bottom: -60px;
 }
 
 .website-process h1 {
     font-size: 16px;
-    text-align: center;
     margin: 0 30px;
     margin-bottom: 20px;
     line-height: 1.2;
     color: rgb(62, 100, 226);
-    margin-left: auto;
-    margin-right: auto;
 }
 .website-process .bloc-small{
     position: relative;
@@ -179,12 +151,8 @@
     height: 4px;
     background-color: #ff5858;
     margin-top: -13px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .website-process p {
-    font-size: 14px;
-    text-align: center;
     margin: 0 15px;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -195,18 +163,10 @@
     background: #ff4545;
     width: 105px;
     height: 100px;
-    border-radius: 50%;
     margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .website-process .icon i {
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 45px;
-    margin-bottom: auto;
     margin-left: 2px;
     margin-top: 18px;
 }

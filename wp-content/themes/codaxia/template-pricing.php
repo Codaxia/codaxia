@@ -42,14 +42,14 @@ Template Name: Pricing
             		<div class="col-xl-3 col-lg-4 col-sm-6 mb-70">
                         <?php if (!empty(get_sub_field('pricing_recommanded'))) : ?>
                                 <!-- Contenu de votre élément avec la classe ajoutée si la condition est remplie -->
-                                <div class="single-bloc-pricing recommanded h-100">
-                                    <div class="content padding">
-                                        <div class="recommanded text-white">
+                                <div class="single-bloc-pricing recommanded text-center h-100">
+                                    <div class="content d-flex flex-column h-100 align-items-center padding">
+                                        <div class="recommanded text-white ms-auto">
                                             <p><?= get_sub_field('pricing_recommanded')?></p>
                                         </div>
                                         <div class="row icon">
                                             <div>
-                                                <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
+                                                <i class="fs-4 rounded-circle d-flex justify-content-center align-items-center lni <?= get_sub_field('pricing_icon')?>"></i>
                                             </div>
                                             <div class="col-11 col-sm-12">
                                                 <h4><?= get_sub_field('pricing_type')?></h4>
@@ -59,7 +59,7 @@ Template Name: Pricing
                                         </div>
                                         <div class="card-body d-flex flex-column">
                                             <p class="text-success"><?= get_sub_field('pricing_price_amount_title')?></p>
-                                            <h3 class="text-white"><?= get_sub_field('pricing_price_amount')?></h3>
+                                            <h3 class="fs-4 text-white"><?= get_sub_field('pricing_price_amount')?></h3>
                                             <?php if (have_rows('pricing_website_package')) : ?>
                                                 <?php while (have_rows('pricing_website_package')) : the_row(); ?>
                                                     <ul class="list-unstyled text-start">
@@ -74,11 +74,11 @@ Template Name: Pricing
                                     </div>
                                 </div>
                         <?php else: ?>
-                                <div class="single-bloc-pricing h-100">
-                                    <div class="content">
+                                <div class="single-bloc-pricing text-center h-100">
+                                    <div class="content d-flex flex-column h-100 align-items-center">
                                             <div class="row icon">
                                                 <div>
-                                                    <i class="lni <?= get_sub_field('pricing_icon')?>"></i>
+                                                    <i class="fs-4 rounded-circle d-flex justify-content-center align-items-center lni <?= get_sub_field('pricing_icon')?>"></i>
                                                 </div>
                                                 <div class="col-11 col-sm-12">
                                                     <h4><?= get_sub_field('pricing_type')?></h4>
@@ -88,7 +88,7 @@ Template Name: Pricing
                                             </div>
                                         <div class="card-body d-flex flex-column">
                                             <p class="text-success"><?= get_sub_field('pricing_price_amount_title')?></p>
-                                            <h3 class="text-white"><?= get_sub_field('pricing_price_amount')?></h3>
+                                            <h3 class="fs-4 text-white"><?= get_sub_field('pricing_price_amount')?></h3>
                                             <?php if (have_rows('pricing_website_package')) : ?>
                                                 <?php while (have_rows('pricing_website_package')) : the_row(); ?>
                                                     <ul class="list-unstyled text-start">
@@ -110,10 +110,10 @@ Template Name: Pricing
 			<!-- Ultimate -->
 			<div class="col-sm-6 col-lg-4 col-xl-3 mb-70">
 				<div class="single-bloc-pricing h-100">
-                    <div class="content">
+                    <div class="content d-flex flex-column h-100 align-items-center">
                         <div class="row icon">
                             <div>
-                                <i class="lni lni-stats-up"></i>
+                                <i class="fs-4 rounded-circle d-flex justify-content-center align-items-center lni lni-stats-up"></i>
                             </div>
                             <div class="col-11 col-sm-12">
                                 <h4>ULTIMATE</h4>
@@ -123,7 +123,7 @@ Template Name: Pricing
                         </div>
                         <div class="card-body d-flex flex-column padding-body">
                             </br>
-                            <h1 class="text-white">We are open to negotiations.</h1> 
+                            <h1 class="text-white text-center">We are open to negotiations.</h1> 
                             </br>
                             <ul class="list-unstyled text-start margin">
                                     <li><i class="lni lni-checkmark-circle"></i>Unlimited Page</li>
@@ -131,7 +131,7 @@ Template Name: Pricing
                                     <li><i class="lni lni-checkmark-circle"></i>Custom features </li>  
                             </ul>
                             </br>
-                            <h1 class="text-white"> Contact us to find a solution tailored to your needs!</h1>
+                            <h1 class="text-white text-center"> Contact us to find a solution tailored to your needs!</h1>
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="first">
@@ -154,56 +154,56 @@ Template Name: Pricing
 <section class="pt-90 pb-100 text-light website-process">
     <div class="container">
         <div class="col">
-            <div class="header section-title text-center mb-60 primary-title">
-                <h1 class="mb-20 wow fadeInUp" data-wow-delay=".3s">WHERE DO WE START ?</h1>
+            <div class="header section-title mb-60 primary-title">
+                <h1 class="mb-20 wow fadeInUp fs-2 text-center" data-wow-delay=".3s">WHERE DO WE START ?</h1>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row g-0 d-flex justify-content-center pt-60">
             <div class="col-md-4 col-lg-2">
-                <div class="icon"><i class="lni lni-bulb"></i></div>
+                <div class="icon rounded-circle mx-auto"><i class="d-flex justify-content-center align-items-center lni lni-bulb"></i></div>
                 <div class="bloc-light-blue left-border d-none d-lg-block"></div>
                 <div>
-                    <h1>DEFINE YOUR NEEDS</h1>
-                    <div class="bloc-small"></div>
-                    <p>We are going to ask you different questions to target what is your complete project.</p>
+                    <h1 class="mx-auto text-center">DEFINE YOUR NEEDS</h1>
+                    <div class="bloc-small mx-auto"></div>
+                    <p class="text-center fs-6">We are going to ask you different questions to target what is your complete project.</p>
                 </div>
             </div>
             <div class="col-md-4 col-lg-2">
-                <div class="icon"><i class="lni lni-graph"></i></div>
+                <div class="icon rounded-circle mx-auto"><i class="d-flex justify-content-center align-items-center lni lni-graph"></i></div>
                 <div class="bloc-dark-blue d-none d-lg-block"></div>
                 <div>
-                    <h1>DESIGN</h1>
-                    <div class="bloc-small"></div>
-                    <p>According to our exchange we are destining a template of the website.</p>
+                    <h1 class="mx-auto text-center">DESIGN</h1>
+                    <div class="bloc-small mx-auto"></div>
+                    <p class="text-center fs-6">According to our exchange we are destining a template of the website.</p>
                 </div>
             </div>
             <div class="col-md-4 col-lg-2">
-                <div class="icon"><i class="lni lni-rocket"></i></div>
+                <div class="icon rounded-circle mx-auto"><i class="d-flex justify-content-center align-items-center lni lni-rocket"></i></div>
                 <div class="bloc-light-blue d-none d-lg-block"></div>
                 <div>
-                    <h1> PROGRAMMING</h1>
-                    <div class="bloc-small"></div>
-                    <p>We are developing the architecture and the code to transform the template in real website.</p>
+                    <h1 class="mx-auto text-center"> PROGRAMMING</h1>
+                    <div class="bloc-small mx-auto"></div>
+                    <p class="text-center fs-6">We are developing the architecture and the code to transform the template in real website.</p>
                 </div>
             </div>
             <div class="col-md-4 col-lg-2">
-                <div class="icon"><i class="lni lni-alarm-clock"></i></div>
+                <div class="icon rounded-circle mx-auto"><i class="d-flex justify-content-center align-items-center lni lni-alarm-clock"></i></div>
                 <div class="bloc-dark-blue d-none d-lg-block"></div>
                 <div>
-                    <h1> RELEASE</h1>
-                    <div class="bloc-small"></div>
-                    <p>Once the website is done and approved we reveal it to the world.</p>
+                    <h1 class="mx-auto text-center"> RELEASE</h1>
+                    <div class="bloc-small mx-auto"></div>
+                    <p class="text-center fs-6">Once the website is done and approved we reveal it to the world.</p>
                 </div>
             </div>
             <div class="col-md-4 col-lg-2">
-                <div class="icon"><i class="lni lni-cog"></i></div>
+                <div class="icon rounded-circle mx-auto"><i class="d-flex justify-content-center align-items-center lni lni-cog"></i></div>
                 <div class="bloc-light-blue right-border d-none d-lg-block"></div>
                 <div>
-                    <h1> MAINTENANCE</h1>
-                    <div class="bloc-small"></div>
-                    <p>We are here for the maintenance and updating of your website. New ideas? We'll be here to support you every step of the way.</p>
+                    <h1 class="mx-auto text-center"> MAINTENANCE</h1>
+                    <div class="bloc-small mx-auto"></div>
+                    <p class="text-center fs-6">We are here for the maintenance and updating of your website. New ideas? We'll be here to support you every step of the way.</p>
                 </div>
             </div>
         </div>

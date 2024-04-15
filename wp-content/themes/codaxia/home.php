@@ -20,7 +20,7 @@ get_header() ?>
 			$query = new WP_Query(['']);
 			if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 					<div class="col-xl-4 col-lg-5 col-md-6 col-sm-10">
-						<div class="single-bloc single-blog bg-white">
+						<div class="single-bloc single-blog bg-white text-center">
 							<a class="w-100"href="<?php the_permalink() ?>">
 								<div class="image-blog" style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url()); ?>');">
 								</div>
