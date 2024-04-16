@@ -38,7 +38,7 @@ Template Name: Audit
         <div class="row">
 			<div class="col-lg-7 col-xxl-5">
 				<div class="about-img mb-50">
-					<img src="<?= get_field('information_audit_audit_image'); ?>" alt="about">
+					<img class="w-100" src="<?= get_field('information_audit_audit_image'); ?>" alt="about">
 				</div>
 			</div>
 			<div class="col-lg-5 col-xxl-6">
@@ -51,8 +51,8 @@ Template Name: Audit
 						<?php $i = 1;
 						if (have_rows('information_audit_audit_bloc')) : ?>
 							<?php while (have_rows('information_audit_audit_bloc')) : the_row(); ?>
-								<div class="single-faq">
-									<button class="w-100 text-start <?= ($i != 1) ? 'collapsed' : ''; ?>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $i ?>" aria-expanded="<?= ($i != 1) ? 'true' : 'false'; ?>" aria-controls="collapse<?= $i ?>">
+								<div class="single-faq bg-white">
+									<button class="w-100 text-start fs-5 <?= ($i != 1) ? 'collapsed' : ''; ?>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $i ?>" aria-expanded="<?= ($i != 1) ? 'true' : 'false'; ?>" aria-controls="collapse<?= $i ?>">
 										<?= get_sub_field('audit_bloc_title'); ?>
 									</button>
 
