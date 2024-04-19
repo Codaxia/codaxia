@@ -19,8 +19,8 @@ Template Name: Portfolio
               </div>
                   </div>
                   <div class="col-lg-6">
-                      <div class="hero-img-portfolio wow fadeInUp" data-wow-delay=".5s">
-                          <img src="<?= get_field('portfolio_description_portfolio_image_of_the_person'); ?>" alt="">
+                      <div class="hero-img-portfolio text-center wow fadeInUp" data-wow-delay=".5s">
+                          <img class="w-50" src="<?= get_field('portfolio_description_portfolio_image_of_the_person'); ?>" alt="">
                       </div>
                   </div>
           	</div>
@@ -33,7 +33,7 @@ Template Name: Portfolio
 			<?php if (have_rows('portfolio_filter_bloc')) : ?>
 				<?php while (have_rows('portfolio_filter_bloc')) : the_row(); ?>
 				<?php $data =  get_sub_field('portfolio_filter_name');?>
-				<button data-filter="<?= strtolower($data); ?>" class="filter-btn btn"><?= $data ?></button>
+				<button data-filter="<?= strtolower($data); ?>" class="text-white filter-btn btn"><?= $data ?></button>
 				<?php endwhile; ?>
 			<?php endif; ?>
 		</div>
@@ -52,27 +52,27 @@ Template Name: Portfolio
 									id="<?= get_sub_field('portfolio_project_type'); ?>"
 									data-category="<?= get_sub_field('portfolio_project_type'); ?>" >
 										<div class="image <?= get_sub_field('portfolio_project_privacy'); ?>">
-											<img src="<?= get_sub_field('portfolio_image_project'); ?>" class="image <?= get_sub_field('portfolio_project_privacy'); ?>" alt="">
+											<img src="<?= get_sub_field('portfolio_image_project'); ?>" class="image w-100 <?= get_sub_field('portfolio_project_privacy'); ?>" alt="">
 										</div>
 										<?php if (get_sub_field('portfolio_project_privacy')=='private') : ?>
 											<a href="../contact-form/" class="overlay d-block" target="_blank">
-												<div class="content">
+												<div class="content d-flex flex-column justify-content-end w-100 h-100">
 													<div class="link-btn">
-														<span> <i class="lni lni-link"></i> </span>
+														<span class="text-center bg-white fs-2"> <i class="lni lni-link"></i> </span>
 													</div>
 													<div class="info-portfolio">
-														<h4><?= get_field('portfolio_contact_message'); ?></h4>
+														<h4 class="text-white"><?= get_field('portfolio_contact_message'); ?></h4>
 													</div>
 												</div>
 											</a>
 										<?php else : ?>
 											<a href="<?= get_sub_field('portfolio_link_project'); ?>" class="overlay d-block" target="_blank">
-												<div class="content">
+												<div class="content d-flex flex-column justify-content-end w-100 h-100">
 													<div class="link-btn">
-														<span> <i class="lni lni-link"></i> </span>
+														<span class="text-center bg-white fs-2"> <i class="lni lni-link"></i> </span>
 													</div>
 													<div class="info-portfolio">
-														<h4><?= get_sub_field('portfolio_project_name'); ?></h4>
+														<h4 class="text-white"><?= get_sub_field('portfolio_project_name'); ?></h4>
 														<p><?= get_sub_field('portfolio_description_of_the_client_project'); ?></p>
 														<p><?= get_sub_field('portfolio_languages_used_project'); ?></p>
 													</div>

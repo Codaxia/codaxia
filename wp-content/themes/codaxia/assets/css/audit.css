@@ -12,7 +12,6 @@
 
 .why-audit .title h5 {
     color: #f14e4e;
-    font-size: 30px;
 }
 
 .why-audit .title p {
@@ -28,17 +27,10 @@
 
 .why-audit .single-bloc-why {
     border-radius: 20px;
-    background: #fff;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .why-audit .single-bloc-why h4 {
-    padding-top: 65px;
     padding-left: 20px;
-    padding-bottom: 30px;
-    font-size: 35px;
-    color: black;
 }
 
 .why-audit .single-bloc-why p {
@@ -48,17 +40,12 @@
     max-width: calc(80 * 1ch);
 }
 
-.why-audit .single-bloc-why .padding-all-button {
-    padding-top: 40px;
-}
-
 .why-audit .single-bloc-why .image {
     min-height: 330px;
     min-width: 300px;
     max-width: 500px;
     max-height: 350px;
     border-radius: 20px;
-    padding-top: 10px;
 }
 
 /* ======= audit information css ========*/
@@ -74,7 +61,6 @@
 
 .audit-pricing .title h5 {
     color:rgb(62, 100, 226);
-    font-size: 30px;
 }
 
 .audit-pricing .title p {
@@ -93,7 +79,6 @@
     padding: 30px; 
     min-height: 10%;
     max-height: 5000px;
-    text-align: center;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
     border-bottom-left-radius: 45px;
@@ -106,19 +91,11 @@
     margin-top: -35px;
     min-height: 10%;
     max-height: 5000px;
-    text-align: center;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 0px;
     box-shadow: rgb(59, 60, 73) 0px 360px 66px -28px inset;
-}
-
-.audit-pricing .single-bloc-audit-pricing .content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
 }
 
 .audit-pricing .single-bloc-audit-pricing .padding {
@@ -133,7 +110,6 @@
     margin-top: 5px;
     text-align: left;
     margin-left: -100%;
-    font-size: 15px;
     color: #1ec034;
 }
 
@@ -141,14 +117,12 @@
     margin-top: 5px;
     text-align: left;
     margin-left: -100%;
-    font-size: 15px;
     color: #1ec034;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content h2 {
     margin-top: -22px;
     margin-left: -165px;
-    font-size: 16px;
     color: rgb(62, 100, 226)
 }
 
@@ -165,7 +139,6 @@
 .audit-pricing .single-bloc-audit-pricing .content .separation hr {
     color: rgb(255, 255, 255);
     height: 2px;
-    width: 100%;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content li {
@@ -209,8 +182,6 @@
     bottom: 0px; 
     left: 50%;
     transform: translateX(-50%) translateY(99%);
-    width: 0;
-    height: 0;
     border-style: solid;
     border-width: 8px 8px 0 8px;
     border-color: #808080 transparent transparent transparent;
@@ -222,8 +193,6 @@
     top: -7px; 
     left: 50%; 
     transform: translateX(-50%) translateY(-20%);
-    width: 0;
-    height: 0;
     border-style: solid;
     border-width: 7px 7px 0 7px; 
     border-color: #000000 transparent transparent transparent; 
@@ -233,10 +202,6 @@
     .audit-pricing .single-bloc-audit-pricing .content .bubble .bubble-text {
         max-width: 28%; 
     }
-}
-
-.audit-pricing .single-bloc-audit-pricing .content .bubble .bubble-text .line-break {
-    padding-bottom: 10px;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .space svg {
@@ -256,19 +221,15 @@
     color: #f14e4e;
     margin-top: -58px;
     margin-left: 34%;
-    margin-bottom: auto;
     text-align: left;
-    font-size: 23px;
 }
 
 .audit-pricing .single-bloc-audit-pricing .icon p {
     font-size: 11px;
-    margin-left: 33%;
+    margin-left: 35%;
     margin-top: 3px;
-    margin-bottom: auto;
     line-height: 1.7;
     text-align: left; 
-    padding: 0 8px;
     max-width: calc(35 * 1ch);
 }
 
@@ -276,15 +237,8 @@
     color: #f14e4e;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
     background: #3a3a3a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
     margin-left: 20%;
-    margin-bottom: auto;
-    margin-top: auto;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .icon hr {
@@ -294,37 +248,24 @@
 }
 
 .audit-pricing .single-bloc-audit-pricing .button-buy {
-    margin-top: auto;
     width: 130px;
     background-color: #f14e4e;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content h1 {
     margin-top: 10px;
-    font-size: 15px;
-}
-
-.audit-pricing .single-bloc-audit-pricing .content h3 {
-    margin-top: -5px;
-    margin-bottom: 13px;
-    font-size: 26px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(62, 100, 226);
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .recommanded {
     border: 1px solid #f14e4e;
     border-radius: 20px;
-    margin-left: auto;
     margin-top: -25px;
     margin-bottom: 15px;
-    display: flex;
     padding-right: 10px;
     padding-left: 10px;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .recommanded p {
-    margin-top: auto;
     font-size: 11px;
 }
 
@@ -335,16 +276,13 @@
 
 .audit-example h1 {
     color: #f14e4e;
-    font-size: 35px;
 }
 
 .audit-example h2 {
     color: rgb(62, 100, 226);
-    font-size: 25px;
 }
 
 .audit-example p {
-    font-size: 16px;
     color: white;
     max-width: calc(100 * 1ch);
     max-width: -20px;
@@ -354,7 +292,6 @@
     min-height: 180px;
     min-width: 200px;
     border-radius: 20px;
-    padding-top: 10px;
 }
 
 /* ======= audit-type css ========*/
@@ -364,16 +301,12 @@
 
 .audit-type .single-bloc-type {
     border-radius: 10px;
-    background: #fff;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .audit-type .single-bloc-type .image {
     min-height: 280px;
     min-width: 112%;
     border-radius: 20px;
-    padding-top: 10px;
 }
 
 .audit-type .single-bloc-type h1 {

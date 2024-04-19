@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-9 col-md-12 col-12 mb-2">
-					<div class="row single-bloc-blog single-blog col-xl-12 col-lg-10 col-md-10 p-4 mb-4 mr-n5">
+					<div class="row single-bloc-blog single-blog bg-white col-xl-12 col-lg-10 col-md-10 p-4 mb-4 mr-n5">
 						<div class="content col-xl-6 col-lg-12 col-md-12">
 							<h1 class="text-dark text-center"> <?php the_title() ?> </h1>
 							</br>
@@ -36,10 +36,10 @@
 							</div>
 							<ul class="socials d-flex align-items-center">
     							<li class="me-3">
-									<a href="<?= get_field('linkedin_autor'); ?>"> <i class="lni lni-linkedin-original"></i> </a> 
+									<a href="<?= get_field('linkedin_autor'); ?>" class="bg-white d-flex justify-content-center align-items-center"> <i class="lni lni-linkedin-original"></i> </a> 
     							</li>
     							<li class="me-3">
-									<a href="<?= get_field('mail_autor'); ?>"> <i class="lni lni-envelope"></i> </a>
+									<a href="<?= get_field('mail_autor'); ?>" class="bg-white d-flex justify-content-center align-items-center"> <i class="lni lni-envelope"></i> </a>
     							</li>
     						</ul>
 						</div>

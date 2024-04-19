@@ -9,15 +9,8 @@
 				</div>
 			</div>
 			<div class="col-1 col-xl-6 col-lg-5">
-				<div class="cta-btn text-lg-end mb-50">
-					<div class="first">
-						<div class="second">
-							<button class="glow-button button-margin">
-								<a href="<?= get_field('contact_link', 'option'); ?>" class="text-uppercase text-white fs-4 fw-bold text-nowrap">
-								<?= get_field('contact_button', 'option'); ?></a>
-							</button>
-						</div>
-					</div>
+				<div class="cta-btn text-lg-end mb-50 button-margin">
+					<?php custom_button(home_url('/' . get_field('contact_link', 'option')), get_field('contact_button', 'option'), 'fs-4'); ?>
 				</div>
 			</div>
 		</div>
