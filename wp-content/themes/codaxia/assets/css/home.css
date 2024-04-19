@@ -78,17 +78,7 @@
   .hero-section .hero-content p {
     margin-bottom: 40px;
   }
-  
-  .hero-section .hero-img {
-    text-align: center;
-  }
-  
-  .hero-section .hero-img img {
-    width: 100%;
-  }
-  
-  
-  
+
   .hero-section .hero-shape .shape {
     position: absolute;
     z-index: -1;
@@ -139,22 +129,15 @@
   }
   
   /* ======= about css ========*/
-  .about-section .about-img img {
-    width: 100%;
-  }
-  
   .about-section .accordion .single-faq {
     margin-bottom: 20px;
     border-radius: 10px;
-    background: #fff;
-    /* box-shadow: 0px 0px 35px #f2f4f94a; */
   }
   
   .about-section .accordion .single-faq button, .subtitle-contact{
     padding: 20px 55px 15px 30px;
     border: none;
     background: none;
-    font-size: 20px;
     font-weight: 500;
     color: #313450;
     position: relative;
@@ -187,12 +170,10 @@
   }
   
   .service-section .single-service {
-    text-align: center;
     padding: 50px 30px;
     border-radius: 10px;
     color: grey;
     height: 90%;
-    background: #fff;
     margin-bottom: 30px;
   }
   
@@ -219,15 +200,7 @@
   .service-section .single-service .icon {
     width: 95px;
     height: 95px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
     margin-bottom: 30px;
-    font-size: 40px;
-    color: #fff;
-  
     transition: all 0.3s ease-out 0s;
   }
   
@@ -248,9 +221,7 @@
   }
   
   .service-section .single-service .content h3 {
-    font-size: 24px;
     margin-bottom: 15px;
-    color: #000000;
   }
   
   /* ============= counter-up css =========== */
@@ -350,19 +321,13 @@
       font-size: 18px;
     }
   }
-  
-  .counter-up-section .counter-up-img img {
-    width: 100%;
-  }
    
   /* =============== team css =============*/
   .team-bloc-section .single-bloc-team .team {
     border-radius: 10px;
-    background: #fff;
     padding: 30px;
     margin-bottom: 30px;
     min-height: 464px;
-    text-align: center;
   }
 
   .team-bloc-section {
@@ -375,14 +340,11 @@
   }
   
   .team-bloc-section .single-bloc-team .image-team img {
-    width: 100%;
     border-radius: 50%;
   }
 
   .team-bloc-section .single-bloc-team .content h3 {
-    font-size: 24px;
     margin-bottom: 10px;
-    color: black;
   }
     
   .team-bloc-section .single-bloc-team .content a i {
@@ -396,7 +358,6 @@
     padding: 30px;
     margin-bottom: 30px;
     min-height: 501px;
-    text-align: center;
   }
 
   .bloc-section .single-bloc .image-blog{
@@ -430,7 +391,6 @@
 
 .blog-page .single-bloc-blog {
   border-radius: 10px;
-  background: #fff;
 }
 
 .blog-page .content-article p {
@@ -448,15 +408,4 @@
   height: 40px;
   border-radius: 50%;
   color: #6b6f92;
-  background: #fff;
-}
-
-.blog-page .socials li a:hover {
-  padding-left: 0px;
-}
-
-.blog-page .socials li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

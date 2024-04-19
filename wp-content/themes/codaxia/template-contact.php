@@ -5,7 +5,7 @@ Template Name: Contact Form
 ?>
 <?php get_header()?>
 
-<section class="form-section pt-150">
+<section class="form-section w-100 pt-150">
     <div class= "container">
         <div class="pb-30">
                     <span class="title">
@@ -16,11 +16,11 @@ Template Name: Contact Form
                         </p>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6 pt-140">
+            <div class="col-lg-6 col-md-6 pt-30">
                 <?php echo do_shortcode(get_field('shortcode')); ?> 
             </div>
-            <div class="col-lg-6 col-md-6 pt-140">
-                <div class="info-contact">
+            <div class="col-lg-6 col-md-6 pt-30">
+                <div class="info-contact text-white text-decoration-underline">
                     <span class="title">
                     <?= get_field('contact_info_contact_title'); ?>
                     </span>
