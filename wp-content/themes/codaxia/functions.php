@@ -156,6 +156,14 @@ function custom_button($link, $text, $font_size = '') {
   <?php
 }
 
+
+add_action('wp_print_scripts', function () {
+  if (!is_page('contact')) {
+  wp_dequeue_script( 'google-recaptcha' );
+  wp_dequeue_script( 'wpcf7-recaptcha' );
+  }
+  });
+
 // class Custom_Walker_footer_Menu extends Walker_Nav_Menu
 // {
 //   function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
