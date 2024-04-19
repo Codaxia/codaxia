@@ -196,7 +196,7 @@ p {
   overflow: hidden;
 }
 
-.cky-prefrence-btn-wrapper .cky-btn{
+.cky-prefrence-btn-wrapper .cky-btn, .cky-notice-btn-wrapper .cky-btn{
   flex: auto;
   max-width: 100%;
   text-shadow: none;
