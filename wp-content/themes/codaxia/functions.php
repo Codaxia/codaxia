@@ -156,6 +156,13 @@ function custom_button($link, $text, $font_size = '') {
   <?php
 }
 
+/*add_action('wp_footer', 'add_recaptcha_contact_page');
+function add_recaptcha_contact_page() {
+    if ( !is_page('contact') ) { 
+        echo '<style>.grecaptcha-badge {display: none !important;}</style>';
+    }
+}*/
+
 // class Custom_Walker_footer_Menu extends Walker_Nav_Menu
 // {
 //   function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)

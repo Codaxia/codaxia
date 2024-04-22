@@ -383,7 +383,7 @@
 .blog-page .image-article {
   border-radius: 20px;
   min-height: 260px;
-  min-width: 380px;
+  min-width: 300px;
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;

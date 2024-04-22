@@ -79,10 +79,7 @@
     padding: 30px; 
     min-height: 10%;
     max-height: 5000px;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-    border-bottom-left-radius: 45px;
-    border-bottom-right-radius: 0px;
+    border-radius: 45px 45px 0 45px;
 }
 
 .audit-pricing .single-bloc-audit-pricing.recommanded {
@@ -91,10 +88,7 @@
     margin-top: -35px;
     min-height: 10%;
     max-height: 5000px;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-    border-bottom-left-radius: 45px;
-    border-bottom-right-radius: 0px;
+    border-radius: 45px 45px 0 45px;
     box-shadow: rgb(59, 60, 73) 0px 360px 66px -28px inset;
 }
 
@@ -107,16 +101,14 @@
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .time p {
-    margin-top: 5px;
+    margin: 5px 0 0 -100%;
     text-align: left;
-    margin-left: -100%;
     color: #1ec034;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .time-bloc p {
-    margin-top: 5px;
+    margin: 5px 0 0 -100%;
     text-align: left;
-    margin-left: -100%;
     color: #1ec034;
 }
 
@@ -127,8 +119,7 @@
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .margin {
-    margin-left: -2%;
-    margin-top: -20px;
+    margin: -20px 0 0 -2%;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .margin-analyse {
@@ -152,8 +143,7 @@
 }
 
 .audit-pricing .single-bloc-audit-pricing .content i {
-    margin-top: 10px;
-    margin-right: 4px;
+    margin: 10px 4px 0 0;
     color: rgb(87, 231, 123);
 }
 
@@ -169,8 +159,7 @@
     padding: 10px;
     border-radius: 5px;
     z-index: 999;
-    margin-left: 11px;     
-    margin-top: -25px;
+    margin: -25px 0 0 11px;
     font-size: 11px;
     width: 220px;
     transform: translateX(-50%) translateY(-100%); 
@@ -205,8 +194,7 @@
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .space svg {
-    margin-top: 6px;
-    margin-left: 36px;
+    margin: 6px 0 0 36px;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .space .needle {
@@ -219,15 +207,13 @@
 
 .audit-pricing .single-bloc-audit-pricing .icon h4 {
     color: #f14e4e;
-    margin-top: -58px;
-    margin-left: 34%;
+    margin: -58px 0 0 34%;
     text-align: left;
 }
 
 .audit-pricing .single-bloc-audit-pricing .icon p {
     font-size: 11px;
-    margin-left: 35%;
-    margin-top: 3px;
+    margin: 3px 0 0 35%;
     line-height: 1.7;
     text-align: left; 
     max-width: calc(35 * 1ch);
@@ -259,10 +245,8 @@
 .audit-pricing .single-bloc-audit-pricing .content .recommanded {
     border: 1px solid #f14e4e;
     border-radius: 20px;
-    margin-top: -25px;
-    margin-bottom: 15px;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin: -25px 0 15px;
+    padding: 0 10px;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .recommanded p {
