@@ -41,13 +41,15 @@
 
 .contact-map-form {
     margin-bottom: 3%;
+    filter: grayscale(100%);
+    padding:blur(5);
 }
 
 #gmap-canvas-form {
     height: 500px;
     margin-top: 2%;
     border-radius: 30px;
-    width: 100%; 
+    width: 100%;
 }
 
 .info-contact {
