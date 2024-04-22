@@ -53,20 +53,22 @@
   border-radius: inherit;
   overflow: hidden;
   mask-image: radial-gradient(circle, white, black);
-  transform: scaleY(1.02) scaleX(1.005) rotate(-.35deg);
+  transform: scaleY(1.07) scaleX(1.016) rotate(-.5deg);
 }
 
 .glow-button .gradient:before {
   content: '';
   position: absolute;
-  top: -20px;
-  left: 0px;
-  right: 0;
-  transform: scale(1.05) translateY(-44px) rotate(0deg) translateZ(0);
+  top: -200%;
+  left: -50%;
+  transform: scale(1) translateY(-10%) rotate(0deg) translateZ(0);
   padding-bottom: 100%;
-  border-radius: 50%;
-  background: linear-gradient(90deg, var(--button-shine-left), var(--button-shine-right));
-  animation: rotate linear 2s infinite;
+  border-radius: 0;
+  width: 250%;
+  height: 1000%;
+  background: linear-gradient(90deg, var(
+  --button-shine-left), var(--button-shine-right));
+  animation: rotate linear 1.6s infinite;
 }
 
 .glow-button a {
