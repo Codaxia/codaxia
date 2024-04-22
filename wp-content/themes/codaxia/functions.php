@@ -110,6 +110,7 @@ class Custom_Walker_footer_Menu extends Walker_Nav_Menu
   }
 }
 
+// remove the editor for pages because we use ACF
 function codaxia_remove_editor()
 {
   // remove_post_type_support('post', 'editor');
@@ -138,12 +139,7 @@ function my_custom_excerpt($excerpt) {
 }
 add_filter('the_excerpt', 'my_custom_excerpt');
 
-// stop the mail system from contact form 7
-add_filter('wpcf7_skip_mail', 'custom_skip_mail', 10, 2);
-function custom_skip_mail($skip_mail, $contact_form) {
-    return true;
-}
-
+// component for the button all around the
 function custom_button($link, $text, $font_size = '') {
   ?>
   <div class="first">
@@ -156,24 +152,16 @@ function custom_button($link, $text, $font_size = '') {
   <?php
 }
 
+// stop the mail system from contact form 7
+add_filter('wpcf7_skip_mail', 'custom_skip_mail', 10, 2);
+function custom_skip_mail($skip_mail, $contact_form) {
+    return true;
+}
 
+// google-recaptcha only on contact page
 add_action('wp_print_scripts', function () {
   if (!is_page('contact')) {
   wp_dequeue_script( 'google-recaptcha' );
   wp_dequeue_script( 'wpcf7-recaptcha' );
   }
   });
-
-// class Custom_Walker_footer_Menu extends Walker_Nav_Menu
-// {
-//   function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
-//   {
-//     $output .= '<li>';
-//     $output .= '<a class="page-scroll" href="' . home_url() . "/" . $item->url . '">' . $item->title . '</a>';
-//     $output .= '</li>';
-//   }
-// }
-
-// add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_scripts' );
-
-// wp_enqueue_style( 'assets/css/main.css', get_stylesheet_uri() );
