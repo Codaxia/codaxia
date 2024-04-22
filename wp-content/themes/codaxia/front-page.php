@@ -131,7 +131,7 @@ get_header() ?>
 			</div>
 			<div class="col-xl-5 col-lg-6">
 				<div class="counter-up-img mb-50">
-					<img class="w-100" src="<?= get_field('why_us_image'); ?>" alt="">
+					<img class="w-100" src="<?= get_field('why_us_image'); ?>" alt="<?= get_field('why_us_title'); ?>">
 				</div>
 			</div>
 		</div>
@@ -157,13 +157,13 @@ get_header() ?>
 						<div class="single-bloc-team">
 							<div class="team bg-white text-center">
 								<div class="image-team">
-									<img class="w-100" src="<?= get_sub_field('team_bloc_image'); ?>" alt="">
+									<img class="w-100" src="<?= get_sub_field('team_bloc_image'); ?>" alt="<?= get_sub_field('team_bloc_name'); ?>">
 								</div>
-							
+
 								<div class="content">
 									<h3 class="text-dark fs-4"><?= get_sub_field('team_bloc_name'); ?></h3>
 									<p><?= get_sub_field('team_bloc_function'); ?></p>
-									<a href="<?= get_sub_field('team_bloc_linkedin'); ?>"> <i class="lni lni-linkedin-original"></i> </a>
+									<a href="<?= get_sub_field('team_bloc_linkedin'); ?>" aria-label="LinkedIn profile of <?= get_sub_field('team_bloc_name'); ?>"> <i class="lni lni-linkedin-original" alt="linkedin"></i> </a>
 								</div>
 							</div>
 						</div>

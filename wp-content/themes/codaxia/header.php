@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" <?php language_attributes(); ?>>
 
 <head>
   <meta charset="utf-8" />
@@ -46,9 +46,6 @@
                     'walker' => new Custom_Walker_Nav_Menu()
                   ]);
                   ?>
-                  <!-- <li class="nav-item"> -->
-                    <!-- <?php echo do_shortcode('[language-switcher]'); ?> -->
-                  <!-- </li> -->
                 </ul>
 
               </div>

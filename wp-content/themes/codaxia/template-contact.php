@@ -17,7 +17,7 @@ Template Name: Contact Form
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-6 pt-30">
-                <?php echo do_shortcode(get_field('shortcode')); ?> 
+                <?php echo do_shortcode(get_field('shortcode')); ?>
             </div>
             <div class="col-lg-6 col-md-6 pt-30">
                 <div class="info-contact text-white text-decoration-underline">
@@ -38,11 +38,11 @@ Template Name: Contact Form
                     </div>
                     <div class="contact-map-form pt-45">
                         <div class="gmap-canvas-form">
-                        <iframe id="gmap-canvas-form" src="<?= get_field('contact_info_contact_map_key'); ?>">
-                        </iframe>   
+                        <iframe title="localization of the company in google map" id="gmap-canvas-form" src="<?= get_field('contact_info_contact_map_key'); ?>">
+                        </iframe>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </div>
