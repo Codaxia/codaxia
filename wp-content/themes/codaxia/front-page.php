@@ -14,8 +14,8 @@ get_header() ?>
 		<div class="row align-items-center">
 			<div class="col-lg-6">
 				<div class="hero-content">
-					<span class="wow fadeInLeft title" data-wow-delay=".2s"><?= get_field('hero_section_title'); ?></span>
-					<h1 class="wow fadeInUp" data-wow-delay=".4s">
+					<span class="wow fadeInLeft title" data-wow-delay=".01s"><?= get_field('hero_section_title'); ?></span>
+					<h1 class="wow fadeInUp" data-wow-delay=".01s">
 						<?= get_field('hero_section_title_2'); ?>
 					</h1>
 					<p class="wow fadeInUp" data-wow-delay=".6s">
