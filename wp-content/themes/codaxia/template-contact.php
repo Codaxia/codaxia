@@ -49,6 +49,3 @@ Template Name: Contact Form
 </section>
 
 <?php get_footer()?>
-
-
-
