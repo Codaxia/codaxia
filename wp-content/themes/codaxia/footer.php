@@ -60,14 +60,7 @@
     <!-- ========================= footer end ========================= -->
 
 	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FD49VBFJS0"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-FD49VBFJS0');
-	</script>
+	<?= get_field('script_google_analytics'); ?>
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top btn-hover">
