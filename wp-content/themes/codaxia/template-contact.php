@@ -38,7 +38,7 @@ Template Name: Contact Form
                     </div>
                     <div class="contact-map-form pt-45">
                         <div class="gmap-canvas-form">
-                        <iframe title="localization of the company in google map" id="gmap-canvas-form" src="<?= get_field('contact_info_contact_map_key'); ?>">
+                        <iframe title="localization of the company in google map" id="gmap-canvas-form" src="<?= get_field('map_key', 'option'); ?>">
                         </iframe>
                         </div>
                     </div>

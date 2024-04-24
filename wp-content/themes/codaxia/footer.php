@@ -45,7 +45,7 @@
     						</ul>
     						<div class="contact-map-form" style="width: 100%; height: 150px; margin-top: 25px;">
     							<div class="gmap-canvas">
-    								<iframe title="localization of the company in google map" id="gmap-canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11181.844318091675!2d-73.566081!3d45.5209263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bd7ccaf2125%3A0x295597803e1369bc!2sCodaxia!5e0!3m2!1sfr!2sca!4v1709612719491!5m2!1sfr!2sca" style="width: 100%;"></iframe>
+    								<iframe title="localization of the company in google map" id="gmap-canvas" src="<?= get_field('map_key', 'option'); ?>" style="width: 100%;"></iframe>
     							</div>
     						</div>
     					</div>
@@ -60,14 +60,7 @@
     <!-- ========================= footer end ========================= -->
 
 	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FD49VBFJS0"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-FD49VBFJS0');
-	</script>
+	<?= get_field('script_google_analytics'); ?>
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top btn-hover">
