@@ -45,7 +45,7 @@
     						</ul>
     						<div class="contact-map" style="width: 100%; height: 150px; margin-top: 25px;">
     							<div class="gmap-canvas">
-    								<iframe id="gmap-canvas" src="https://maps.google.com/maps?q=Montreal&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="width: 100%;"></iframe>
+    								<iframe id="gmap-canvas" src="<?= get_field('map_key', 'option'); ?>" style="width: 100%;"></iframe>
     							</div>
     						</div>
     					</div>
