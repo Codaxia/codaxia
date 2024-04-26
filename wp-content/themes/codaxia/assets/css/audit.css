@@ -238,13 +238,13 @@
     width: 60px;
     height: 60px;
     background: #3a3a3a;
-    margin-left: 20%;
+    margin-left: 9%;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .icon hr {
     color: black;
     margin-top: 15px;
-    width: 490px;
+    width: 100%;
 }
 
 .audit-pricing .single-bloc-audit-pricing .button-buy {
