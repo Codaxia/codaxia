@@ -4,8 +4,6 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title> <?php bloginfo('name'); ?></title>
-  <meta name="description" content="Specialized in helping businesses digital and web grow" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- <meta property="og:image" content="https://cdn.thumbsmith.com/v1/u/codaxia/e-commerce" /> -->
   <meta name="google-site-verification" content="tPREifeNXUZ5BzNqsRZhQob__mrIxy1dQjsSd6GhCKE" />

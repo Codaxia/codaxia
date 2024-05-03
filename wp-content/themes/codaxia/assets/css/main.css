@@ -18,6 +18,7 @@ Version: 0.1
 @import url("contact-form.css");
 @import url("button.css");
 @import url("audit.css");
+@import url("services.css");
 .counter-up-section
   .counter-up-content
   .counter-up-wrapper
@@ -421,4 +422,103 @@ p {
   to {
     transform: rotate(-130deg);
   }
+}
+
+/* ======= description css ========*/
+.black {
+  background-color: black;
+}
+
+.grey {
+  background-color: #1e2022;
+}
+.description .single-bloc-description {
+  border-radius: 10px;
+}
+
+.description .single-bloc-description .image {
+  min-height: 280px;
+  min-width: 112%;
+  border-radius: 20px;
+}
+
+.description .single-bloc-description h1 {
+  color: #44446b;
+  margin-left: 40px;
+}
+
+.description .single-bloc-description p {
+  color: #000000;
+  margin-left: 40px;
+}
+
+/* ============= website-process css ============== */
+.website-process {
+  background-color: black;
+}
+
+.website-process .primary-title h1{
+  color: rgb(62, 100, 226);
+  margin-bottom: -60px;
+}
+
+.website-process h1 {
+  font-size: 16px;
+  margin: 0 30px 20px;
+  line-height: 1.2;
+  color: rgb(62, 100, 226);
+}
+.website-process .bloc-small{
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #ff5858;
+  margin-top: -13px;
+}
+.website-process p {
+  margin: 0 15px 20px;
+  line-height: 1.2;
+  margin-top: 8px;
+}
+.website-process .icon {
+  border: 10px solid #ff7b69;
+  background: #ff4545;
+  width: 105px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.website-process .icon i {
+  font-size: 45px;
+  margin: 18px 0 0 2px;
+}
+
+.website-process .bloc-light-blue,
+.website-process .bloc-dark-blue {
+  display: block;
+  height: 30px;
+  margin: 10px 0;
+}
+.website-process .bloc-light-blue::before,
+.website-process .bloc-dark-blue::before {
+  content: '';
+  position: relative;
+  left: 50%;
+  width: 2px;
+  background-color: #4646ca;
+  height: 17px;
+  display: block;
+  top: -17px;
+}
+.website-process .left-border {
+  border-radius: 20px 0 0 20px;
+}
+.website-process .bloc-light-blue {
+  background-color: #4646ca;
+}
+.website-process .bloc-dark-blue {
+  background-color: #3c3c8a;
+}
+.website-process .right-border {
+  border-radius: 0 20px 20px 0;
 }

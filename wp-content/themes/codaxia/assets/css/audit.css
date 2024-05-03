@@ -224,13 +224,13 @@
     width: 60px;
     height: 60px;
     background: #3a3a3a;
-    margin-left: 20%;
+    margin-left: 9%;
 }
 
 .audit-pricing .single-bloc-audit-pricing .content .icon hr {
     color: black;
     margin-top: 15px;
-    width: 490px;
+    width: 100%;
 }
 
 .audit-pricing .single-bloc-audit-pricing .button-buy {
@@ -276,29 +276,4 @@
     min-height: 180px;
     min-width: 200px;
     border-radius: 20px;
-}
-
-/* ======= audit-type css ========*/
-.audit-type {
-    background-color: black
-}
-
-.audit-type .single-bloc-type {
-    border-radius: 10px;
-}
-
-.audit-type .single-bloc-type .image {
-    min-height: 280px;
-    min-width: 112%;
-    border-radius: 20px;
-}
-
-.audit-type .single-bloc-type h1 {
-    color: #44446b;
-    margin-left: 40px;
-}
-
-.audit-type .single-bloc-type p {
-    color: #000000;
-    margin-left: 40px;
 }

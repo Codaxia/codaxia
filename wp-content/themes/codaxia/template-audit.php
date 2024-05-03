@@ -250,11 +250,11 @@ Template Name: Audit
     </div>
 </section>
 
-<section id="audit-type-id" class="pt-100 pb-50 audit-type">
+<section id="audit-type-id" class="pt-100 pb-50 description">
     <div class="container">
     <?php if (have_rows('audit_type')) : ?>
 		<?php while (have_rows('audit_type')) : the_row(); ?>
-        <div class="row single-bloc-type bg-white ms-auto me-auto col-lg-11 col-xl-12 col-xxl-10 p-3 mb-70">
+        <div class="row single-bloc-description bg-white ms-auto me-auto col-lg-11 col-xl-12 col-xxl-10 p-3 mb-70">
             <div class="col-11 col-lg-6 col-xl-3 mb-10">
                 <img class="image img-fluid pt-10" src="<?= get_sub_field('audit_type_image'); ?>" alt="">
             </div>
