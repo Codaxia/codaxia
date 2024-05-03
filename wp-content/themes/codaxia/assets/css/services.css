@@ -1,0 +1,170 @@
+/* ======= main title css ========*/
+.blue {
+    color: rgb(62, 100, 226);
+}
+
+/* ======= how-does-it-work css ========*/
+.how-does-it-work {
+    background-color: #1e2022;
+}
+
+.how-does-it-work .red {
+    color: #f14e4e;;
+}
+
+/* ======= hour bank css ========*/
+.hour-bank {
+    background-color: black;
+}
+
+.hour-bank p {
+    max-width: calc(80 * 1ch);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hour-bank {
+    background-color: black;
+}
+
+.hour-bank .title h5 {
+    color:rgb(62, 100, 226);
+}
+
+.hour-bank .title p {
+    color:rgb(126, 126, 126);
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.hour-bank .title i {
+    margin-top: 7px;
+    color:rgb(126, 126, 126);
+}
+
+.hour-bank .single-bloc-audit-pricing {
+    background: #25262b;
+    padding: 30px; 
+    min-height: 10%;
+    max-height: 5000px;
+    border-radius: 45px 45px 0 45px;
+}
+
+.hour-bank .single-bloc-audit-pricing.recommanded {
+    background: #25262b;
+    padding: 30px;
+    margin-top: -35px;
+    min-height: 10%;
+    max-height: 5000px;
+    border-radius: 45px 45px 0 45px;
+    box-shadow: rgb(59, 60, 73) 0px 360px 66px -28px inset;
+}
+
+.hour-bank .single-bloc-audit-pricing .padding {
+    padding-top: 18px;
+}
+
+.hour-bank .single-bloc-audit-pricing .content .padding-body {
+    margin-top: -40px;
+}
+
+.hour-bank .single-bloc-audit-pricing .content .time p {
+    margin: 5px 0 0 -175%;
+    text-align: left;
+    color: #1ec034;
+}
+
+.hour-bank .single-bloc-audit-pricing .content .time-bloc p {
+    margin: 5px 0 0 -100%;
+    text-align: left;
+    color: #1ec034;
+}
+
+.hour-bank .single-bloc-audit-pricing .content h2 {
+    margin-top: -22px;
+    margin-left: -165px;
+    color: rgb(62, 100, 226)
+}
+
+.hour-bank .single-bloc-audit-pricing .content .margin {
+    margin: -20px 0 0 -2%;
+}
+
+.hour-bank .single-bloc-audit-pricing .content .margin-analyse {
+    text-align: left;
+    margin-left: 3%;
+}
+
+.hour-bank .single-bloc-audit-pricing .content .separation hr {
+    color: rgb(255, 255, 255);
+    height: 2px;
+}
+
+.hour-bank .single-bloc-audit-pricing .content li {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.hour-bank .single-bloc-audit-pricing .content ul {
+    margin-left: -15px;
+    padding-left: 20px;
+}
+
+.hour-bank .single-bloc-audit-pricing .content i {
+    margin: 10px 4px 0 0;
+    color: rgb(87, 231, 123);
+}
+
+.hour-bank .single-bloc-audit-pricing .content .bubble .margin {
+    margin-left: 5px;
+}
+
+.hour-bank .single-bloc-audit-pricing .content .space svg {
+    margin: 6px 0 0 -40%;
+}
+
+.hour-bank .single-bloc-audit-pricing .content .space .needle {
+    fill: green;
+}
+
+.hour-bank .single-bloc-audit-pricing .content .space .clock {
+    fill: white;
+}
+
+.hour-bank .single-bloc-audit-pricing .icon h4 {
+    color: #f14e4e;
+    margin: -58px 0 0 32%;
+    text-align: left;
+    font-size: 23px;
+}
+
+.hour-bank .single-bloc-audit-pricing .icon p {
+    font-size: 11px;
+    margin: 3px 0 0 33%;
+    line-height: 1.7;
+    text-align: left; 
+    max-width: calc(35 * 1ch);
+}
+
+.hour-bank .single-bloc-audit-pricing .content .icon i {
+    color: #f14e4e;
+    width: 60px;
+    height: 60px;
+    background: #3a3a3a;
+    margin-left: 5%;
+}
+
+.hour-bank .single-bloc-audit-pricing .content .icon hr {
+    color: black;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.hour-bank .single-bloc-audit-pricing .button-buy {
+    width: 130px;
+    background-color: #f14e4e;
+}
+
+.hour-bank .single-bloc-audit-pricing .content h1 {
+    margin-top: 10px;
+}
