@@ -60,7 +60,7 @@
     <!-- ========================= footer end ========================= -->
 
 	<!-- Google tag (gtag.js) -->
-	<?= get_field('script_google_analytics'); ?>
+	<?= get_field('script_google_analytics', 'option'); ?>
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top btn-hover">
