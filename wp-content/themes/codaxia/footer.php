@@ -6,7 +6,9 @@
     				<div class="col-xl-3 col-md-6">
     					<div class="footer-widget">
     						<div class="logo mb-35">
-    							<a href="index.html"> <img src="<?= the_field('logo', 'option'); ?>" alt=""> </a>
+    							<a href="<?= home_url() ?>">
+									<img src="<?= the_field('logo', 'option'); ?>" alt="">
+								</a>
     						</div>
     						<p class="desc mb-35"><?= the_field('footer_description', 'option'); ?></p>
     						<ul class="socials">
@@ -53,7 +55,7 @@
     			</div>
     		</div>
     		<div class="copy-right">
-    			<p>CODAXIA 2023 Copyright. All Rights Reserved.</p>
+    			<p>CODAXIA 2024 Copyright. All Rights Reserved.</p>
     		</div>
     	</div>
     </footer>
